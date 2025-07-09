@@ -1,0 +1,650 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurukul Points Management - GSTATUS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .container { margin-top: 20px; }
+        .tab-content { padding: 20px; }
+        .exam-input { display: none; margin-top: 10px; } /* Removed cupboard-action classes */
+        .update-message { display: none; margin-top: 10px; }
+        h1, h3 { color: #343a40; }
+        table { width: 100%; }
+        th, td { padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Gurukul Points Management - GSTATUS</h1>
+        
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs" id="gurukulTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="administration-tab" data-bs-toggle="tab" href="#administration" role="tab">Administration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="rankings-tab" data-bs-toggle="tab" href="#rankings" role="tab">Rankings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="responses-tab" data-bs-toggle="tab" href="#responses" role="tab">Responses</a>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Home Tab -->
+            <div class="tab-pane fade show active" id="home" role="tabpanel">
+                <h3>Jai Swaminarayan</h3>
+                <p><strong>Status:</strong> System Active</p>
+                <p><strong>Version:</strong> 1.0</p>
+            </div>
+
+            <!-- Administration Tab -->
+            <div class="tab-pane fade" id="administration" role="tabpanel">
+                <h3>Administration</h3>
+                <div class="mb-3">
+                    <label for="searchQueryPoints" class="form-label">Search Student by Name, ID, Floor, or Room</label>
+                    <input type="text" class="form-control" id="searchQueryPoints" placeholder="Enter name, ID, floor, or room">
+                </div>
+                <div id="searchResultsPoints" class="mb-3"></div>
+                <form id="pointsForm">
+                    <h4>Select Positive Action</h4>
+                    <select name="positiveAction" class="form-select mb-3" id="positiveAction">
+                        <option value="">Select an action</option>
+                        <option value="5">Participation in competition (+5)</option>
+                        <option value="5">Helping others (+5)</option>
+                        <option value="10">Room cleaning competition 1st (+10)</option>
+                        <option value="7">Room cleaning competition 2nd (+7)</option>
+                        <option value="5">Room cleaning competition 3rd (+5)</option>
+                        <option value="15">Winners in competition (+15)</option>
+                        <option value="10">Good discipline (+10)</option>
+                        <option value="exam">According to percentage (exam)</option>
+                    </select>
+                    <div class="exam-input" id="examPercentage">
+                        <label for="percentageInput" class="form-label">Enter Exam Percentage</label>
+                        <input type="number" class="form-control" id="percentageInput" placeholder="e.g., 85" min="0" max="100">
+                    </div>
+                    <h4>Select Negative Action</h4>
+                    <select name="negativeAction" class="form-select mb-3">
+                        <option value="">Select an action</option>
+                        <option value="-5">No Dress code (-5)</option>
+                        <option value="-3">Incomplete homework (-3)</option>
+                        <option value="-3">Late from playing bell (-3)</option>
+                        <option value="-10">Absent to school (-10)</option>
+                        <option value="-7">No room cleaning (-7)</option>
+                        <option value="-10">Late for prayer (-10)</option>
+                        <option value="-10">Fighting (-10)</option>
+                        <option value="-5">Indiscipline in study hour (-5)</option>
+                        <option value="-5">Roaming outside (-5)</option>
+                        <option value="-10">Not speaking in English (-10)</option>
+                        <option value="-10">Late for pooja (-10)</option>
+                        <option value="-3">Talking in studying (-3)</option>
+                        <option value="-10">No discipline (-10)</option>
+                        <option value="-5">Speaking Bad words (-5)</option>
+                        <option value="-10">Disobeying in-charges (-10)</option>
+                        <option value="-20">Damaging gurukul properties (-20)</option>
+                        <option value="-3">No pooja equipment (-3)</option>
+                        <option value="-3">No cupboard cleaning (-3)</option>
+                    </select>
+                    <!-- Removed remarkInput from admin tab -->
+                    <button type="submit" class="btn btn-primary">Go</button>
+                </form>
+                <div class="update-message alert alert-success" id="updateMessage"></div>
+
+                <!-- Removed Cupboard Management section -->
+            </div>
+
+            <!-- Rankings Tab -->
+            <div class="tab-pane fade" id="rankings" role="tabpanel">
+                <h3>Student Rankings</h3>
+                <div class="mb-3">
+                    <label for="searchQueryRankings" class="form-label">Search Student by Name, ID, Floor, or Room</label>
+                    <input type="text" class="form-control" id="searchQueryRankings" placeholder="Enter name, ID, floor, or room">
+                </div>
+                <div id="searchResultsRankings" class="mb-3"></div>
+                <div class="mb-3">
+                    <label for="gradeFilter" class="form-label">Filter by Grade</label>
+                    <select class="form-select" id="gradeFilter">
+                        <option value="all">All Grades</option>
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary mb-3" id="refreshRankings">Refresh Rankings</button>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Student ID</th>
+                            <th>Name</th>
+                            <th>Room</th>
+                            <th>Floor</th>
+                            <th>Total Points</th>
+                            <th>Grade</th>
+                            <th>Remark</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rankingsTable"></tbody>
+                </table>
+            </div>
+
+            <!-- Responses Tab -->
+            <div class="tab-pane fade" id="responses" role="tabpanel">
+                <h3>Response History</h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Student ID</th>
+                            <th>Name</th>
+                            <th>Action</th>
+                            <th>Points Changed</th>
+                        </tr>
+                    </thead>
+                    <tbody id="responseTable"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Initialize student data in localStorage if not present
+        const initialStudents = [
+            { id: "AE2389", room: "101/1", name: "VEERAMALLA DHEERAJ", points: 0 },
+            { id: "AE5738", room: "101/2", name: "SOHITH SUBHANG RISHI VATTURI", points: 0 },
+            { id: "AD2352", room: "101/3", name: "BHASWRAJU VIVEK", points: 0 },
+            { id: "AD7711", room: "101/4", name: "SAMUDRALA SRIRAM PRAHARSHA", points: 0 },
+            { id: "AE4945", room: "101/5", name: "SMARAN JASTI", points: 0 },
+            { id: "AD5064", room: "101/6", name: "PABBA SATHVIK", points: 0 },
+            { id: "AD5037", room: "101/7", name: "YERRA MOHAN KARTHIKEYA", points: 0 },
+            { id: "AE7078", room: "101/8", name: "V CHAITANYA SWARWOOP", points: 0 },
+            { id: "AD9505", room: "101/9", name: "LIKHESH BEVARA", points: 0 },
+            { id: "AD4516", room: "101/10", name: "Omkar Swarup Pradhan", points: 0 },
+            { id: "AF4818", room: "101/11", name: "MADHIRE HANRITH", points: 0 },
+            { id: "AF3709", room: "101/12", name: "K RAM CHARAN UTTEJ", points: 0 },
+            { id: "AF3017", room: "101/13", name: "AKULA HARSHA", points: 0 },
+            { id: "AF6178", room: "101/14", name: "K VIBHAS", points: 0 },
+            { id: "AF3618", room: "101/15", name: "VENDI EEKSHITH", points: 0 },
+            { id: "AF8537", room: "101/16", name: "ACHYUTH RAO", points: 0 },
+            { id: "AD8823", room: "102/1", name: "VAIJNATH SHIVKANT MEDGE", points: 0 },
+            { id: "AD8618", room: "102/2", name: "NAGELLI SHISHIR REDDY", points: 0 },
+            { id: "AD9329", room: "102/3", name: "M NIVAS", points: 0 },
+            { id: "AF6700", room: "102/4", name: "PALEPU NAVEEN RAJU", points: 0 },
+            { id: "AE4784", room: "102/5", name: "G CHANDRESH PATEL", points: 0 },
+            { id: "AF4039", room: "102/6", name: "ADITHYA SRINIVAS NAIDU TIRUMALASETTY", points: 0 },
+            { id: "AE2503", room: "102/7", name: "MURTHY TEJASWI MUMMIDAVARAPU", points: 0 },
+            { id: "AF4007", room: "102/8", name: "SHESHAVPURI TANISHQ", points: 0 },
+            { id: "AD8845", room: "102/9", name: "JISHAN GHOSH", points: 0 },
+            { id: "AF3338", room: "102/10", name: "Lolam ganesh", points: 0 },
+            { id: "AF8457", room: "102/11", name: "Shaurya Suhas Chavan", points: 0 },
+            { id: "AE0647", room: "102/12", name: "B MANISH", points: 0 },
+            { id: "AF4524", room: "102/13", name: "NIGEL WANGKHEIMAYUM", points: 0 },
+            { id: "AD3355", room: "102/14", name: "Uppala Sai Chandra", points: 0 },
+            { id: "AF6328", room: "102/15", name: "DAMAM BHARATH", points: 0 },
+            { id: "AF4830", room: "102/16", name: "SHRIYASH DATTATRAY GURME", points: 0 },
+            { id: "AF2351", room: "103/1", name: "S MANOCHARAN", points: 0 },
+            { id: "AE9179", room: "103/2", name: "KOUSHIK S", points: 0 },
+            { id: "AE6350", room: "103/3", name: "POSHAL KARUNYA", points: 0 },
+            { id: "AC6389", room: "103/4", name: "GAJULA SRISHANTH", points: 0 },
+            { id: "AE6192", room: "103/5", name: "VADLA SHREE HARI", points: 0 },
+            { id: "AE1176", room: "103/7", name: "ARSHANAPELLI JASHAN RAO", points: 0 },
+            { id: "AE4808", room: "103/8", name: "KODIGANTI KARTHIK", points: 0 },
+            { id: "AF3019", room: "103/9", name: "Khunt Dev", points: 0 },
+            { id: "AF4499", room: "103/10", name: "ASHWATH KATAKAM", points: 0 },
+            { id: "AF2981", room: "103/12", name: "P MADHAN KUMAR", points: 0 },
+            { id: "AE8407", room: "103/13", name: "RAGHAV PATEL", points: 0 },
+            { id: "AD7362", room: "103/14", name: "T SRISHANTH", points: 0 },
+            { id: "AF2877", room: "103/15", name: "BHEEMANGARI DINESH REDDY", points: 0 },
+            { id: "AE6225", room: "103/16", name: "KARRI YASHWANTH SATHYA VENKATA SAI", points: 0 },
+            { id: "AD5701", room: "104/1", name: "DODDELA PRANAY RAJ", points: 0 },
+            { id: "AF7855", room: "104/3", name: "SEETHAPATHI TANISH", points: 0 },
+            { id: "AF3798", room: "104/5", name: "SHOURYA AGARWAL", points: 0 },
+            { id: "AE8422", room: "104/6", name: "NITYA PATEL", points: 0 },
+            { id: "AE5783", room: "104/8", name: "ISHAAN MUTHYALA", points: 0 },
+            { id: "AD8775", room: "104/9", name: "SABBANI ROHITH KUMAR", points: 0 },
+            { id: "AE5112", room: "104/10", name: "SACHIN KUMAR", points: 0 },
+            { id: "AF3160", room: "104/11", name: "YOHAAN JAISWAL", points: 0 },
+            { id: "AF2450", room: "104/12", name: "NYATHKALA KARTHIKEYA", points: 0 },
+            { id: "AD9845", room: "104/13", name: "DHAIRYA PATEL", points: 0 },
+            { id: "AF3631", room: "104/14", name: "AMITH ARJUNE", points: 0 },
+            { id: "AF3385", room: "104/15", name: "KONDIKANTI NANI SAGAR", points: 0 },
+            { id: "AF4984", room: "104/16", name: "PALASH BHOWMIK", points: 0 },
+            { id: "AF4727", room: "105/1", name: "P JEEVAN NAYAK", points: 0 },
+            { id: "AE1879", room: "105/2", name: "AKULA GEETH VARUN", points: 0 },
+            { id: "AF5926", room: "105/3", name: "ALUVALA SRI SHIVA SAHISHNU", points: 0 },
+            { id: "AD2257", room: "105/4", name: "JAPA SHASHANK REDDY", points: 0 },
+            { id: "AF2303", room: "105/5", name: "CHARABUDDI NEHANTH REDDY", points: 0 },
+            { id: "AD7577", room: "105/6", name: "Singuluri Leela Pavan Kumar", points: 0 },
+            { id: "AF4304", room: "105/7", name: "KOKKALAKONDA SHIVA SREEKAR", points: 0 },
+            { id: "AH0015", room: "105/8", name: "Rudra Pratap Nayak", points: 0 },
+            { id: "AE5810", room: "105/9", name: "BANOTH VIVEK VARSHITH", points: 0 },
+            { id: "AF3258", room: "105/10", name: "Pottipally Rushil Reddy", points: 0 },
+            { id: "AF4992", room: "105/11", name: "ATMAKURI MANOHAR", points: 0 },
+            { id: "AF3092", room: "105/12", name: "KASANAGOTTU AASHISH", points: 0 },
+            { id: "AE5504", room: "105/13", name: "ANURAG SINGH", points: 0 },
+            { id: "AF2492", room: "105/14", name: "GUNDAGANI HRISHITH", points: 0 },
+            { id: "AD8910", room: "105/15", name: "PALLE ADHARSH REDDY", points: 0 },
+            { id: "AF7534", room: "105/16", name: "Akula dhanush", points: 0 },
+            { id: "AE9724", room: "106/1", name: "ILA SHRITHAN", points: 0 },
+            { id: "AF1688", room: "106/2", name: "GUDA VASTALYA VISHNU VARDHAN REDDY", points: 0 },
+            { id: "AF4216", room: "106/3", name: "KRITANU ANAND", points: 0 },
+            { id: "AE1619", room: "106/4", name: "MOPURU REVANTH REDDY", points: 0 },
+            { id: "AF5574", room: "106/5", name: "DAMANNAGARI SHOURYA DEEP REDDY", points: 0 },
+            { id: "AF2002", room: "106/6", name: "SONTI REDDY PRITAM REDDY", points: 0 },
+            { id: "AD9200", room: "106/7", name: "D.NARAYANA REDDY", points: 0 },
+            { id: "AE5774", room: "106/8", name: "PENMETSA AMAN VARMA", points: 0 },
+            { id: "AE2973", room: "106/9", name: "V JASWANTH SRI MANIKANTA", points: 0 },
+            { id: "AF3022", room: "106/10", name: "Diksh Devda", points: 0 },
+            { id: "AF3831", room: "106/11", name: "KOLAGANI MANIKANTHA", points: 0 },
+            { id: "AD4481", room: "106/12", name: "PEDDINTI MANI SHANKAR", points: 0 },
+            { id: "AE6337", room: "106/13", name: "AMGOTH REVANTH", points: 0 },
+            { id: "AF4203", room: "106/14", name: "ALLAM ROHITH KUMAR REDDY", points: 0 },
+            { id: "AF2447", room: "106/15", name: "KONDA ABHI RAM", points: 0 },
+            { id: "AE6358", room: "106/16", name: "BADRI VARSHITH PATEL", points: 0 },
+            { id: "AF2956", room: "107/1", name: "AMAND YATIN", points: 0 },
+            { id: "AF6519", room: "107/2", name: "GONUGUNTLA ANISH CHOWDARY", points: 0 },
+            { id: "AE2110", room: "107/3", name: "DIWAN SURYA SHREYAS", points: 0 },
+            { id: "AF3003", room: "107/4", name: "Kottu Hrusheekesha", points: 0 },
+            { id: "AE8150", room: "107/5", name: "KUMMATI DEEPAK REDDY", points: 0 },
+            { id: "AE5946", room: "107/6", name: "DONDI HARSHITH", points: 0 },
+            { id: "AF2955", room: "107/7", name: "SURUKUNTA SHRITHAN REDDY", points: 0 },
+            { id: "AF3460", room: "107/8", name: "Ramagiri Sravan Bhargav", points: 0 },
+            { id: "AF3091", room: "107/9", name: "BIKSHAMAIAH PODILA", points: 0 },
+            { id: "AE1489", room: "107/10", name: "PARTH PIYUSH PATEL", points: 0 },
+            { id: "AF7140", room: "107/11", name: "GAJERA DHRUVKUMAR KRISHNAKANT", points: 0 },
+            { id: "AE2358", room: "107/12", name: "GOURAV SINGH", points: 0 },
+            { id: "AF6518", room: "107/13", name: "MOHIT YOGESH KATHIRIA", points: 0 },
+            { id: "AF3321", room: "107/14", name: "BEDUDHURU THAXILESWARA REDDY", points: 0 },
+            { id: "AF4923", room: "107/15", name: "RENTIKOTA JANAKI RAM", points: 0 },
+            { id: "AD2038", room: "108/1", name: "PINNINTI UDAY HARSHA", points: 0 },
+            { id: "AE8928", room: "108/2", name: "PREM KUMAR PATIL", points: 0 },
+            { id: "AF1539", room: "108/3", name: "MUKUL MALPANI", points: 0 },
+            { id: "AE5906", room: "108/5", name: "DHARMA MUKESH SAVALIA", points: 0 },
+            { id: "AF6412", room: "108/7", name: "PEDAKOTA SHREEHANS", points: 0 },
+            { id: "AD6750", room: "108/8", name: "ATHARVA DUBEY", points: 0 },
+            { id: "AE2752", room: "108/9", name: "KOTHAPALLY PRANEETH REDDY", points: 0 },
+            { id: "AE2354", room: "108/10", name: "BHUVANESHWAR POLICE PATEL", points: 0 },
+            { id: "AF3078", room: "108/11", name: "SAI SATVIK BORULE", points: 0 },
+            { id: "AF4502", room: "108/12", name: "ALLURI SHARATH CHANDRA", points: 0 },
+            { id: "AD8257", room: "108/13", name: "Aarush Jigneshkumar Kevadiya", points: 0 },
+            { id: "AE8360", room: "108/14", name: "GUMUDALA VARSHITH", points: 0 },
+            { id: "AE9623", room: "108/15", name: "NILAY AMIT LANDGE", points: 0 },
+            { id: "AE1222", room: "108/16", name: "RUDRESH ARUN ASHTURE", points: 0 },
+            { id: "AF4849", room: "109/1", name: "KHETANI ANSH PARAG", points: 0 },
+            { id: "AE2250", room: "109/2", name: "KILARI.VENKATA SAI HARSHA", points: 0 },
+            { id: "AD5180", room: "109/3", name: "SANGANI HARSHIT RAKESHBHAI", points: 0 },
+            { id: "AD4896", room: "109/4", name: "AKASH MITTAL", points: 0 },
+            { id: "AD6316", room: "109/5", name: "RAUNAK VERMA", points: 0 },
+            { id: "AF3810", room: "109/6", name: "TIRTH KUMAR PATEL", points: 0 },
+            { id: "AE5788", room: "109/7", name: "G LOHITH REDDY", points: 0 },
+            { id: "AE4551", room: "109/8", name: "RNS PURUSHOTTAM", points: 0 },
+            { id: "AE1064", room: "109/9", name: "K BHUVAN", points: 0 },
+            { id: "AE9000", room: "109/10", name: "PETHANI HET SHAILESHBHAI", points: 0 },
+            { id: "AF6467", room: "109/11", name: "RUPAPARA DIVY MILAN BHAI", points: 0 },
+            { id: "AE5755", room: "109/12", name: "ARADLA ABHINAV REDDY", points: 0 },
+            { id: "AE5727", room: "109/13", name: "PANDURI SOMA MRUDUL", points: 0 },
+            { id: "AE8919", room: "109/14", name: "ADITYA POONDRU", points: 0 },
+            { id: "AF5873", room: "109/15", name: "Alakh Tiwari", points: 0 },
+            { id: "AF4919", room: "109/16", name: "RUDRA MANIDHAR", points: 0 },
+            { id: "AE4941", room: "110/1", name: "PANAV GUPTA", points: 0 },
+            { id: "AD4924", room: "110/2", name: "Dodda Sri Sai Prateek Kumar", points: 0 },
+            { id: "AE4751", room: "110/3", name: "RATHLA VIVEK", points: 0 },
+            { id: "AF6468", room: "110/4", name: "KHATRA RENISH MEHULBHAI", points: 0 },
+            { id: "AE5743", room: "110/5", name: "DARSH JITENDRA PATEL", points: 0 },
+            { id: "AE8255", room: "110/6", name: "Bhanderi Preet Rameshbhai", points: 0 },
+            { id: "AE6369", room: "110/7", name: "MANTHRI VINAYAK", points: 0 },
+            { id: "AE0519", room: "110/9", name: "AYUSH MALPANI", points: 0 },
+            { id: "AE6043", room: "110/10", name: "SWAYAM MOHTA", points: 0 },
+            { id: "AF5955", room: "110/11", name: "YASH SHAW", points: 0 },
+            { id: "AC7228", room: "110/12", name: "GULLA SHIVA KUMAR", points: 0 },
+            { id: "AC3582", room: "110/13", name: "CHINNABABAU BAJARAG SOMESH", points: 0 },
+            { id: "AF7113", room: "110/14", name: "DEVANI SHREY RAJESH BHAI", points: 0 },
+            { id: "AD2140", room: "110/15", name: "KOTA SAI AARUSH", points: 0 },
+            { id: "AF4985", room: "110/16", name: "GUJJULA SHRIYAN REDDY", points: 0 },
+            { id: "AE2449", room: "111/1", name: "HARSH PATEL", points: 0 },
+            { id: "AE4890", room: "111/2", name: "AYUSH NEMANI", points: 0 },
+            { id: "AC3178", room: "111/3", name: "GOLLAPALLY MEGHANATH REDDY", points: 0 },
+            { id: "AE6387", room: "111/4", name: "CH SHIVA KESHAVA", points: 0 },
+            { id: "AE0652", room: "111/5", name: "DURGAM VIJAYA SRIKAR", points: 0 },
+            { id: "AF3847", room: "111/6", name: "Y TRILOK GOUD", points: 0 },
+            { id: "AD4108", room: "111/7", name: "Soppari Ram Charan", points: 0 },
+            { id: "AE4026", room: "111/8", name: "Prathemesh Kedareshwar Chitmalwar", points: 0 },
+            { id: "AF4167", room: "111/9", name: "BANOTU NITEESH KUMAR", points: 0 },
+            { id: "AE5742", room: "111/10", name: "LEKH JAYESH PATEL", points: 0 },
+            { id: "AF6271", room: "111/11", name: "SUYASH VAID", points: 0 },
+            { id: "AF2980", room: "111/12", name: "GAURAV HANUMANTHKARI MARATHA", points: 0 },
+            { id: "AD5441", room: "111/13", name: "VEERANNAGARI VISHWATEJA REDDY", points: 0 },
+            { id: "AE5771", room: "111/14", name: "JENIL P VADALIYA", points: 0 },
+            { id: "AC8713", room: "111/15", name: "JAY PATEL", points: 0 },
+            { id: "AD6640", room: "111/16", name: "DHARMAAVARAM GOWTHAMA NANDAN", points: 0 },
+            { id: "AD1725", room: "112/1", name: "MAHATHO DAAMAN RAJ", points: 0 },
+            { id: "AE0710", room: "112/2", name: "VIPUL CHOUDHARY", points: 0 },
+            { id: "AF2695", room: "112/3", name: "VIPPAKAYALA KAVISH", points: 0 },
+            { id: "AE0605", room: "112/4", name: "HARSH PATEL", points: 0 },
+            { id: "AD7341", room: "112/5", name: "HRIDAY MUNDADA", points: 0 },
+            { id: "AE6008", room: "112/6", name: "AKHILESH VISHAL BANGAD", points: 0 },
+            { id: "AE4186", room: "112/7", name: "FALDU LAKSH KISHOR KUMAR", points: 0 },
+            { id: "AD3058", room: "112/8", name: "RAJVEER SHINDE", points: 0 },
+            { id: "AE0845", room: "112/9", name: "LALITH PANIGRAHI GANGU", points: 0 },
+            { id: "AE0808", room: "112/10", name: "CHINCHOLE GIRISH SACHIN", points: 0 },
+            { id: "AE0784", room: "112/11", name: "PRAVEEN CHOUDHARY", points: 0 },
+            { id: "AE2502", room: "112/12", name: "BATHINA BHARATH MANIKANTA", points: 0 },
+            { id: "AD2965", room: "112/13", name: "GOTTIMUKKULA RISHAB RAO", points: 0 },
+            { id: "AE5713", room: "112/14", name: "VATTIPROLU SIVA SAI PAVAN KRISHNA", points: 0 },
+            { id: "AF6482", room: "112/15", name: "ARYAN KUMAR", points: 0 },
+            { id: "AF6550", room: "112/16", name: "Hemansh Motwani", points: 0 },
+            { id: "AF6469", room: "113/1", name: "PIPALIYA PARTH MAHESHBHAI", points: 0 },
+            { id: "AE6537", room: "113/2", name: "KOTA SANJEEVA HIMESH", points: 0 },
+            { id: "AE4774", room: "113/3", name: "Dhrumil P Sanchaniya", points: 0 },
+            { id: "AF3980", room: "113/4", name: "DIVYESH MUNDRA", points: 0 },
+            { id: "AF6342", room: "113/5", name: "THAKUR RUDHRA PRATHAP SINGH", points: 0 },
+            { id: "AD6794", room: "113/6", name: "DACHEPALLY SANJAY KARTHIKEYA", points: 0 },
+            { id: "AF5793", room: "113/7", name: "VEDANT PATEL", points: 0 },
+            { id: "AE0745", room: "113/8", name: "BIKKUMALLA ANISH", points: 0 },
+            { id: "AE8783", room: "113/9", name: "ADITYA KHATRI", points: 0 },
+            { id: "AE1091", room: "113/10", name: "KANUKULA KARTHIK REDDY", points: 0 },
+            { id: "AE1802", room: "113/11", name: "HARSH KHEDEKAR", points: 0 },
+            { id: "AD9679", room: "113/12", name: "Kalidindi Akshay Sai Varma", points: 0 },
+            { id: "AF2970", room: "113/13", name: "THARUN SUDHAKAR", points: 0 },
+            { id: "AF6797", room: "113/15", name: "PRIYANK TAUNK", points: 0 },
+            { id: "AF5053", room: "113/16", name: "R TANUSH REDDY", points: 0 },
+            { id: "AD5738", room: "114/1", name: "OMKAR ARVIND CHAMLE", points: 0 },
+            { id: "AD9325", room: "114/2", name: "PULLA VISHWA CHAITANYA REDDY", points: 0 },
+            { id: "AF2756", room: "114/3", name: "GUDURI ABHINAV VARMA", points: 0 },
+            { id: "AC7573", room: "114/4", name: "Shivam Shinde", points: 0 },
+            { id: "AD6669", room: "114/5", name: "Veer Singh Chouhan", points: 0 },
+            { id: "AF1080", room: "114/6", name: "DASHRATH SINGH", points: 0 },
+            { id: "AD8988", room: "114/7", name: "KAUKUTLA AVYUKTH REDDY", points: 0 },
+            { id: "AF4846", room: "114/8", name: "GUBBALA YASHWANTH SAI VENKAT", points: 0 },
+            { id: "AE5756", room: "114/9", name: "HARIVANSH SANKLA", points: 0 },
+            { id: "AE0283", room: "114/10", name: "N SRIVARDHAN REDDY", points: 0 },
+            { id: "AE6032", room: "114/11", name: "BONTHA LOHITHESH", points: 0 },
+            { id: "AE5861", room: "114/12", name: "TELLAKULA PURNA NANDAN", points: 0 },
+            { id: "AD7235", room: "114/14", name: "Yuvan Varma Jampana", points: 0 },
+            { id: "AF6409", room: "114/15", name: "YUG PRAFUL BHAI AKBARI", points: 0 },
+            { id: "AF4197", room: "114/16", name: "HARSHIT PATEL", points: 0 }
+        ];
+
+        if (!localStorage.getItem('students')) {
+            localStorage.setItem('students', JSON.stringify(initialStudents));
+        }
+        if (!localStorage.getItem('responseHistory')) {
+            localStorage.setItem('responseHistory', JSON.stringify([]));
+        }
+
+        let students = JSON.parse(localStorage.getItem('students')) || [];
+        let responseHistory = JSON.parse(localStorage.getItem('responseHistory')) || [];
+
+        // Removed availableRooms and initializeCupboardDropdowns as cupboard management is removed.
+
+        // Search functionality for points and rankings
+        function handleSearch(inputId, resultsId) {
+            document.getElementById(inputId).addEventListener('input', function() {
+                const query = this.value.toLowerCase();
+                const results = document.getElementById(resultsId);
+                results.innerHTML = '';
+                if (query) {
+                    const filteredStudents = students.filter(student => {
+                        const floor = student.room.split('/')[0];
+                        return student.name.toLowerCase().includes(query) || 
+                               student.id.toLowerCase().includes(query) || 
+                               student.room.toLowerCase().includes(query) || 
+                               floor.includes(query);
+                    });
+                    if (filteredStudents.length) {
+                        results.innerHTML = '<h5>Matching Students:</h5>';
+                        filteredStudents.forEach(student => {
+                            results.innerHTML += `
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="${inputId === 'searchQueryPoints' ? 'selectedStudents' : 'selectedRankings'}" value="${student.id}" id="${inputId}_${student.id}">
+                                    <label class="form-check-label" for="${inputId}_${student.id}">
+                                        ${student.name} (${student.id}, Room: ${student.room}, Points: ${student.points})
+                                    </label>
+                                </div>
+                            `;
+                        });
+                    } else {
+                        results.innerHTML = '<p>No students found.</p>';
+                    }
+                }
+            });
+        }
+
+        // Show/hide exam percentage input
+        document.getElementById('positiveAction').addEventListener('change', function() {
+            const examInput = document.getElementById('examPercentage');
+            examInput.style.display = this.value === 'exam' ? 'block' : 'none';
+        });
+
+        // Handle points form submission
+        document.getElementById('pointsForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const selectedStudentIds = Array.from(document.querySelectorAll('input[name="selectedStudents"]:checked')).map(input => input.value);
+            const positiveAction = document.getElementById('positiveAction').value;
+            const negativeAction = document.querySelector('[name="negativeAction"]').value;
+            const percentageInput = document.getElementById('percentageInput').value;
+            // Removed remark from admin form submission
+            const updateMessage = document.getElementById('updateMessage');
+
+            if (!selectedStudentIds.length) {
+                updateMessage.classList.remove('alert-success');
+                updateMessage.classList.add('alert-danger');
+                updateMessage.textContent = 'Please select at least one student.';
+                updateMessage.style.display = 'block';
+                setTimeout(() => updateMessage.style.display = 'none', 3000);
+                return;
+            }
+
+            let points = 0;
+            let actionText = '';
+            if (positiveAction && negativeAction) {
+                updateMessage.classList.remove('alert-success');
+                updateMessage.classList.add('alert-danger');
+                updateMessage.textContent = 'Please select only one action (positive or negative).';
+                updateMessage.style.display = 'block';
+                setTimeout(() => updateMessage.style.display = 'none', 3000);
+                return;
+            } else if (positiveAction) {
+                if (positiveAction === 'exam') {
+                    const percentage = parseInt(percentageInput);
+                    if (isNaN(percentage) || percentage < 0 || percentage > 100) {
+                        updateMessage.classList.remove('alert-success');
+                        updateMessage.classList.add('alert-danger');
+                        updateMessage.textContent = 'Please enter a valid percentage (0-100).';
+                        updateMessage.style.display = 'block';
+                        setTimeout(() => updateMessage.style.display = 'none', 3000);
+                        return;
+                    }
+                    points = percentage >= 90 ? 20 : percentage >= 80 ? 15 : percentage >= 70 ? 10 : 5;
+                    actionText = `Exam Percentage (${percentage}%)`;
+                } else {
+                    points = parseInt(positiveAction);
+                    actionText = document.querySelector(`#positiveAction option[value="${positiveAction}"]`).text;
+                }
+            } else if (negativeAction) {
+                points = parseInt(negativeAction);
+                actionText = document.querySelector(`select[name="negativeAction"] option[value="${negativeAction}"]`).text;
+            } else {
+                updateMessage.classList.remove('alert-success');
+                updateMessage.classList.add('alert-danger');
+                updateMessage.textContent = 'Please select an action.';
+                updateMessage.style.display = 'block';
+                setTimeout(() => updateMessage.style.display = 'none', 3000);
+                return;
+            }
+
+            const now = new Date();
+            const date = now.toLocaleDateString('en-GB');
+            const time = now.toLocaleTimeString('en-GB');
+
+            selectedStudentIds.forEach(studentId => {
+                const student = students.find(s => s.id === studentId);
+                if (student) {
+                    student.points += points;
+                    // Removed remark update from admin form submission
+                    responseHistory.push({
+                        date,
+                        time,
+                        studentId,
+                        name: student.name,
+                        action: actionText,
+                        pointsChanged: points
+                    });
+                }
+            });
+
+            localStorage.setItem('students', JSON.stringify(students));
+            localStorage.setItem('responseHistory', JSON.stringify(responseHistory));
+
+            updateMessage.classList.remove('alert-danger');
+            updateMessage.classList.add('alert-success');
+            updateMessage.textContent = `Points updated for ${selectedStudentIds.length} student(s): ${points > 0 ? '+' : ''}${points} points each.`; // Removed remark from message
+            updateMessage.style.display = 'block';
+            setTimeout(() => updateMessage.style.display = 'none', 3000);
+
+            document.getElementById('pointsForm').reset();
+            document.getElementById('examPercentage').style.display = 'none';
+            document.getElementById('searchResultsPoints').innerHTML = '';
+            document.getElementById('searchQueryPoints').value = '';
+            refreshRankings();
+        });
+
+        // Removed cupboard form submission handler and related functions.
+
+        // Handle remark update from rankings table
+        function updateRemark(studentId, newRemark) {
+            const student = students.find(s => s.id === studentId);
+            if (student) {
+                student.remark = newRemark;
+                localStorage.setItem('students', JSON.stringify(students));
+                // No need to refresh rankings immediately, as the input field already shows the change
+                // If you want a confirmation message, you can add it here.
+            }
+        }
+
+        // Refresh rankings
+        function refreshRankings() {
+            const rankingsTable = document.getElementById('rankingsTable');
+            const gradeFilter = document.getElementById('gradeFilter').value;
+            let sortedStudents = [...students].sort((a, b) => b.points - a.points);
+
+            // Assign grades based on rank
+            sortedStudents.forEach((student, index) => {
+                if (index < 10) {
+                    student.assignedGrade = 'A+';
+                } else if (index < 10 + 30) {
+                    student.assignedGrade = 'A';
+                } else if (index < 10 + 30 + 30) {
+                    student.assignedGrade = 'B';
+                } else if (index < 10 + 30 + 30 + 30) {
+                    student.assignedGrade = 'C';
+                } else {
+                    student.assignedGrade = 'D';
+                }
+            });
+
+            // Filter students by selected grade
+            let filteredStudents = sortedStudents;
+            if (gradeFilter !== 'all') {
+                filteredStudents = sortedStudents.filter(student => student.assignedGrade === gradeFilter);
+            }
+
+            rankingsTable.innerHTML = '';
+            filteredStudents.forEach((student, index) => {
+                const floor = student.room.split('/')[0];
+                rankingsTable.innerHTML += `
+                    <tr>
+                        <td>${sortedStudents.indexOf(student) + 1}</td> <!-- Display original rank -->
+                        <td>${student.id}</td>
+                        <td>${student.name}</td>
+                        <td>${student.room}</td>
+                        <td>${floor}</td>
+                        <td>${student.points}</td>
+                        <td>${student.assignedGrade}</td>
+                        <td>
+                            <input type="text" class="form-control" value="${student.remark || ''}" onchange="updateRemark('${student.id}', this.value)">
+                        </td>
+                    </tr>
+                `;
+            });
+        }
+
+        // Refresh response history
+        function refreshResponses() {
+            const responseTable = document.getElementById('responseTable');
+            responseTable.innerHTML = '';
+            responseHistory.forEach(response => {
+                responseTable.innerHTML += `
+                    <tr>
+                        <td>${response.date}</td>
+                        <td>${response.time}</td>
+                        <td>${response.studentId}</td>
+                        <td>${response.name}</td>
+                        <td>${response.action}</td>
+                        <td>${response.pointsChanged}</td>
+                    </tr>
+                `;
+            });
+        }
+
+        // Initialize
+        handleSearch('searchQueryPoints', 'searchResultsPoints');
+        handleSearch('searchQueryRankings', 'searchResultsRankings');
+        document.getElementById('refreshRankings').addEventListener('click', refreshRankings);
+        document.getElementById('gradeFilter').addEventListener('change', refreshRankings); // Add event listener for grade filter
+        // Removed initializeCupboardDropdowns call
+        refreshRankings();
+        refreshResponses();
+    </script>
+</body>
+</html>
