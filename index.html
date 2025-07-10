@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurukul Points Management - GSTATUS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- SheetJS library for XLSX parsing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+    <style>
+        body { background-color: #f8f9fa; }
+        .container { margin-top: 20px; }
+        .tab-content { padding: 20px; }
+        .exam-input { display: none; margin-top: 10px; }
+        .update-message { display: none; margin-top: 10px; }
+        h1, h3 { color: #343a40; }
+        table { width: 100%; }
+        th, td { padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Gurukul Points Management - GSTATUS</h1>
+
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs" id="gurukulTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="administration-tab" data-bs-toggle="tab" href="#administration" role="tab">Administration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="rankings-tab" data-bs-toggle="tab" href="#rankings" role="tab">Rankings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="responses-tab" data-bs-toggle="tab" href="#responses" role="tab">Responses</a>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Home Tab -->
+            <div class="tab-pane fade show active" id="home" role="tabpanel">
+                <h3>Jai Swaminarayan</h3>
+                <p><strong>Status:</strong> System Active</p>
+                <p><strong>Version:</strong> 1.0</p>
+            </div>
+            <!-- Administration Tab -->
+            <div class="tab-pane fade" id="administration" role="tabpanel">
+                <h3>Administration</h3>
+
+                <div class="mb-3">
+                    <label for="searchQueryPoints" class="form-label">Search Student by Name, ID, Floor, or Room</label>
+                    <input type="text" class="form-control" id="searchQueryPoints" placeholder="Enter name, ID, floor, or room">
+                </div>
+                <div id="searchResultsPoints" class="mb-3"></div>
+
+                <form id="pointsForm">
+                    <h4>Select Positive Action</h4>
+                    <select name="positiveAction" class="form-select mb-3" id="positiveAction">
+                        <option value="">Select an action</option>
+                        <option value="5">Participation in competition (+5)</option>
+                        <option value="5">Helping others (+5)</option>
+                        <option value="10">Room cleaning competition 1st (+10)</option>
+                        <option value="7">Room cleaning competition 2nd (+7)</option>
+                        <option value="5">Room cleaning competition 3rd (+5)</option>
+                        <option value="15">Winners in competition (+15)</option>
+                        <option value="10">Good discipline (+10)</option>
+                        <option value="exam">According to percentage (exam)</option>
+                    </select>
+                    <div class="exam-input" id="examPercentage">
+                        <label for="percentageInput" class="form-label">Enter Exam Percentage</label>
+                        <input type="number" class="form-control" id="percentageInput" placeholder="e.g., 85" min="0" max="100">
+                    </div>
+
+                    <h4>Select Negative Action</h4>
+                    <select name="negativeAction" class="form-select mb-3">
+                        <option value="">Select an action</option>
+                        <option value="-5">No Dress code (-5)</option>
+                        <option value="-3">Incomplete homework (-3)</option>
+                        <option value="-3">Late from playing bell (-3)</option>
+                        <option value="-10">Absent to school (-10)</option>
+                        <option value="-7">No room cleaning (-7)</option>
+                        <option value="-10">Late for prayer (-10)</option>
+                        <option value="-10">Fighting (-10)</option>
+                        <option value="-5">Indiscipline in study hour (-5)</option>
+                        <option value="-5">Roaming outside (-5)</option>
+                        <option value="-10">Not speaking in English (-10)</option>
+                        <option value="-10">Late for pooja (-10)</option>
+                        <option value="-3">Talking in studying (-3)</option>
+                        <option value="-10">No discipline (-10)</option>
+                        <option value="-5">Speaking Bad words (-5)</option>
+                        <option value="-10">Disobeying in-charges (-10)</option>
+                        <option value="-20">Damaging gurukul properties (-20)</option>
+                        <option value="-3">No pooja equipment (-3)</option>
+                        <option value="-3">No cupboard cleaning (-3)</option>
+                    </select>
+
+                    <button type="submit" class="btn btn-primary">Go</button>
+                </form>
+                <div class="update-message alert alert-success" id="updateMessage"></div>
+            </div>
+            <!-- Rankings Tab -->
+            <div class="tab-pane fade" id="rankings" role="tabpanel">
+                <h3>Student Rankings</h3>
+                <div class="mb-3">
+                    <label for="searchQueryRankings" class="form-label">Search Student by Name, ID, Floor, or Room</label>
+                    <input type="text" class="form-control" id="searchQueryRankings" placeholder="Enter name, ID, floor, or room">
+                </div>
+                <div id="searchResultsRankings" class="mb-3"></div>
+                
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="gradeFilter" class="form-label">Filter by Grade</label>
+                        <select class="form-select" id="gradeFilter">
+                            <option value="all">All Grades</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="floorFilter" class="form-label">Filter by Floor</label>
+                        <select class="form-select" id="floorFilter">
+                            <option value="all">All Floors</option>
+                            <option value="1">1st Floor</option>
+                            <option value="2">2nd Floor</option>
+                            <option value="3">3rd Floor</option>
+                            <option value="4">4th Floor</option>
+                            <option value="5">5th Floor</option>
+                            <option value="6">6th Floor</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button class="btn btn-primary mb-3" id="refreshRankings">Refresh Rankings</button>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Student ID</th>
+                            <th>Name</th>
+                            <th>Room</th>
+                            <th>Floor</th>
+                            <th>Total Points</th>
+                            <th>Grade</th>
+                            <th>Remark</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rankingsTable"></tbody>
+                </table>
+            </div>
+
+            <!-- Responses Tab -->
+            <div class="tab-pane fade" id="responses" role="tabpanel">
+                <h3>Response History</h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Student ID</th>
+                            <th>Name</th>
+                            <th>Action</th>
+                            <th>Points Changed</th>
+                        </tr>
+                    </thead>
+                    <tbody id="responseTable"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let allStudents = [];
+
+fetch('students.json')
+  .then(response => response.json())
+  .then(data => {
+    allStudents = data;
+    console.log("Loaded students:", allStudents);
+    initializeApp();
+  })
+  .catch(error => console.error("Failed to load student data:", error));
+
+
+function initializeApp() {
+  const searchInput = document.getElementById('searchInput');
+  const resultsContainer = document.getElementById('studentResults');
+
+  function renderResults(results) {
+    resultsContainer.innerHTML = '';
+    if (results.length === 0) {
+      resultsContainer.innerHTML = '<p>No students found.</p>';
+      return;
+    }
+
+    results.forEach(student => {
+      const div = document.createElement('div');
+      div.className = 'student-result';
+      div.textContent = `${student.name} | ID: ${student.id} | Room: ${student.room}`;
+      resultsContainer.appendChild(div);
+    });
+  }
+
+  searchInput.addEventListener('input', function () {
+    const searchValue = this.value.toLowerCase();
+    const filtered = allStudents.filter(student =>
+      student.name.toLowerCase().includes(searchValue) ||
+      student.id.toLowerCase().includes(searchValue) ||
+      student.room.toLowerCase().includes(searchValue) ||
+      (student.floor && student.floor.toString().includes(searchValue))
+    );
+    renderResults(filtered);
+  });
+}
+
+
+        localStorage.removeItem('students');
+        localStorage.setItem('students', JSON.stringify(allStudents));
+        let students = allStudents;
+
+        if (!localStorage.getItem('responseHistory')) {
+            localStorage.setItem('responseHistory', JSON.stringify([]));
+        }
+        let responseHistory = JSON.parse(localStorage.getItem('responseHistory')) || [];
+
+        function handleSearch(inputId, resultsId) {
+            document.getElementById(inputId).addEventListener('input', function() {
+                const query = this.value.toLowerCase().trim();
+                const results = document.getElementById(resultsId);
+                results.innerHTML = '';
+                if (query) {
+                    const filteredStudents = students.filter(student => {
+                        const floor = student.room.split('/')[0];
+                        return student.name.toLowerCase().includes(query) || 
+                               student.id.toLowerCase().includes(query) || 
+                               student.room.toLowerCase().includes(query) || 
+                               floor.toLowerCase().includes(query);
+                    });
+                    if (filteredStudents.length) {
+                        results.innerHTML = '<h5>Matching Students:</h5>';
+                        filteredStudents.forEach(student => {
+                            results.innerHTML += `
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="${inputId === 'searchQueryPoints' ? 'selectedStudents' : 'selectedRankings'}" value="${student.id}" id="${inputId}_${student.id}">
+                                    <label class="form-check-label" for="${inputId}_${student.id}">
+                                        ${student.name} (${student.id}, Room: ${student.room}, Points: ${student.points})
+                                    </label>
+                                </div>
+                            `;
+                        });
+                    } else {
+                        results.innerHTML = '<p>No students found.</p>';
+                    }
+                }
+            });
+        }
+
+        document.getElementById('positiveAction').addEventListener('change', function() {
+            document.getElementById('examPercentage').style.display = this.value === 'exam' ? 'block' : 'none';
+        });
+
+        document.getElementById('pointsForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const selectedStudentIds = Array.from(document.querySelectorAll('input[name="selectedStudents"]:checked')).map(input => input.value);
+            const positiveAction = document.getElementById('positiveAction').value;
+            const negativeAction = document.querySelector('[name="negativeAction"]').value;
+            const percentageInput = document.getElementById('percentageInput').value;
+            const updateMessage = document.getElementById('updateMessage');
+
+            if (!selectedStudentIds.length) {
+                updateMessage.classList.remove('alert-success');
+                updateMessage.classList.add('alert-danger');
+                updateMessage.textContent = 'Please select at least one student.';
+                updateMessage.style.display = 'block';
+                setTimeout(() => updateMessage.style.display = 'none', 3000);
+                return;
+            }
+
+            let points = 0;
+            let actionText = '';
+            if (positiveAction && negativeAction) {
+                updateMessage.classList.remove('alert-success');
+                updateMessage.classList.add('alert-danger');
+                updateMessage.textContent = 'Please select only one action (positive or negative).';
+                updateMessage.style.display = 'block';
+                setTimeout(() => updateMessage.style.display = 'none', 3000);
+                return;
+            } else if (positiveAction) {
+                if (positiveAction === 'exam') {
+                    const percentage = parseInt(percentageInput);
+                    if (isNaN(percentage) || percentage < 0 || percentage > 100) {
+                        updateMessage.classList.remove('alert-success');
+                        updateMessage.classList.add('alert-danger');
+                        updateMessage.textContent = 'Please enter a valid percentage (0-100).';
+                        updateMessage.style.display = 'block';
+                        setTimeout(() => updateMessage.style.display = 'none', 3000);
+                        return;
+                    }
+                    points = percentage >= 90 ? 20 : percentage >= 80 ? 15 : percentage >= 70 ? 10 : 5;
+                    actionText = `Exam Percentage (${percentage}%)`;
+                } else {
+                    points = parseInt(positiveAction);
+                    actionText = document.querySelector(`#positiveAction option[value="${positiveAction}"]`).text;
+                }
+            } else if (negativeAction) {
+                points = parseInt(negativeAction);
+                actionText = document.querySelector(`select[name="negativeAction"] option[value="${negativeAction}"]`).text;
+            } else {
+                updateMessage.classList.remove('alert-success');
+                updateMessage.classList.add('alert-danger');
+                updateMessage.textContent = 'Please select an action.';
+                updateMessage.style.display = 'block';
+                setTimeout(() => updateMessage.style.display = 'none', 3000);
+                return;
+            }
+
+            const now = new Date();
+            const date = now.toLocaleDateString('en-GB');
+            const time = now.toLocaleTimeString('en-GB');
+
+            selectedStudentIds.forEach(studentId => {
+                const student = students.find(s => s.id === studentId);
+                if (student) {
+                    student.points += points;
+                    responseHistory.push({
+                        date,
+                        time,
+                        studentId,
+                        name: student.name,
+                        action: actionText,
+                        pointsChanged: points
+                    });
+                }
+            });
+
+            localStorage.setItem('students', JSON.stringify(students));
+            localStorage.setItem('responseHistory', JSON.stringify(responseHistory));
+
+            updateMessage.classList.remove('alert-danger');
+            updateMessage.classList.add('alert-success');
+            updateMessage.textContent = `Points updated for ${selectedStudentIds.length} student(s): ${points > 0 ? '+' : ''}${points} points each.`;
+            updateMessage.style.display = 'block';
+            setTimeout(() => updateMessage.style.display = 'none', 3000);
+
+            document.getElementById('pointsForm').reset();
+            document.getElementById('examPercentage').style.display = 'none';
+            document.getElementById('searchResultsPoints').innerHTML = '';
+            document.getElementById('searchQueryPoints').value = '';
+            refreshRankings();
+        });
+
+        function updateRemark(studentId, newRemark) {
+            const student = students.find(s => s.id === studentId);
+            if (student) {
+                student.remark = newRemark;
+                localStorage.setItem('students', JSON.stringify(students));
+            }
+        }
+
+        function getFloorDisplay(roomNumber) {
+            const firstDigit = roomNumber.charAt(0);
+            switch(firstDigit) {
+                case '1': return '1st Floor';
+                case '2': return '2nd Floor';
+                case '3': return '3rd Floor';
+                default: return `${firstDigit}th Floor`;
+            }
+        }
+
+        function refreshRankings() {
+            const rankingsTable = document.getElementById('rankingsTable');
+            const gradeFilter = document.getElementById('gradeFilter').value;
+            const floorFilter = document.getElementById('floorFilter').value;
+            
+            let sortedStudents = [...students].sort((a, b) => b.points - a.points);
+
+            sortedStudents.forEach((student, index) => {
+                if (index < 10) student.assignedGrade = 'A+';
+                else if (index < 40) student.assignedGrade = 'A';
+                else if (index < 70) student.assignedGrade = 'B';
+                else if (index < 100) student.assignedGrade = 'C';
+                else student.assignedGrade = 'D';
+            });
+
+            let filteredStudents = sortedStudents;
+            
+            // Apply grade filter if not "all"
+            if (gradeFilter !== 'all') {
+                filteredStudents = filteredStudents.filter(student => student.assignedGrade === gradeFilter);
+            }
+            
+            // Apply floor filter if not "all"
+            if (floorFilter !== 'all') {
+                filteredStudents = filteredStudents.filter(student => student.floor === floorFilter);
+            }
+
+            rankingsTable.innerHTML = '';
+            filteredStudents.forEach((student, index) => {
+                const floorDisplay = getFloorDisplay(student.room);
+                rankingsTable.innerHTML += `
+                    <tr>
+                        <td>${sortedStudents.indexOf(student) + 1}</td>
+                        <td>${student.id}</td>
+                        <td>${student.name}</td>
+                        <td>${student.room}</td>
+                        <td>${floorDisplay}</td>
+                        <td>${student.points}</td>
+                        <td>${student.assignedGrade}</td>
+                        <td>
+                            <input type="text" class="form-control" value="${student.remark || ''}" onchange="updateRemark('${student.id}', this.value)">
+                        </td>
+                    </tr>`;
+            });
+        }
+
+        function refreshResponses() {
+            const responseTable = document.getElementById('responseTable');
+            responseTable.innerHTML = '';
+            responseHistory.forEach(response => {
+                responseTable.innerHTML += `
+                    <tr>
+                        <td>${response.date}</td>
+                        <td>${response.time}</td>
+                        <td>${response.studentId}</td>
+                        <td>${response.name}</td>
+                        <td>${response.action}</td>
+                        <td>${response.pointsChanged}</td>
+                    </tr>`;
+            });
+        }
+
+        handleSearch('searchQueryPoints', 'searchResultsPoints');
+        handleSearch('searchQueryRankings', 'searchResultsRankings');
+        document.getElementById('refreshRankings').addEventListener('click', refreshRankings);
+        document.getElementById('gradeFilter').addEventListener('change', refreshRankings);
+        document.getElementById('floorFilter').addEventListener('change', refreshRankings);
+        refreshRankings();
+        refreshResponses();
+    </script>
+</body>
+</html>
