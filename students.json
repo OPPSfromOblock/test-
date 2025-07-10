@@ -1,0 +1,9201 @@
+[
+  {
+    "id": "AE2389",
+    "name": "VEERAMALLA DHEERAJ",
+    "room": "101/1",
+    "points": 0,
+    "remark": ""
+  },
+  {
+    "id": "AE2389",
+    "room": "101/1",
+    "name": "VEERAMALLA DHEERAJ",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5738",
+    "room": "101/2",
+    "name": "SOHITH SUBHANG RISHI VATTURI",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD2352",
+    "room": "101/3",
+    "name": "BHASWRAJU VIVEK",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD7711",
+    "room": "101/4",
+    "name": "SAMUDRALA SRIRAM PRAHARSHA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE4945",
+    "room": "101/5",
+    "name": "SMARAN JASTI",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD5064",
+    "room": "101/6",
+    "name": "PABBA SATHVIK",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD5037",
+    "room": "101/7",
+    "name": "YERRA MOHAN KARTHIKEYA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE7078",
+    "room": "101/8",
+    "name": "V CHAITANYA SWARWOOP",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD9505",
+    "room": "101/9",
+    "name": "LIKHESH BEVARA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD4516",
+    "room": "101/10",
+    "name": "Omkar Swarup Pradhan",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4818",
+    "room": "101/11",
+    "name": "MADHIRE HANRITH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3709",
+    "room": "101/12",
+    "name": "K RAM CHARAN UTTEJ",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3017",
+    "room": "101/13",
+    "name": "AKULA HARSHA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6178",
+    "room": "101/14",
+    "name": "K VIBHAS",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3618",
+    "room": "101/15",
+    "name": "VENDI EEKSHITH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF8537",
+    "room": "101/16",
+    "name": "ACHYUTH RAO",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD8823",
+    "room": "102/1",
+    "name": "VAIJNATH SHIVKANT MEDGE",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD8618",
+    "room": "102/2",
+    "name": "NAGELLI SHISHIR REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD9329",
+    "room": "102/3",
+    "name": "M NIVAS",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6700",
+    "room": "102/4",
+    "name": "PALEPU NAVEEN RAJU",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE4784",
+    "room": "102/5",
+    "name": "G CHANDRESH PATEL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4039",
+    "room": "102/6",
+    "name": "ADITHYA SRINIVAS NAIDU TIRUMALASETTY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE2503",
+    "room": "102/7",
+    "name": "MURTHY TEJASWI MUMMIDAVARAPU",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4007",
+    "room": "102/8",
+    "name": "SHESHAVPURI TANISHQ",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD8845",
+    "room": "102/9",
+    "name": "JISHAN GHOSH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3338",
+    "room": "102/10",
+    "name": "Lolam ganesh",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF8457",
+    "room": "102/11",
+    "name": "Shurya Suhas Chavan",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE0647",
+    "room": "102/12",
+    "name": "B MANISH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4524",
+    "room": "102/13",
+    "name": "NIGEL WANGKHEIMAYUM",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD3355",
+    "room": "102/14",
+    "name": "Uppala Sai Chandra",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6328",
+    "room": "102/15",
+    "name": "DAMAM BHARATH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4830",
+    "room": "102/16",
+    "name": "SHRIYASH DATTATRAY GURME",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF2351",
+    "room": "103/1",
+    "name": "S MANOCHARAN",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE9179",
+    "room": "103/2",
+    "name": "KOUSHIK S",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE6350",
+    "room": "103/3",
+    "name": "POSHAL KARUNYA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AC6389",
+    "room": "103/4",
+    "name": "GAJULA SRISHANTH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE6192",
+    "room": "103/5",
+    "name": "VADLA SHREE HARI",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE1176",
+    "room": "103/7",
+    "name": "ARSHANAPELLI JASHAN RAO",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE4808",
+    "room": "103/8",
+    "name": "KODIGANTI KARTHIK",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3019",
+    "room": "103/9",
+    "name": "Khunt Dev",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4499",
+    "room": "103/10",
+    "name": "ASHWATH KATAKAM",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF2981",
+    "room": "103/12",
+    "name": "P MADHAN KUMAR",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE8407",
+    "room": "103/13",
+    "name": "RAGHAV PATEL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD7362",
+    "room": "103/14",
+    "name": "T SRISHANTH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF2877",
+    "room": "103/15",
+    "name": "BHEEMANGARI DINESH REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE6225",
+    "room": "103/16",
+    "name": "KARRI YASHWANTH SATHYA VENKATA SAI",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD5701",
+    "room": "104/1",
+    "name": "DODDELA PRANAY RAJ",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF7855",
+    "room": "104/3",
+    "name": "SEETHAPATHI TANISH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3798",
+    "room": "104/5",
+    "name": "SHOURYA AGARWAL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE8422",
+    "room": "104/6",
+    "name": "NITYA PATEL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5783",
+    "room": "104/8",
+    "name": "ISHAAN MUTHYALA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD8775",
+    "room": "104/9",
+    "name": "SABBANI ROHITH KUMAR",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5112",
+    "room": "104/10",
+    "name": "SACHIN KUMAR",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3160",
+    "room": "104/11",
+    "name": "YOHAAN JAISWAL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF2450",
+    "room": "104/12",
+    "name": "NYATHKALA KARTHIKEYA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD9845",
+    "room": "104/13",
+    "name": "DHAIRYA PATEL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3631",
+    "room": "104/14",
+    "name": "AMITH ARJUNE",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3385",
+    "room": "104/15",
+    "name": "KONDIKANTI NANI SAGAR",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4984",
+    "room": "104/16",
+    "name": "PALASH BHOWMIK",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4727",
+    "room": "105/1",
+    "name": "P JEEVAN NAYAK",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE1879",
+    "room": "105/2",
+    "name": "AKULA GEETH VARUN",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF5926",
+    "room": "105/3",
+    "name": "ALUVALA SRI SHIVA SAHISHNU",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD2257",
+    "room": "105/4",
+    "name": "JAPA SHASHANK REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF2303",
+    "room": "105/5",
+    "name": "CHARABUDDI NEHANTH REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD7577",
+    "room": "105/6",
+    "name": "Singuluri Leela Pavan Kumar",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4304",
+    "room": "105/7",
+    "name": "KOKKALAKONDA SHIVA SREEKAR",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AH0015",
+    "room": "105/8",
+    "name": "Rudra Pratap Nayak",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5810",
+    "room": "105/9",
+    "name": "BANOTH VIVEK VARSHITH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3258",
+    "room": "105/10",
+    "name": "Pottipally Rushil Reddy",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4992",
+    "room": "105/11",
+    "name": "ATMAKURI MANOHAR",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3092",
+    "room": "105/12",
+    "name": "KASANAGOTTU AASHISH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5504",
+    "room": "105/13",
+    "name": "ANURAG SINGH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF2492",
+    "room": "105/14",
+    "name": "GUNDAGANI HRISHITH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD8910",
+    "room": "105/15",
+    "name": "PALLE ADHARSH REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF7534",
+    "room": "105/16",
+    "name": "Akula dhanush",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE9724",
+    "room": "106/1",
+    "name": "ILA SHRITHAN",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF1688",
+    "room": "106/2",
+    "name": "GUDA VASTALYA VISHNU VARDHAN REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4216",
+    "room": "106/3",
+    "name": "KRITANU ANAND",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE1619",
+    "room": "106/4",
+    "name": "MOPURU REVANTH REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF5574",
+    "room": "106/5",
+    "name": "DAMANNAGARI SHOURYA DEEP REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF2002",
+    "room": "106/6",
+    "name": "SONTI REDDY PRITAM REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD9200",
+    "room": "106/7",
+    "name": "D.NARAYANA REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5774",
+    "room": "106/8",
+    "name": "PENMETSA AMAN VARMA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE2973",
+    "room": "106/9",
+    "name": "V JASWANTH SRI MANIKANTA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3022",
+    "room": "106/10",
+    "name": "Diksh Devda",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3831",
+    "room": "106/11",
+    "name": "KOLAGANI MANIKANTHA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD4481",
+    "room": "106/12",
+    "name": "PEDDINTI MANI SHANKAR",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE6337",
+    "room": "106/13",
+    "name": "AMGOTH REVANTH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4203",
+    "room": "106/14",
+    "name": "ALLAM ROHITH KUMAR REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF2447",
+    "room": "106/15",
+    "name": "KONDA ABHI RAM",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE6358",
+    "room": "106/16",
+    "name": "BADRI VARSHITH PATEL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF2956",
+    "room": "107/1",
+    "name": "AMAND YATIN",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6519",
+    "room": "107/2",
+    "name": "GONUGUNTLA ANISH CHOWDARY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE2110",
+    "room": "107/3",
+    "name": "DIWAN SURYA SHREYAS",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3003",
+    "room": "107/4",
+    "name": "Kottu Hrusheekesha",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE8150",
+    "room": "107/5",
+    "name": "KUMMATI DEEPAK REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5946",
+    "room": "107/6",
+    "name": "DONDI HARSHITH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF2955",
+    "room": "107/7",
+    "name": "SURUKUNTA SHRITHAN REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3460",
+    "room": "107/8",
+    "name": "Ramagiri Sravan Bhargav",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3091",
+    "room": "107/9",
+    "name": "BIKSHAMAIAH PODILA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE1489",
+    "room": "107/10",
+    "name": "PARTH PIYUSH PATEL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF7140",
+    "room": "107/11",
+    "name": "GAJERA DHRUVKUMAR KRISHNAKANT",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE2358",
+    "room": "107/12",
+    "name": "GOURAV SINGH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6518",
+    "room": "107/13",
+    "name": "MOHIT YOGESH KATHIRIA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3321",
+    "room": "107/14",
+    "name": "BEDUDHURU THAXILESWARA REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4923",
+    "room": "107/15",
+    "name": "RENTIKOTA JANAKI RAM",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD2038",
+    "room": "108/1",
+    "name": "PINNINTI UDAY HARSHA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE8928",
+    "room": "108/2",
+    "name": "PREM KUMAR PATIL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF1539",
+    "room": "108/3",
+    "name": "MUKUL MALPANI",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5906",
+    "room": "108/5",
+    "name": "DHARMA MUKESH SAVALIA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6412",
+    "room": "108/7",
+    "name": "PEDAKOTA SHREEHANS",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD6750",
+    "room": "108/8",
+    "name": "ATHARVA DUBEY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE2752",
+    "room": "108/9",
+    "name": "KOTHAPALLY PRANEETH REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE2354",
+    "room": "108/10",
+    "name": "BHUVANESHWAR POLICE PATEL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3078",
+    "room": "108/11",
+    "name": "SAI SATVIK BORULE",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4502",
+    "room": "108/12",
+    "name": "ALLURI SHARATH CHANDRA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD8257",
+    "room": "108/13",
+    "name": "Aarush Jigneshkumar Kevadiya",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE8360",
+    "room": "108/14",
+    "name": "GUMUDALA VARSHITH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE9623",
+    "room": "108/15",
+    "name": "NILAY AMIT LANDGE",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE1222",
+    "room": "108/16",
+    "name": "RUDRESH ARUN ASHTURE",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4849",
+    "room": "109/1",
+    "name": "KHETANI ANSH PARAG",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE2250",
+    "room": "109/2",
+    "name": "KILARI.VENKATA SAI HARSHA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD5180",
+    "room": "109/3",
+    "name": "SANGANI HARSHIT RAKESHBHAI",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD4896",
+    "room": "109/4",
+    "name": "AKASH MITTAL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD6316",
+    "room": "109/5",
+    "name": "RAUNAK VERMA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3810",
+    "room": "109/6",
+    "name": "TIRTH KUMAR PATEL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5788",
+    "room": "109/7",
+    "name": "G LOHITH REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE4551",
+    "room": "109/8",
+    "name": "RNS PURUSHOTTAM",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE1064",
+    "room": "109/9",
+    "name": "K BHUVAN",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE9000",
+    "room": "109/10",
+    "name": "PETHANI HET SHAILESHBHAI",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6467",
+    "room": "109/11",
+    "name": "RUPAPARA DIVY MILAN BHAI",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5755",
+    "room": "109/12",
+    "name": "ARADLA ABHINAV REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5727",
+    "room": "109/13",
+    "name": "PANDURI SOMA MRUDUL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE8919",
+    "room": "109/14",
+    "name": "ADITYA POONDRU",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF5873",
+    "room": "109/15",
+    "name": "Alakh Tiwari",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4919",
+    "room": "109/16",
+    "name": "RUDRA MANIDHAR",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE4941",
+    "room": "110/1",
+    "name": "PANAV GUPTA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD4924",
+    "room": "110/2",
+    "name": "Dodda Sri Sai Prateek Kumar",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE4751",
+    "room": "110/3",
+    "name": "RATHLA VIVEK",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6468",
+    "room": "110/4",
+    "name": "KHATRA RENISH MEHULBHAI",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5743",
+    "room": "110/5",
+    "name": "DARSH JITENDRA PATEL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE8255",
+    "room": "110/6",
+    "name": "Bhanderi Preet Rameshbhai",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE6369",
+    "room": "110/7",
+    "name": "MANTHRI VINAYAK",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE0519",
+    "room": "110/9",
+    "name": "AYUSH MALPANI",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE6043",
+    "room": "110/10",
+    "name": "SWAYAM MOHTA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF5955",
+    "room": "110/11",
+    "name": "YASH SHAW",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AC7228",
+    "room": "110/12",
+    "name": "GULLA SHIVA KUMAR",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AC3582",
+    "room": "110/13",
+    "name": "CHINNABABAU BAJARAG SOMESH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF7113",
+    "room": "110/14",
+    "name": "DEVANI SHREY RAJESH BHAI",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD2140",
+    "room": "110/15",
+    "name": "KOTA SAI AARUSH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4985",
+    "room": "110/16",
+    "name": "GUJJULA SHRIYAN REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE2449",
+    "room": "111/1",
+    "name": "HARSH PATEL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE4890",
+    "room": "111/2",
+    "name": "AYUSH NEMANI",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AC3178",
+    "room": "111/3",
+    "name": "GOLLAPALLY MEGHANATH REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE6387",
+    "room": "111/4",
+    "name": "CH SHIVA KESHAVA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE0652",
+    "room": "111/5",
+    "name": "DURGAM VIJAYA SRIKAR",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3847",
+    "room": "111/6",
+    "name": "Y TRILOK GOUD",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD4108",
+    "room": "111/7",
+    "name": "Soppari Ram Charan",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE4026",
+    "room": "111/8",
+    "name": "Prathemesh Kedareshwar Chitmalwar",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4167",
+    "room": "111/9",
+    "name": "BANOTU NITEESH KUMAR",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5742",
+    "room": "111/10",
+    "name": "LEKH JAYESH PATEL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6271",
+    "room": "111/11",
+    "name": "SUYASH VAID",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF2980",
+    "room": "111/12",
+    "name": "GAURAV HANUMANTHKARI MARATHA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD5441",
+    "room": "111/13",
+    "name": "VEERANNAGARI VISHWATEJA REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5771",
+    "room": "111/14",
+    "name": "JENIL P VADALIYA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AC8713",
+    "room": "111/15",
+    "name": "JAY PATEL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD6640",
+    "room": "111/16",
+    "name": "DHARMAAVARAM GOWTHAMA NANDAN",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD1725",
+    "room": "112/1",
+    "name": "MAHATHO DAAMAN RAJ",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE0710",
+    "room": "112/2",
+    "name": "VIPUL CHOUDHARY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF2695",
+    "room": "112/3",
+    "name": "VIPPAKAYALA KAVISH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE0605",
+    "room": "112/4",
+    "name": "HARSH PATEL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD7341",
+    "room": "112/5",
+    "name": "HRIDAY MUNDADA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE6008",
+    "room": "112/6",
+    "name": "AKHILESH VISHAL BANGAD",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE4186",
+    "room": "112/7",
+    "name": "FALDU LAKSH KISHOR KUMAR",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD3058",
+    "room": "112/8",
+    "name": "RAJVEER SHINDE",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE0845",
+    "room": "112/9",
+    "name": "LALITH PANIGRAHI GANGU",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE0808",
+    "room": "112/10",
+    "name": "CHINCHOLE GIRISH SACHIN",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE0784",
+    "room": "112/11",
+    "name": "PRAVEEN CHOUDHARY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE2502",
+    "room": "112/12",
+    "name": "BATHINA BHARATH MANIKANTA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD2965",
+    "room": "112/13",
+    "name": "GOTTIMUKKULA RISHAB RAO",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5713",
+    "room": "112/14",
+    "name": "VATTIPROLU SIVA SAI PAVAN KRISHNA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6482",
+    "room": "112/15",
+    "name": "ARYAN KUMAR",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6550",
+    "room": "112/16",
+    "name": "Hemansh Motwani",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6469",
+    "room": "113/1",
+    "name": "PIPALIYA PARTH MAHESHBHAI",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE6537",
+    "room": "113/2",
+    "name": "KOTA SANJEEVA HIMESH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE4774",
+    "room": "113/3",
+    "name": "Dhrumil P Sanchaniya",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF3980",
+    "room": "113/4",
+    "name": "DIVYESH MUNDRA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6342",
+    "room": "113/5",
+    "name": "THAKUR RUDHRA PRATHAP SINGH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD6794",
+    "room": "113/6",
+    "name": "DACHEPALLY SANJAY KARTHIKEYA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF5793",
+    "room": "113/7",
+    "name": "VEDANT PATEL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE0745",
+    "room": "113/8",
+    "name": "BIKKUMALLA ANISH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE8783",
+    "room": "113/9",
+    "name": "ADITYA KHATRI",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE1091",
+    "room": "113/10",
+    "name": "KANUKULA KARTHIK REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE1802",
+    "room": "113/11",
+    "name": "HARSH KHEDEKAR",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD9679",
+    "room": "113/12",
+    "name": "Kalidindi Akshay Sai Varma",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF2970",
+    "room": "113/13",
+    "name": "THARUN SUDHAKAR",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6797",
+    "room": "113/15",
+    "name": "PRIYANK TAUNK",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF5053",
+    "room": "113/16",
+    "name": "R TANUSH REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD5738",
+    "room": "114/1",
+    "name": "OMKAR ARVIND CHAMLE",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD9325",
+    "room": "114/2",
+    "name": "PULLA VISHWA CHAITANYA REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF2756",
+    "room": "114/3",
+    "name": "GUDURI ABHINAV VARMA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AC7573",
+    "room": "114/4",
+    "name": "Shivam Shinde",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD6669",
+    "room": "114/5",
+    "name": "Veer Singh Chouhan",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF1080",
+    "room": "114/6",
+    "name": "DASHRATH SINGH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD8988",
+    "room": "114/7",
+    "name": "KAUKUTLA AVYUKTH REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4846",
+    "room": "114/8",
+    "name": "GUBBALA YASHWANTH SAI VENKAT",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5756",
+    "room": "114/9",
+    "name": "HARIVANSH SANKLA",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE0283",
+    "room": "114/10",
+    "name": "N SRIVARDHAN REDDY",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE6032",
+    "room": "114/11",
+    "name": "BONTHA LOHITHESH",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AE5861",
+    "room": "114/12",
+    "name": "TELLAKULA PURNA NANDAN",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AD7235",
+    "room": "114/14",
+    "name": "Yuvan Varma Jampana",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6409",
+    "room": "114/15",
+    "name": "YUG PRAFUL BHAI AKBARI",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF4197",
+    "room": "114/16",
+    "name": "HARSHIT PATEL",
+    "points": 0,
+    "floor": "1",
+    "active": true
+  },
+  {
+    "id": "AF6272",
+    "room": "201/1",
+    "name": "PRANSHU BOTHRA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4235",
+    "room": "201/2",
+    "name": "SHERI NISHKESH REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE3504",
+    "room": "201/3",
+    "name": "KANNAIAHGARI MANISH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE3131",
+    "room": "201/4",
+    "name": "LOVE KUMAR SINHA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4106",
+    "room": "201/5",
+    "name": "VISHNU",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE6541",
+    "room": "201/6",
+    "name": "Boda Surya Jathin",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD9480",
+    "room": "201/8",
+    "name": "AKSHAT SAO",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD5026",
+    "room": "201/9",
+    "name": "MAYANK HARSHAD PATEL",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE6343",
+    "room": "201/10",
+    "name": "METTU TRILOK REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF3093",
+    "room": "201/11",
+    "name": "KAMUNI MANAS SHARWA PRASAD",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD4560",
+    "room": "201/12",
+    "name": "ABHIRAM AVVARU",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE7065",
+    "room": "201/13",
+    "name": "Bhaliya Het Vipulbhai",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD7784",
+    "room": "201/15",
+    "name": "SAMRIDH SANDEEPKUMAR SINGH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4302",
+    "room": "201/16",
+    "name": "BANKI JAYA SHANKAR",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AC3177",
+    "room": "202/1",
+    "name": "GOLLAPALLY DHANUSH REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE4959",
+    "room": "202/2",
+    "name": "V RAM CHARAN",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD5194",
+    "room": "202/3",
+    "name": "Sparsh Laxmi Narayan Mandhani",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AJ0027",
+    "room": "202/4",
+    "name": "VIVEK BILE",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4509",
+    "room": "202/5",
+    "name": "THANIPARTHI KINSHUK",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE4269",
+    "room": "202/6",
+    "name": "KAVALI SAIRAM",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF7217",
+    "room": "202/7",
+    "name": "BUYANA SAI SANNIHITH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD7681",
+    "room": "202/8",
+    "name": "ABHIJIT BALAJI PADILE",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF6270",
+    "room": "202/9",
+    "name": "LOGUS BOTHRA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD3061",
+    "room": "202/10",
+    "name": "CHINTAPUDI JAYASIMHA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD4265",
+    "room": "202/13",
+    "name": "V SAI KOUSHIK",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF2804",
+    "room": "202/15",
+    "name": "RUDRA PEGAD",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE0588",
+    "room": "202/16",
+    "name": "PUSHKAR KUMBHAKAR",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF2739",
+    "room": "203/1",
+    "name": "SAFFADI SUHAS",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE5284",
+    "room": "203/2",
+    "name": "MANDADI PRATEEK REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE6272",
+    "room": "203/3",
+    "name": "BHUWAN MANGESH MUNDADA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE3856",
+    "room": "203/4",
+    "name": "DUBBAKA SHIVA CHARAN",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE1390",
+    "room": "203/5",
+    "name": "KUTHURU SRI SAI RITHIK",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4706",
+    "room": "203/6",
+    "name": "INDUKURI UPENDRA VARMA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE1175",
+    "room": "203/8",
+    "name": "SAKA VISHWATEJA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE7275",
+    "room": "203/9",
+    "name": "MYADAM AKSHAY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE8551",
+    "room": "203/10",
+    "name": "RAMA JEEVAN",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF3261",
+    "room": "203/12",
+    "name": "TERALA ABHIRAM",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE3590",
+    "room": "203/13",
+    "name": "JUPALLY REVANTH RAO",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE8029",
+    "room": "203/14",
+    "name": "SNEHIT BHATPALLIWAR",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AC5787",
+    "room": "203/15",
+    "name": "Namra Lalji Bangari",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE9742",
+    "room": "203/16",
+    "name": "DEVKRUSHNA PRAVINKUMAR TIMBADIYA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4645",
+    "room": "204/1",
+    "name": "SAKSHAM KUMAR JAISWAL",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD4397",
+    "room": "204/2",
+    "name": "VAIBHAVRAJ SINGH BHATI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD9524",
+    "room": "204/3",
+    "name": "AAKIREDDY AGASTYA RAO",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD5627",
+    "room": "204/4",
+    "name": "BEJJARAPU VIDYADEEP",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE4851",
+    "room": "204/5",
+    "name": "VUPPARI SAI MANI DATHU",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE8938",
+    "room": "204/6",
+    "name": "SOMAVARAPU RUTHVIK",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD7138",
+    "room": "204/7",
+    "name": "K YAGNESH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4379",
+    "room": "204/9",
+    "name": "REKULAPALLI MANIDEEP REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD9514",
+    "room": "204/10",
+    "name": "RUDRARAJU RISHITH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF6261",
+    "room": "204/11",
+    "name": "ANDE SIDHARTH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE5696",
+    "room": "204/12",
+    "name": "ALLURI NAGA SAI SIDDARDHA VARMA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE0655",
+    "room": "204/13",
+    "name": "REVANTH GORU",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE0570",
+    "room": "204/14",
+    "name": "VAGULDAS VARUN GOUD",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AC9852",
+    "room": "204/15",
+    "name": "KOUSHIK BONKURI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF1162",
+    "room": "205/2",
+    "name": "V B DHRUVAKETHAN REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE7588",
+    "room": "205/3",
+    "name": "PRITAM DHIRAJ MEHTA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD2684",
+    "room": "205/5",
+    "name": "P SHREEHAAN TEZ",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE9604",
+    "room": "205/6",
+    "name": "RAM SINGH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF7791",
+    "room": "205/7",
+    "name": "VAIDAMBH SHARMA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF6244",
+    "room": "205/8",
+    "name": "KHUSHAL MUNDADA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE8491",
+    "room": "205/9",
+    "name": "SAMARTH PARIMAL BEDRE",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE4023",
+    "room": "205/10",
+    "name": "YEMSANI SAIAKSHITH YADAV",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF6065",
+    "room": "205/11",
+    "name": "CHINTHAJINGA ASHWITH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE9260",
+    "room": "205/12",
+    "name": "NAKUL SINGH RAJ PUROHIT",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE2644",
+    "room": "205/13",
+    "name": "MONTHA SAHAS CHANDRA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD8232",
+    "room": "205/15",
+    "name": "ASHUTOSH KUMAR",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF3132",
+    "room": "205/16",
+    "name": "KRISHNA KUMAR AGARWAL",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF6266",
+    "room": "206/1",
+    "name": "VAKITI RAGHUPATHI NARAYANA REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE9351",
+    "room": "206/2",
+    "name": "SHANIGIRAM HARSHA VARDHAN",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4640",
+    "room": "206/3",
+    "name": "HANDE VIGNESHWAR BALAJI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF6093",
+    "room": "206/5",
+    "name": "URVASH JAIN",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE9100",
+    "room": "206/6",
+    "name": "G. PIYUSH REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF6185",
+    "room": "206/7",
+    "name": "SAMA MUKESH GOUD",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE4946",
+    "room": "206/8",
+    "name": "SAMITH JASTI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF2917",
+    "room": "206/9",
+    "name": "Dhairya B Vavia",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF6150",
+    "room": "206/10",
+    "name": "GURRAM JAYANTH REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF6460",
+    "room": "206/11",
+    "name": "Moturi Vedavyasa",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF3728",
+    "room": "206/12",
+    "name": "KOMMINENI S V L JHASAKETHAN",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD5322",
+    "room": "206/14",
+    "name": "VAMSHI PRADHAN",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD5878",
+    "room": "206/15",
+    "name": "AMGOTH ANKITH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD9598",
+    "room": "206/16",
+    "name": "E MEGHANATH GOUD",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4918",
+    "room": "207/1",
+    "name": "JUVVADI BALAJI RAO",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD5550",
+    "room": "207/2",
+    "name": "Doma varshith Reddy",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD3446",
+    "room": "207/3",
+    "name": "Jai Lodha",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF7219",
+    "room": "207/4",
+    "name": "Avinash Dwivedi",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF0903",
+    "room": "207/5",
+    "name": "MASINA JAYASURYA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE8014",
+    "room": "207/6",
+    "name": "JAISWAL PREET",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4983",
+    "room": "207/7",
+    "name": "VANGAPELLY SATHWIK RAO",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF3593",
+    "room": "207/8",
+    "name": "ADITYA AMOL AHER",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE5358",
+    "room": "207/9",
+    "name": "Y JOGENDRA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4220",
+    "room": "207/10",
+    "name": "HARSHIL TAPARIA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF7286",
+    "room": "207/11",
+    "name": "UJJWAL YASHPAL SOLANKI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4966",
+    "room": "207/12",
+    "name": "GUDURU SAI VISHRUTH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE0780",
+    "room": "207/13",
+    "name": "SUSHANT AMRUT VARNALE",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE0792",
+    "room": "207/14",
+    "name": "TIGULLA ADITYA GOUD",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE7350",
+    "room": "207/15",
+    "name": "DONTHA SUPRATHIK",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF3154",
+    "room": "207/16",
+    "name": "S VIDHYACHARAN REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE4833",
+    "room": "208/1",
+    "name": "CHAMINETI MANI KANTA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD1194",
+    "room": "208/2",
+    "name": "Gosula Deekshith",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE9881",
+    "room": "208/3",
+    "name": "VENKATAPURAM REVANTH GOUD",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF6940",
+    "room": "208/7",
+    "name": "RAWWARAPU CHAITANYA KARTHICK",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF5618",
+    "room": "208/8",
+    "name": "AVIDI POORNA CHANDRA NAGA SAI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD6668",
+    "room": "208/9",
+    "name": "VYOM RANJIT AJRA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE9670",
+    "room": "208/10",
+    "name": "DASARI SAI TEJA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF2605",
+    "room": "208/11",
+    "name": "RANGAN MANDAL",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AB8929",
+    "room": "208/12",
+    "name": "K. Sathwik Sangvi",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE9621",
+    "room": "208/13",
+    "name": "KERELLI YASHWANTH REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD8297",
+    "room": "208/14",
+    "name": "KOUSTUBH KULKARNI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4790",
+    "room": "208/15",
+    "name": "TOKALA RUSHEEK SAINATH REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4967",
+    "room": "208/16",
+    "name": "GADARLA LOKESH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD7021",
+    "room": "209/1",
+    "name": "PARIGE SOUMIK REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AB4980",
+    "room": "209/2",
+    "name": "CHUNCHU LALITH ADITHYA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF9235",
+    "room": "209/3",
+    "name": "Harishankar Satvic",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD5953",
+    "room": "209/4",
+    "name": "THOKALA REVANTH KAILASH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG0079",
+    "room": "209/5",
+    "name": "PALLABOTULA SAI SRIYAAN",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AB6567",
+    "room": "209/6",
+    "name": "Somesh Parganiha",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE5087",
+    "room": "209/7",
+    "name": "BIRADAR NIHAL CHANDRA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE8858",
+    "room": "209/8",
+    "name": "JAISWAL SURAJ RAKESH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF9966",
+    "room": "209/9",
+    "name": "ELTAM VIJAY PRASAD",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD2125",
+    "room": "209/10",
+    "name": "SAATHVIK BONAKURTHI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE6546",
+    "room": "209/11",
+    "name": "TESHI PARESH THOTA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG1336",
+    "room": "209/12",
+    "name": "RAJAPURAM SAI CHARAN REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE6389",
+    "room": "209/13",
+    "name": "NELAPATI SHARATH CHANDRA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF3585",
+    "room": "209/14",
+    "name": "Akshar kolnati",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF3639",
+    "room": "209/15",
+    "name": "BHAKHAR YUG RAMJIBHAI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF1254",
+    "room": "209/16",
+    "name": "PARTH PATEL",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF3990",
+    "room": "210/1",
+    "name": "PASUPULETI HANISH KARTHIKEYA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG2868",
+    "room": "210/2",
+    "name": "KANNETI UDAY KUMAR",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE4819",
+    "room": "210/3",
+    "name": "METHRE SATISH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF9101",
+    "room": "210/4",
+    "name": "JUKANTI CHAKRADAR GOUD",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG0151",
+    "room": "210/5",
+    "name": "Surya Sagi",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG2852",
+    "room": "210/6",
+    "name": "RISHI KUMAR",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE8559",
+    "room": "210/7",
+    "name": "PARTH MANOJ BHANUSHALI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG2839",
+    "room": "210/8",
+    "name": "KURAKULA SUSHANTH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF7395",
+    "room": "210/9",
+    "name": "SRI SAI VIGNESH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG2809",
+    "room": "210/10",
+    "name": "MANYAM TANUSH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF9703",
+    "room": "210/11",
+    "name": "ARPIT CHOURASIYA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG2698",
+    "room": "210/12",
+    "name": "BOKKA NIKHILESH REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF3924",
+    "room": "210/13",
+    "name": "NIKHIL BAJORIA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF3023",
+    "room": "210/14",
+    "name": "Dhrith Devda",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF9769",
+    "room": "210/15",
+    "name": "KAMIDI PRANAV OMKAR REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG4583",
+    "room": "210/16",
+    "name": "VASILI DAMARUKAM RISHI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF3836",
+    "room": "211/1",
+    "name": "KADAVERU HARI SHANKAR",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF7958",
+    "room": "211/2",
+    "name": "SORATHIYA JEEL RAJESH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE8352",
+    "room": "211/3",
+    "name": "Gajjala Madhu Karthik",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG3428",
+    "room": "211/4",
+    "name": "BURELA ABHIVARDHAN",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG0219",
+    "room": "211/5",
+    "name": "AKSHAT TIWARI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG3539",
+    "room": "211/6",
+    "name": "ANAND SWAMY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4498",
+    "room": "211/7",
+    "name": "BOBLAD SAKETH SHARMA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG3542",
+    "room": "211/8",
+    "name": "JADHAV SHANKAR RAJ",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG2854",
+    "room": "211/9",
+    "name": "Vaishnav Devender",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG3811",
+    "room": "211/10",
+    "name": "NILESH SAHU",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF9500",
+    "room": "211/11",
+    "name": "CHINTALAPATI HAVISH VARMA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG3866",
+    "room": "211/12",
+    "name": "YUVRAJ SUDHIR DESHMUKH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE1033",
+    "room": "211/13",
+    "name": "Vansh Vishwanath Chitmalwar",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF5386",
+    "room": "211/14",
+    "name": "GOLLA SHISHIR YADAV",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF9489",
+    "room": "211/15",
+    "name": "AMRITAM CHOUDHARY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG3040",
+    "room": "212/1",
+    "name": "RAMPALLY NIDHISH KARTIKEYA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE7503",
+    "room": "212/2",
+    "name": "GAURAV SUDHIR CHIRWATKAR",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF9630",
+    "room": "212/3",
+    "name": "PODDUTURI SRIHAN",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE5149",
+    "room": "212/4",
+    "name": "HRUDAY SAI SRUNGAVARAPU",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG0298",
+    "room": "212/5",
+    "name": "SAATVIK AKULA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AC6825",
+    "room": "212/6",
+    "name": "MATPATHI PRATHAM ADITYA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD9100",
+    "room": "212/7",
+    "name": "AKSHAT SHAILENDRA TIWARI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG0252",
+    "room": "212/8",
+    "name": "CHIKKELA SANKEERTH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF3392",
+    "room": "212/9",
+    "name": "KUDUPUDI JAIRAJ VEER",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG0441",
+    "room": "212/10",
+    "name": "TEJAS SINGH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF3391",
+    "room": "212/11",
+    "name": "KUDUPUDI JAIRAJ DHEER",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF5426",
+    "room": "212/12",
+    "name": "Mahir Rajesh Kumar Vegad",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE9787",
+    "room": "212/13",
+    "name": "ACHAN VARSHITH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF9381",
+    "room": "212/15",
+    "name": "P Ashwath Sai",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF5628",
+    "room": "212/16",
+    "name": "RUTHVIK AYILA A",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AC5460",
+    "room": "213/1",
+    "name": "VINAYAK TRIPATHI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG2711",
+    "room": "213/2",
+    "name": "Parepally Meher Rishikesh",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG0301",
+    "room": "213/3",
+    "name": "SRIPATHI MONISH VARDHAN",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG0327",
+    "room": "213/5",
+    "name": "BALAN THARRUN JANAADHAN REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG0409",
+    "room": "213/6",
+    "name": "CHARAK BARAPATI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4598",
+    "room": "213/7",
+    "name": "GANJEWAR SRUJAN",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF4156",
+    "room": "213/9",
+    "name": "HIMANSHU BAJAJ",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD1185",
+    "room": "213/10",
+    "name": "shiven lahoti",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF9310",
+    "room": "213/11",
+    "name": "Sadhu Venkata Sai Aryan",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG0184",
+    "room": "213/12",
+    "name": "KOTHAKAPU ABHIRAM REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF2987",
+    "room": "213/13",
+    "name": "NAGA UMAA BHARATCHAND TALLURI",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF2467",
+    "room": "213/14",
+    "name": "VIHAAN GAGGARA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF5779",
+    "room": "213/15",
+    "name": "CHAITANYA VENKATESH TAMBAT",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF8718",
+    "room": "213/16",
+    "name": "Magham Ruthwik",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE2656",
+    "room": "214/1",
+    "name": "ANNU SRI CHARAN REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG0080",
+    "room": "214/2",
+    "name": "CHIGURUPATI VASHISTA VARUN",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG0393",
+    "room": "214/3",
+    "name": "NARNE AKHILESHWAR",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF9236",
+    "room": "214/4",
+    "name": "Vadla karthikeya",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG1797",
+    "room": "214/6",
+    "name": "ADITYA",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD2478",
+    "room": "214/7",
+    "name": "KOTA DHANUSH",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE7917",
+    "room": "214/9",
+    "name": "NALLA SRUJAN REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AD6942",
+    "room": "214/10",
+    "name": "JAPA DEEKSHITH REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE0577",
+    "room": "214/11",
+    "name": "CHIDRAPU RITHWIK",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE1364",
+    "room": "214/12",
+    "name": "YELUGULA GURU CHARAN",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE9867",
+    "room": "214/13",
+    "name": "KUNCHARAM VAIBHAV",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF5511",
+    "room": "214/14",
+    "name": "Malye Srujan",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AG0006",
+    "room": "214/15",
+    "name": "HARSHRAJ VIJAYRAJ JAMBHALE",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AE2952",
+    "room": "214/16",
+    "name": "A MANIVARDHAN REDDY",
+    "points": 0,
+    "floor": "2",
+    "active": true
+  },
+  {
+    "id": "AF5582",
+    "room": "301/1",
+    "name": "PATLORI VAISHWIK REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF4738",
+    "room": "301/2",
+    "name": "VIRAT PARAG AILWAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE6895",
+    "room": "301/4",
+    "name": "TAGALPALLEWAK ARYA PRAJWAL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF7714",
+    "room": "301/5",
+    "name": "MANIKYAM ARYAN",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE4571",
+    "room": "301/6",
+    "name": "YEMSANI RAM VARSHITH YADAV",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF7056",
+    "room": "301/7",
+    "name": "BADKA BHAGATH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE5050",
+    "room": "301/9",
+    "name": "ADARSH TIWARY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF5055",
+    "room": "301/11",
+    "name": "MADASTU DAYANANDA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE8986",
+    "room": "301/12",
+    "name": "THAKUR RAGHUVENDR SINGH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE5578",
+    "room": "301/13",
+    "name": "LOKINENI SATWIK RAO",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF2193",
+    "room": "301/14",
+    "name": "VARTHYA MAHENDHAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF8134",
+    "room": "301/15",
+    "name": "N HARSHAN",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF3735",
+    "room": "301/16",
+    "name": "CHEETI SAI SUHAAS",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AD9852",
+    "room": "302/1",
+    "name": "SRI GANESH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF1954",
+    "room": "302/2",
+    "name": "LAVUDYA SATHVIK",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF1627",
+    "room": "302/3",
+    "name": "SHUBHAM JOSHI",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF3615",
+    "room": "302/4",
+    "name": "AARADHY RAJARAM PATIL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9522",
+    "room": "302/5",
+    "name": "CHEBOLU MAHALAKSHMI BAVESH SARMA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF4925",
+    "room": "302/6",
+    "name": "MADUGULA BHANU TEJA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG1177",
+    "room": "302/7",
+    "name": "NEVIL D THUMMAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG1532",
+    "room": "302/8",
+    "name": "KATUKAM CHAITRANANDAM",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF2946",
+    "room": "302/9",
+    "name": "CHALASANI NIHANT CHOWDARY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF5271",
+    "room": "302/10",
+    "name": "B CHETAN SWAROOP REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG1123",
+    "room": "302/11",
+    "name": "POTHIREDDY PRADHAM REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE1107",
+    "room": "302/12",
+    "name": "TAKLE SANSKAR DIGAMBAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF2851",
+    "room": "302/13",
+    "name": "SAINATH DHANAJI KOTALAPURE",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE8368",
+    "room": "302/15",
+    "name": "GUMMADI MANOJ REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE9514",
+    "room": "303/1",
+    "name": "MADDURI NIHITH JAI VENKATA SAI",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF4246",
+    "room": "303/2",
+    "name": "NEERATI SRI AVYUKT",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG1335",
+    "room": "303/3",
+    "name": "VARSHITH MONIGARI",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF8299",
+    "room": "303/4",
+    "name": "AARSH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE6039",
+    "room": "303/5",
+    "name": "ARNAV AJAY KULKARNI",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE4809",
+    "room": "303/6",
+    "name": "SANDEEP PATEL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF7485",
+    "room": "303/7",
+    "name": "K SHARVANTH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG1833",
+    "room": "303/8",
+    "name": "RAMAGIRI AVANISH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF4958",
+    "room": "303/9",
+    "name": "AYYAMOLLA ROSHAN",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AC5368",
+    "room": "303/10",
+    "name": "KONDAVENI SRI HARSHA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9884",
+    "room": "303/11",
+    "name": "GURRALA MANISH REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9850",
+    "room": "303/12",
+    "name": "SIDDAMSHETTY ADITYA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF6649",
+    "room": "303/13",
+    "name": "BADATHALA RUSHI",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9886",
+    "room": "303/14",
+    "name": "KRISHAN KUMAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG1154",
+    "room": "303/15",
+    "name": "POTLA VAMSHI KRISHNA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE9143",
+    "room": "303/16",
+    "name": "PHANI NAGA SAI RITHVIK REDDY T",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE1860",
+    "room": "304/1",
+    "name": "SUNKARI JAYANTH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF4423",
+    "room": "304/2",
+    "name": "BUREWAR ARNAV RAJARAM",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE4568",
+    "room": "304/3",
+    "name": "CHOLKAR PRAVASTHIK",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9738",
+    "room": "304/5",
+    "name": "A SRIKAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE5672",
+    "room": "304/6",
+    "name": "BADDAM AVINASH REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9695",
+    "room": "304/7",
+    "name": "PIGILATI VISHNU VARDHAN",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG1726",
+    "room": "304/8",
+    "name": "JUPALLY KRISHIK",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE9278",
+    "room": "304/9",
+    "name": "PATOLLA SRI HARSHITH REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF5886",
+    "room": "304/10",
+    "name": "VIRAT SINGH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9623",
+    "room": "304/12",
+    "name": "SIDDHARTH CHAWHAN",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE5673",
+    "room": "304/13",
+    "name": "RUCHIK KUMAR PATEL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AD7983",
+    "room": "304/14",
+    "name": "KANDADI SAKSHITH REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF3732",
+    "room": "304/15",
+    "name": "CHITTI GIDDA SRI NANDHAN REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE6342",
+    "room": "304/16",
+    "name": "RUDRA KALAPP MALBHAGE",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF2716",
+    "room": "305/1",
+    "name": "G AADARSH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE3270",
+    "room": "305/2",
+    "name": ".GANNAVARAPU JOGEESWAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9561",
+    "room": "305/3",
+    "name": "BIRANCHI NARAYAN PARAMANIK",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF2878",
+    "room": "305/4",
+    "name": "GOLLAPALLY RUTHVIK GOUD",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF3291",
+    "room": "305/5",
+    "name": "DONTHI VENKATA SATHYA TEJA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE4400",
+    "room": "305/6",
+    "name": "BANTU BHANSHIDHAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9526",
+    "room": "305/7",
+    "name": "BODE SIVAHARSHITH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AD9534",
+    "room": "305/8",
+    "name": "LAGGALA PRASANNA VADHAN",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE4937",
+    "room": "305/9",
+    "name": "CHETAN MUDUNURI",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE0518",
+    "room": "305/10",
+    "name": "NEELI SHEETHAL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE4855",
+    "room": "305/11",
+    "name": "YARRAM SRUJANNADH REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9443",
+    "room": "305/12",
+    "name": "MEDURI SAI MARUTI MAHEDHAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF1274",
+    "room": "305/13",
+    "name": "KOLIPAKA RUSHI RUTHVIK",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9520",
+    "room": "305/14",
+    "name": "LAVETI DEVAMSH NARAYANA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE4950",
+    "room": "305/15",
+    "name": "PARTH PATEL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE1015",
+    "room": "305/16",
+    "name": "M SANYUTH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE4906",
+    "room": "306/1",
+    "name": "MADDURI SAMPATH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE7584",
+    "room": "306/2",
+    "name": "K LAXMI PRANEETH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF7892",
+    "room": "306/3",
+    "name": "MALLEM SATYA VENKATA AGRATA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF2799",
+    "room": "306/4",
+    "name": "DESU YOJITH KUMAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9376",
+    "room": "306/5",
+    "name": "GURRAM SAI SANJEEV",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AD9571",
+    "room": "306/7",
+    "name": "POGAKU DIKSHIT KUMAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG1942",
+    "room": "306/8",
+    "name": "NIKUNJ ANAND BAJAJ",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF2748",
+    "room": "306/9",
+    "name": "PRATHMESH SANKHALA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9464",
+    "room": "306/10",
+    "name": "MIRYALA SHRI CHARAN",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE5022",
+    "room": "306/11",
+    "name": "T HARISH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9360",
+    "room": "306/12",
+    "name": "MADI ASHWITH REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AC8429",
+    "room": "306/13",
+    "name": "SABAVATH SURESH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9361",
+    "room": "306/14",
+    "name": "NAIKOTI MITHUN",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE5138",
+    "room": "306/15",
+    "name": "HRUDAY PATEL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE5456",
+    "room": "306/16",
+    "name": "GADDE KARTEEK CHOWDARY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0423",
+    "room": "307/1",
+    "name": "SOLI SUHAS",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9517",
+    "room": "307/3",
+    "name": "PARIKSHIT EKNATH CHINCHANE",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9334",
+    "room": "307/5",
+    "name": "VOOTUKOORU VEERANATH RUTHVIK",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE9555",
+    "room": "307/7",
+    "name": "SRI VASTHAVA G",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE9556",
+    "room": "307/8",
+    "name": "NAVADEEP G",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG1520",
+    "room": "307/9",
+    "name": "PRATHAMESH LAXMAN AILANE",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AD8786",
+    "room": "307/10",
+    "name": "SABBANI VARSHITH KUMAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE6341",
+    "room": "307/11",
+    "name": "YASH GUNDAPPA KANTE",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9995",
+    "room": "307/12",
+    "name": "MOTHE SRIVATHSAV REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF2326",
+    "room": "307/13",
+    "name": "RYAKALA BHAVESH GOUD",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9994",
+    "room": "307/14",
+    "name": "ARADHY SHIVKUMAR BIJAMWAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF3711",
+    "room": "307/15",
+    "name": "KANKANALA SRI VIGNESH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE5021",
+    "room": "307/16",
+    "name": "THANNIR HARSHA VARDHAN",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF4824",
+    "room": "308/2",
+    "name": "INJAM YUGESH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0040",
+    "room": "308/3",
+    "name": "PUTTUBOINA CHARANJEET",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE5304",
+    "room": "308/4",
+    "name": "ANMOL ANIL JAJU",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0042",
+    "room": "308/5",
+    "name": "BHEEMANA TEJA SAI SIVA RAYA CHOWDARY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF2777",
+    "room": "308/6",
+    "name": "KAVYA NANJI VAID",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0058",
+    "room": "308/7",
+    "name": "DEEPAN KUMAR SONI",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG1867",
+    "room": "308/8",
+    "name": "ABHINAY SAI N",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF5536",
+    "room": "308/9",
+    "name": "VENNA JAYANTH REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9185",
+    "room": "308/10",
+    "name": "P YAGNA SAI SHANKAR REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF2338",
+    "room": "308/11",
+    "name": "PALAVALASA ADITHYA VARDHAN",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF3037",
+    "room": "308/12",
+    "name": "HARDIK JAIN",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9566",
+    "room": "308/13",
+    "name": "RAKHOLIYA RUDRA KISHORBHAI",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9198",
+    "room": "308/14",
+    "name": "VISHRUTH BAIRAGONIWAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE4852",
+    "room": "308/15",
+    "name": "DASARI VARSHITH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE8083",
+    "room": "309/1",
+    "name": "SARTHAK SAGAR ZANWAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE5290",
+    "room": "309/2",
+    "name": "BANDARI RITHVIK",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0082",
+    "room": "309/3",
+    "name": "BURIGARI SIDDARTH MANI",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE0558",
+    "room": "309/4",
+    "name": "SHIVAM SANKHLA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0142",
+    "room": "309/5",
+    "name": "PRANAV GOVIND GHORPADE",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF4853",
+    "room": "309/6",
+    "name": "PRATEEK PATRA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0146",
+    "room": "309/7",
+    "name": "BELLAM KARTHIK",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG2159",
+    "room": "309/8",
+    "name": "BALGURI SRIKAR SAGAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF5878",
+    "room": "309/9",
+    "name": "MANCHUKONDA SAI AAKARSHAN",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0149",
+    "room": "309/10",
+    "name": "KOVVURI SHASHANK",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE5220",
+    "room": "309/11",
+    "name": "B HARSHAVARDHAN",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0157",
+    "room": "309/12",
+    "name": "CHINTHAKUNTA VARSHITH REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE5283",
+    "room": "309/13",
+    "name": "B NITHISH YADAV",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AC5367",
+    "room": "309/14",
+    "name": "P PRASANTH KUMAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE6228",
+    "room": "309/15",
+    "name": "CHINTHA KUSHAL KUMAR REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AD8237",
+    "room": "309/16",
+    "name": "U KEETHAN GOUD",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF3407",
+    "room": "310/1",
+    "name": "AMRITANSH AGARWAL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF5903",
+    "room": "310/2",
+    "name": "THIRUPATHI VARUN REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0299",
+    "room": "310/3",
+    "name": "CIGUMAL BAVYESH KUSAL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF6695",
+    "room": "310/4",
+    "name": "ALOK YADAV",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF4632",
+    "room": "310/5",
+    "name": "M S RUDRAVEER",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AD5270",
+    "room": "310/6",
+    "name": "BOLLARAM ANISH REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0322",
+    "room": "310/7",
+    "name": "SAURYAV SANDIP KADAM",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG1858",
+    "room": "310/8",
+    "name": "PATHAPATI JAYANTH SATYA VARMA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0394",
+    "room": "310/10",
+    "name": "PRATYUSH PRABHU",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE2190",
+    "room": "310/11",
+    "name": "N ADVITH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0371",
+    "room": "310/12",
+    "name": "PUJALA KARTHIK",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF5547",
+    "room": "310/13",
+    "name": "KAVYA ASHOK PATEL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9885",
+    "room": "310/14",
+    "name": "RASHWA GAJANAN MUKKAWAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9883",
+    "room": "310/15",
+    "name": "KAVISH SHAILESH CHITMALWAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF2356",
+    "room": "310/16",
+    "name": "PITTLA SHREE HARSHA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF4802",
+    "room": "311/1",
+    "name": "ADVIK PAMMI",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE4958",
+    "room": "311/2",
+    "name": "CH VIJAY KUMAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0405",
+    "room": "311/3",
+    "name": "M ABHIRAJ",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG3133",
+    "room": "311/4",
+    "name": "THOTA SAMANYU",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0406",
+    "room": "311/5",
+    "name": "DIVY MILANKUMAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF4222",
+    "room": "311/6",
+    "name": "VITTAL SAI CHARAN",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9742",
+    "room": "311/7",
+    "name": "LINE SAI LOKESH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0359",
+    "room": "311/8",
+    "name": "SUMIT KUMAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF7229",
+    "room": "311/9",
+    "name": "RAVULA SHRIYAN REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0454",
+    "room": "311/10",
+    "name": "TAARAN VIJAY ZALAVADIYA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE4812",
+    "room": "311/11",
+    "name": "VADDEPU SANJITH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF4062",
+    "room": "311/12",
+    "name": "N SAI KARTHIK",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF2359",
+    "room": "311/13",
+    "name": "YASH JAKAWAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF7228",
+    "room": "311/14",
+    "name": "THIRUKOVELA ADWAITH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF4803",
+    "room": "311/15",
+    "name": "VADALIYA DEV MITESHBHAI",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF8553",
+    "room": "311/16",
+    "name": "GAJERA VED TUSHARBHAI",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AD6299",
+    "room": "312/1",
+    "name": "VEMURI MRITHULL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0075",
+    "room": "312/2",
+    "name": "V ANIL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF7232",
+    "room": "312/4",
+    "name": "SOMA ASHRITH REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0474",
+    "room": "312/5",
+    "name": "CHHAVI RAJ",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF3434",
+    "room": "312/6",
+    "name": "UJJWAL RAJPUT",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0554",
+    "room": "312/7",
+    "name": "BUDDE ASHWITH VARMA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF7048",
+    "room": "312/8",
+    "name": "B ASHRITH SAI GOUD",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF2947",
+    "room": "312/9",
+    "name": "NARA THAKSHAK",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0553",
+    "room": "312/10",
+    "name": "ABHINAV ANAND",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF3967",
+    "room": "312/11",
+    "name": "POOLA YASHWIN REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9218",
+    "room": "312/12",
+    "name": "ABHINAV REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9478",
+    "room": "312/14",
+    "name": "RUTHVIK KOLLI",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE5606",
+    "room": "312/16",
+    "name": "AMIT SANTOSH AMBULGE",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AD2367",
+    "room": "313/1",
+    "name": "B SANDEP KUMAR REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE1877",
+    "room": "313/2",
+    "name": "AKULA NRUSIMHA MAYUR KARTHIK",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9214",
+    "room": "313/3",
+    "name": "KONDADI WISHVA TEJA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE4542",
+    "room": "313/4",
+    "name": "SHAURYA PAWANKUMAR BHOSALE",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF3311",
+    "room": "313/5",
+    "name": "BIRELLY DHANUSH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9203",
+    "room": "313/7",
+    "name": "VISHAL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG3268",
+    "room": "313/8",
+    "name": "NAMAN BOTHRA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE9603",
+    "room": "313/9",
+    "name": "PRABHU SINGH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9199",
+    "room": "313/10",
+    "name": "ARJUN DEEPAK MAHAJAN",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF3696",
+    "room": "313/11",
+    "name": "ARIHANT KUMAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0984",
+    "room": "313/12",
+    "name": "JAINIL ANKIT KACHHADIA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE5063",
+    "room": "313/13",
+    "name": "HARSHEEL PATEL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG0161",
+    "room": "313/14",
+    "name": "THADUVAYI SUDHESH GUPTTA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE6907",
+    "room": "313/15",
+    "name": "NEELESH KUMAWAT",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF9254",
+    "room": "313/16",
+    "name": "JAY PRAVIN SOMANI",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE6240",
+    "room": "314/1",
+    "name": "DEV PATEL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AD8306",
+    "room": "314/2",
+    "name": "TANISHQ PATEL",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG2440",
+    "room": "314/3",
+    "name": "T.BHUWANA CHANDRA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF5198",
+    "room": "314/4",
+    "name": "SHREYASH RADHESHYAM SHAHAGANTWAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG1042",
+    "room": "314/5",
+    "name": "HARDIK AMIT CHOPRA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF7054",
+    "room": "314/6",
+    "name": "RHYTHM MANOJBHAI PANSURIYA",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG1039",
+    "room": "314/7",
+    "name": "GODDETI ANIKETH",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE8151",
+    "room": "314/9",
+    "name": "KUMMATI TRISHANTH REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF3832",
+    "room": "314/10",
+    "name": "SANIKA ESWAR PRASAD",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AE1973",
+    "room": "314/11",
+    "name": "BADHA KRISHNAPRASAD",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF5405",
+    "room": "314/12",
+    "name": "KASAGOUNI MALLIKARJUN GOUD",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AG1507",
+    "room": "314/14",
+    "name": "VIRAT PARIHAR",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AD7165",
+    "room": "314/15",
+    "name": "POTLOLLA SURYA VENKAT RAM NARAYAN REDDY",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF2614",
+    "room": "314/16",
+    "name": "NARRA MAHESH KARTHIK",
+    "points": 0,
+    "floor": "3",
+    "active": true
+  },
+  {
+    "id": "AF3116",
+    "room": "401/7",
+    "name": "MALLAVALLI BALAJI SRI SAI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9616",
+    "room": "401/8",
+    "name": "KOMAKULA VARSHITH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD8017",
+    "room": "401/9",
+    "name": "ATHARV MADHAV ECHWAD",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD8728",
+    "room": "402/1",
+    "name": "OMKAR KEDAR",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF6488",
+    "room": "402/2",
+    "name": "MEKALA VISHRUTH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD8164",
+    "room": "402/3",
+    "name": "G LOHITHAKSH VARMA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE4062",
+    "room": "402/4",
+    "name": "MOHIT UJJWAL NATHANI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF3413",
+    "room": "402/5",
+    "name": "PITLA NIVRUTH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE7337",
+    "room": "402/6",
+    "name": "PIYUSH VIJAY MESHRAM",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF4516",
+    "room": "402/7",
+    "name": "M S MAHAVEER",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF6489",
+    "room": "402/8",
+    "name": "JABARI PRANAY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF5919",
+    "room": "402/9",
+    "name": "KESUBHUKTA SHASHANK",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE7509",
+    "room": "402/10",
+    "name": "LAV PATEL",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF6031",
+    "room": "402/11",
+    "name": "BOINI VARSHITH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE7889",
+    "room": "402/12",
+    "name": "NAYAN PATEL",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF6025",
+    "room": "402/13",
+    "name": "KOTHAPALLY SUSHANTH REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AB5527",
+    "room": "402/14",
+    "name": "TUSHAR TAUNK",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF3436",
+    "room": "402/15",
+    "name": "PRADNEESH GINNE",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF8032",
+    "room": "402/16",
+    "name": "M.DIVYANSH REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG2439",
+    "room": "403/1",
+    "name": "PADALA DHEEMANTH REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE7933",
+    "room": "403/2",
+    "name": "BHAGAWAN SINGH RATHORE",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF4501",
+    "room": "403/3",
+    "name": "SEVARTHI JAIDEEP",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE7597",
+    "room": "403/4",
+    "name": "GAMI JAY MANSUKH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE5947",
+    "room": "403/5",
+    "name": "K RUSHIKESH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF4704",
+    "room": "403/6",
+    "name": "RUDHARANSH CHOUDHARY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF6148",
+    "room": "403/7",
+    "name": "KESAGANI MOKSHITH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD7311",
+    "room": "403/8",
+    "name": "KOTA ADIDEVA REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD6483",
+    "room": "403/9",
+    "name": "VAMBARELLI TRIVIKRAM SAI SWAROOP",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE2535",
+    "room": "403/10",
+    "name": "BHARGAVA MITHRA KOMURELLI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE4708",
+    "room": "403/11",
+    "name": "BONGONI RAM KIRAN",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG1121",
+    "room": "403/12",
+    "name": "SUNIL JAAT",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF2432",
+    "room": "403/13",
+    "name": "BOLNENI HANISHWAR RAO",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9823",
+    "room": "403/14",
+    "name": "TANUSH PATEL",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF3736",
+    "room": "403/15",
+    "name": "ASHUTOSH SAO",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE8223",
+    "room": "403/16",
+    "name": "VANAMPALLY SHIVANTH REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD2136",
+    "room": "404/1",
+    "name": "ISHAN GHOSH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9824",
+    "room": "404/2",
+    "name": "NAYAN PATEL",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE8522",
+    "room": "404/3",
+    "name": "KASHYAP BHARATBHAI KATHAROTIYA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9601",
+    "room": "404/4",
+    "name": "SAUMY PANKAJBHAI AKBARI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9224",
+    "room": "404/5",
+    "name": "PRADYUMNA GUNJAHALLI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9600",
+    "room": "404/6",
+    "name": "UCHIT DUDHATRA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF2383",
+    "room": "404/7",
+    "name": "SAI RIKHIL BONI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG2313",
+    "room": "404/9",
+    "name": "BODASU KETHAN",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG2161",
+    "room": "404/10",
+    "name": "GOUDA TRISHITH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF2075",
+    "room": "404/11",
+    "name": "SHREYANS RAJANIBHAI SHIYANI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG2486",
+    "room": "404/12",
+    "name": "HIRPARA KAUSHAL KISHORBHAI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD5362",
+    "room": "404/13",
+    "name": "PANTH N PATEL",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG2581",
+    "room": "404/14",
+    "name": "HIRPARA MOKSH MANISHBHAI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG0057",
+    "room": "404/15",
+    "name": "VED PATEL",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF6379",
+    "room": "405/1",
+    "name": "KRISHNAM GURU SHARAN",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG0877",
+    "room": "405/2",
+    "name": "AJITH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG1009",
+    "room": "405/3",
+    "name": "HARSHIT UMESH JANGID",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG3178",
+    "room": "405/4",
+    "name": "CHANDAK HARSHIT SHAILESH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG1382",
+    "room": "405/5",
+    "name": "SHREYASH MAHAJAN",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG3243",
+    "room": "405/6",
+    "name": "RAJJAT KUMAR MOHTA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE6765",
+    "room": "405/7",
+    "name": "I L A MARUTHI VIJAY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG3182",
+    "room": "405/8",
+    "name": "ARJUN CHOUDHARY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF3907",
+    "room": "405/9",
+    "name": "EMMADISETTY SAI YAKSHIT",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG3224",
+    "room": "405/10",
+    "name": "TANISQUE PATEL",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE0463",
+    "room": "405/11",
+    "name": "VEJELLA NIRAV CHOWDARY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG3776",
+    "room": "405/12",
+    "name": "JAGIRDAR GIRIRAJ",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE8576",
+    "room": "405/13",
+    "name": "PERUNTHODI JAYANTH BALAJI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG4005",
+    "room": "405/14",
+    "name": "ARADHYA GUPTA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9181",
+    "room": "405/15",
+    "name": "KHAIRE TEJAS BALAJI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD9931",
+    "room": "406/2",
+    "name": "TILAK SHRIRAM PUNDKAR",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG0593",
+    "room": "406/3",
+    "name": "KOLLU VENU SAI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE7338",
+    "room": "406/4",
+    "name": "UDAY DEVCHAND DHEKWAR",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG1600",
+    "room": "406/5",
+    "name": "SHREERAJ PRASHANT THAKARE",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD8399",
+    "room": "406/6",
+    "name": "BOMDYAL HARSHAVARDHAN",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF2453",
+    "room": "406/7",
+    "name": "ATIKSH TAANK",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE5406",
+    "room": "406/8",
+    "name": "KONINTI VIGNESH GOUD",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF5942",
+    "room": "406/9",
+    "name": "BOLLA URVESH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD4582",
+    "room": "406/10",
+    "name": "VRAJKUMAR PRAJAPATI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG1107",
+    "room": "406/11",
+    "name": "YASH JAYANT ZAMRE",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE7405",
+    "room": "406/12",
+    "name": "VAIBHAV SANTOSH JOSHI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD2510",
+    "room": "406/13",
+    "name": "LASKAR SRIKER REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF1084",
+    "room": "406/14",
+    "name": "GANGA VASHISHTA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9176",
+    "room": "406/15",
+    "name": "MARABOINA TRIVIKRAM",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF2780",
+    "room": "407/1",
+    "name": "BATTULA GOUTHAM REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG1774",
+    "room": "407/3",
+    "name": "K S MAHANTH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG1755",
+    "room": "407/5",
+    "name": "DAKSH CHANDRESH MADHANI PATEL",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AC2709",
+    "room": "407/6",
+    "name": "KOLE PRASANNA KUMAR",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF3057",
+    "room": "407/7",
+    "name": "GANDLA YUVARAJ",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF3554",
+    "room": "407/9",
+    "name": "U HARSHAVARDHAN",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE5133",
+    "room": "407/10",
+    "name": "PRIYANSH SAHU",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD8421",
+    "room": "407/11",
+    "name": "D. HEMANT KUMAR",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE5002",
+    "room": "407/13",
+    "name": "M HARSHAVARDHAN GOUD",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE8041",
+    "room": "407/14",
+    "name": "LANGATI JASHWITH KUMAR REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF4924",
+    "room": "407/16",
+    "name": "HANUMANDLA SHIVA KRISHNA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE0471",
+    "room": "408/1",
+    "name": "B NIHANTH REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG1756",
+    "room": "408/3",
+    "name": "BHAVYA KISHOR MADHANI PATEL",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE8706",
+    "room": "408/4",
+    "name": "SOWMYAADISH VIKRAM REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF2246",
+    "room": "408/5",
+    "name": "HRIDAAY DHIRAJ PAWAR",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE6070",
+    "room": "408/6",
+    "name": "ERRAGOLLA MANIKANTA YADAV",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD8436",
+    "room": "408/8",
+    "name": "PITTALWALA MOHIT ROBIN",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF2608",
+    "room": "408/9",
+    "name": "ADITYA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD4391",
+    "room": "408/10",
+    "name": "SHARMA SHREYASH ANUP",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE1813",
+    "room": "408/11",
+    "name": "RABARA AARYA CHIRAGBHAI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE5807",
+    "room": "408/12",
+    "name": "REVANKAR YASH DEEPAK",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE4544",
+    "room": "408/13",
+    "name": "RANGAPUR LAKSH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG4373",
+    "room": "408:0",
+    "name": "GOPINAMBALA ANTHARYAMI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF3312",
+    "room": "408/15",
+    "name": "KANDIMALLA NAGA VANKATA SAI THAMAN",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE4910",
+    "room": "409/1",
+    "name": "E SAI VIGHNA VISHAL KARTHIK",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE1560",
+    "room": "409/2",
+    "name": "AYELA SOWMITH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG2066",
+    "room": "409/3",
+    "name": "ANANY UPADHYAY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD3369",
+    "room": "409/4",
+    "name": "PUNISH RAO",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE6970",
+    "room": "409/5",
+    "name": "RISHI RAJESHBHAI DUDHAT",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE9830",
+    "room": "409/6",
+    "name": "PALLE UMAMAESWARA REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF4845",
+    "room": "409/7",
+    "name": "KOLI SRI PADH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE7957",
+    "room": "409/8",
+    "name": "SOORAM PAVANA TEJA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF5542",
+    "room": "409/9",
+    "name": "SANKALP PATEL",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD6921",
+    "room": "409/10",
+    "name": "KANAGALA DHRUV SAI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE6376",
+    "room": "409/11",
+    "name": "PARAPALLY RUTHWIK GOUD",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE4749",
+    "room": "409/12",
+    "name": "BONGONI MAHANTH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF3529",
+    "room": "409/14",
+    "name": "BANDARI VARUN SAI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE7681",
+    "room": "409/15",
+    "name": "K. EAKANATH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF2306",
+    "room": "409/16",
+    "name": "D SHAURYA RAJU",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG0139",
+    "room": "410/1",
+    "name": "KONDETI HARSHIT",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE5903",
+    "room": "410/2",
+    "name": "YASHASHWI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE1847",
+    "room": "410/3",
+    "name": "DEVDYOTI KHAMARI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG3100",
+    "room": "410/5",
+    "name": "KUPPA PUNITH KRISHNA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE4748",
+    "room": "410/6",
+    "name": "BONGONI RAM CHARAN",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE2416",
+    "room": "410/8",
+    "name": "PREM SINGH RAJPUROTHIT",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF2352",
+    "room": "410/9",
+    "name": "DANDU SUSHANTH VARMA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE1303",
+    "room": "410/10",
+    "name": "SAI AWAHAN MUND",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG1322",
+    "room": "410/11",
+    "name": "LONKA SAI VIGNESH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE8715",
+    "room": "410/12",
+    "name": "KHONGNANGTHABA KHAIDEM",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF2360",
+    "room": "410/13",
+    "name": "ANMOL JAKAWAR",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG1110",
+    "room": "410/14",
+    "name": "ABHINAV JORIGE",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG0489",
+    "room": "411/1",
+    "name": "RUDRA PRAKASH INGLE PATIL",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF7587",
+    "room": "411/1",
+    "name": "GOPATHI BHUVAN KARTHIKEYA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE4503",
+    "room": "411/3",
+    "name": "CHAKKA HARSHA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9722",
+    "room": "411/4",
+    "name": "TANK NISARG GEETA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF6571",
+    "room": "411/5",
+    "name": "ANIKETH REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9178",
+    "room": "411/6",
+    "name": "GOVIND MANISH KUMAR",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9249",
+    "room": "411/7",
+    "name": "ARRA ABHINAV",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD3888",
+    "room": "411/8",
+    "name": "G.SANDEEP KUMAR",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF4339",
+    "room": "411/9",
+    "name": "KORIGINJA VITESH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG0156",
+    "room": "411/10",
+    "name": "SUMAN DAGGUPATI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9933",
+    "room": "411/11",
+    "name": "REKULAPALLY VIVEK YADAV",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9904",
+    "room": "411/12",
+    "name": "CHELLURI SREEMAAN SIVA CHARAN",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD6486",
+    "room": "411/13",
+    "name": "SAHARSH GANTA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9828",
+    "room": "411/14",
+    "name": "ABHIRAM VEMURI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF3189",
+    "room": "411/15",
+    "name": "RAM SRI CHARAN A V",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF2435",
+    "room": "411/16",
+    "name": "PEDDAMALLU GANGA AVINASH REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF8320",
+    "room": "412/1",
+    "name": "KANDULA SATHWIK REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG0461",
+    "room": "412/2",
+    "name": "ALLADI SHREYAS",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE6332",
+    "room": "412/3",
+    "name": "TANGELLAPALLY ISHANT RAJ",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG0557",
+    "room": "412/4",
+    "name": "GANJI RAGHAVENDRA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF4939",
+    "room": "412/5",
+    "name": "PALAPARTHI SUSHANTH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG0562",
+    "room": "412/6",
+    "name": "VYASABATTU VENKATRAJU",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE5945",
+    "room": "412/8",
+    "name": "G. BHANU SHREYAS NAIDU",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE6995",
+    "room": "412/9",
+    "name": "RISHIK SUNCHU",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9201",
+    "room": "412/10",
+    "name": "SUDARSHANAM SRI VALLABH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE7520",
+    "room": "412/11",
+    "nameaxe": "KASTURI AKHIL",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9200",
+    "room": "412/12",
+    "name": "KARRE VISRUTH",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF3384",
+    "room": "412/13",
+    "name": "SHIVA KARTHIKEYA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9820",
+    "room": "412/14",
+    "name": "SHRIYANS",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF4767",
+    "room": "412/16",
+    "name": "TADAPANENI KUUSHAL",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9666",
+    "room": "413/1",
+    "name": "PODDUTURI NIHITH REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG1540",
+    "room": "413/2",
+    "name": "KARTHIKEYA SHARMA PALAVAJVALA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG3324",
+    "room": "413/3",
+    "name": "KODURI VIKAS REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG1531",
+    "room": "413/4",
+    "name": "SUGGUNA ADITYA KRISHNA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9227",
+    "room": "413/5",
+    "name": "GOGOORI RANDEEP REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG1521",
+    "room": "413/6",
+    "name": "PUJALA RAGHAVENDRA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF2339",
+    "room": "413/7",
+    "name": "PAKKIRU ASHWIN REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD8319",
+    "room": "413/8",
+    "name": "YASH SHAILESHBHAI SARDHARA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF7188",
+    "room": "413/9",
+    "name": "N RUTHVIK SAI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF8741",
+    "room": "413/10",
+    "name": "G ANANTH KUMAR",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9681",
+    "room": "413/11",
+    "name": "VASOYA SWET KETAN KUMAR",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG2222",
+    "room": "413/12",
+    "name": "DARSHAN DIPAKBHAI KATHIRIYA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE5345",
+    "room": "413/13",
+    "name": "VEKARIYA MAITREY VIJAYBHAI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF6475",
+    "room": "413/14",
+    "name": "AAMGOTH GOUTHAM",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF3667",
+    "room": "413/16",
+    "name": "SRI JAYANTH GANEDI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE9208",
+    "room": "414/1",
+    "name": "P SAI PRATHIK",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG2442",
+    "room": "414/2",
+    "name": "KOMIRISETTY MEERA CHAITANYA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF3952",
+    "room": "414/3",
+    "name": "VAKKALAKULA KHUSHAAL",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG2484",
+    "room": "414/4",
+    "name": "TEKULA SHIVA PRASAD REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD7928",
+    "room": "414/5",
+    "name": "MITAI NANDISH KUMAR",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD9062",
+    "room": "414/7",
+    "name": "PANTHANGI AKSHAY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG2169",
+    "room": "414/8",
+    "name": "MOORABOINA DHANUNJAYA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD8940",
+    "room": "414/9",
+    "name": "B MANIKANTA",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AG2527",
+    "room": "414/10",
+    "name": "LAKSHAY SINGHAL",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AD8343",
+    "room": "414/12",
+    "name": "KIKANI KUNJ HITESHBAI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF7505",
+    "room": "414/13",
+    "name": "SHREYAS GANDHAM",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF9841",
+    "room": "414/14",
+    "name": "ANUGU SWASTHIK REDDY",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF3340",
+    "room": "414/15",
+    "name": "GUNDA GAGAN SAI",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AF4538",
+    "room": "414/16",
+    "name": "RISHANKA JANAKB",
+    "points": 0,
+    "floor": "4",
+    "active": true
+  },
+  {
+    "id": "AE6221",
+    "room": "501/1",
+    "name": "BORRA RESHVANTH SAI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF5225",
+    "room": "501/2",
+    "name": "GUNJHI REVANTH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF7827",
+    "room": "501/3",
+    "name": "PARIHAR YASHVEER",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE6634",
+    "room": "501/4",
+    "name": "PRAJAPATI ANSH ANILKUMAR",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF5550",
+    "room": "501/5",
+    "name": "Vishwanath Ayyappa Gogu",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF5553",
+    "room": "501/6",
+    "name": "Vishwatejeshwarnath Gogu",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF7625",
+    "room": "501/7",
+    "name": "KOTA VIKRANTH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG4614",
+    "room": "501/8",
+    "name": "GUGULAVATH SREE KOUTILYA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD8939",
+    "room": "501/9",
+    "name": "B AKSHAY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE8116",
+    "room": "501/10",
+    "name": "RUDRAKSH DEWASI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG0619",
+    "room": "501/11",
+    "name": "Merige Devansh",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF7059",
+    "room": "502/1",
+    "name": "Sama Nihan Reddy",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE2513",
+    "room": "502/2",
+    "name": "PRATHICK PATIL",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF8025",
+    "room": "502/3",
+    "name": "PEDDA GOLLA SHIVAMANESHWAR",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF7192",
+    "room": "502/4",
+    "name": "NITISH MOIRANGTHEM",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF6118",
+    "room": "502/5",
+    "name": "DANDEMPALLY LOKESH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG1127",
+    "room": "502/6",
+    "name": "PLUTUS LEISHANGTHEM",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3953",
+    "room": "502/7",
+    "name": "DIKSHIT CHOUDHARY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF7191",
+    "room": "502/8",
+    "name": "Devajit ngangom",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2341",
+    "room": "502/10",
+    "name": "VEMURI VIHAAN ARRJUN",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE4939",
+    "room": "502/11",
+    "name": "MANISH KUMAWAT",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG0387",
+    "room": "502/12",
+    "name": "ISHANTH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE5834",
+    "room": "502/13",
+    "name": "AMGOTH SHRI TANUSH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF4448",
+    "room": "502/14",
+    "name": "VEMULA RAKSHITH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE7699",
+    "room": "502/15",
+    "name": "JASWANTH KUMAR KHATRI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF8026",
+    "room": "502/16",
+    "name": "BHANURI MANIDEEKSHITH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE8804",
+    "room": "502/17",
+    "name": "NARENDRA PATEL",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF5304",
+    "room": "503/1",
+    "name": "MUNDE VIGENSH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3731",
+    "room": "503/2",
+    "name": "CHELMAL VIVEK",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE6037",
+    "room": "503/3",
+    "name": "SHLOK KULKARNI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF0848",
+    "room": "503/4",
+    "name": "ALAKUNTA PARASHURAM",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG4164",
+    "room": "503/5",
+    "name": "AGIRU LAXMI SUJAY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF5307",
+    "room": "503/6",
+    "name": "MUNDE RAGHAV",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE8367",
+    "room": "503/7",
+    "name": "VISHWAS REDDY JALLAPALLY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF9187",
+    "room": "503/8",
+    "name": "PADMAWAR PRAJVAL PRAVIN",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2740",
+    "room": "503/9",
+    "name": "Kattekolla Vishvajith",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF5404",
+    "room": "503/10",
+    "name": "SAMA SAAHAS REDDY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE9416",
+    "room": "503/11",
+    "name": "CHEGURI NIKSHITH REDDY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG0395",
+    "room": "503/12",
+    "name": "PIBGILI NIHAL REDDY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF4468",
+    "room": "503/13",
+    "name": "AKUTHOTA VEEKSHITH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG0386",
+    "room": "503/14",
+    "name": "MALANI MANAV",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF6424",
+    "room": "503/15",
+    "name": "Srimaan Vemula",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD9496",
+    "room": "504/1",
+    "name": "SREE DHEERAJ KAILA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF5963",
+    "room": "504/2",
+    "name": "CHODABATHULA DAIVIK",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2828",
+    "room": "504/4",
+    "name": "CHEGURI SUCHITH REDDY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF0844",
+    "room": "504/5",
+    "name": "TALARI RITHWIK",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3948",
+    "room": "504/6",
+    "name": "TENJARLA SAI KRISHNA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF8387",
+    "room": "504/7",
+    "name": "PRITHEM MISHRA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF9240",
+    "room": "504/8",
+    "name": "Nenavath Sai Swarup",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF5092",
+    "room": "504/9",
+    "name": "YERRI UMA SHANKAR",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF9292",
+    "room": "504/10",
+    "name": "NAMBURI GAURAV VARMA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF1824",
+    "room": "504/11",
+    "name": "BALLA RISHIK VIJAYSURYA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG2705",
+    "room": "504/12",
+    "name": "ASHUTOSH RAJ CHAURASIA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2316",
+    "room": "504/13",
+    "name": "GAMPA AARUSH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG0388",
+    "room": "504/14",
+    "name": "Yerri Lohith Kumar",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2404",
+    "room": "504/15",
+    "name": "THAMMISETTI YUVAN RAJ",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE0559",
+    "room": "505/1",
+    "name": "VANSH BHATI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE8934",
+    "room": "505/2",
+    "name": "KUNTA SAI VARSHITH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF4186",
+    "room": "505/3",
+    "name": "PAVAN GOVIND DHAGE",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2998",
+    "room": "505/4",
+    "name": "Regalla Sai Vardhan Reddy",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2411",
+    "room": "505/5",
+    "name": "IDARA MAHINDRA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE4109",
+    "room": "505/6",
+    "name": "BHUVANESH PATEL",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE5784",
+    "room": "505/7",
+    "name": "BARLA HARSHAVARDHAN",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF9420",
+    "room": "505/8",
+    "name": "SHIVANK SAKLANI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF9858",
+    "room": "505/9",
+    "name": "AAYUSH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF9204",
+    "room": "505/10",
+    "name": "AVISHKAR",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG2748",
+    "room": "505/11",
+    "name": "KUNTA AKSHITH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG0565",
+    "room": "505/12",
+    "name": "NARANI SAKETH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2710",
+    "room": "505/13",
+    "name": "Chelluri Jaya SreeRaam",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG0369",
+    "room": "505/14",
+    "name": "JOGINPALLY RAJ SHOURYA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2745",
+    "room": "505/15",
+    "name": "VANSH PREMJI PATEL",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2868",
+    "room": "506/1",
+    "name": "ALLURI HARSHAVARDHAN",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF9973",
+    "room": "506/2",
+    "name": "K DEEVAMSH REDDY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG4642",
+    "room": "506/3",
+    "name": "Luchingpeeba Irengbam",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2609",
+    "room": "506/4",
+    "name": "AGNEYA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF6958",
+    "room": "506/6",
+    "name": "JANGAMPETA RISHIL REDDY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2975",
+    "room": "506/7",
+    "name": "DESIDI YOJITH REDDY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF9472",
+    "room": "506/8",
+    "name": "JUPELLI SRIHITESH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3164",
+    "room": "506/9",
+    "name": "JIVITHESH REDDY BALPUNOORI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF9237",
+    "room": "506/10",
+    "name": "Tula Rohith Sai Surya",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE8191",
+    "room": "506/11",
+    "name": "GUDISE HARSHAVARDHAN",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3636",
+    "room": "506/13",
+    "name": "PRAJWAL GONA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG0419",
+    "room": "506/14",
+    "name": "TANISH SAI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG1064",
+    "room": "507/1",
+    "name": "SONALE VEERESH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG1171",
+    "room": "507/2",
+    "name": "Sangmeshwar Shantling Patri",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG1697",
+    "room": "507/3",
+    "name": "GANESH SHRINIWAS TAMMALWAR",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD5610",
+    "room": "507/4",
+    "name": "A AKSHITH REDDY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3928",
+    "room": "507/5",
+    "name": "VECHALAPU VEERA VENKATA JANITH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG0224",
+    "room": "507/6",
+    "name": "ROHIT NARASIMHA JASTI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF9734",
+    "room": "507/8",
+    "name": "JASHWANTH SAI BORRA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF9351",
+    "room": "507/9",
+    "name": "RANVEER GUPTA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG0566",
+    "room": "507/10",
+    "name": "Tangidipelly Sai Rudra",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG0567",
+    "room": "507/11",
+    "name": "Tangadipelly Mokshagna",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG0691",
+    "room": "507/12",
+    "name": "Gujjeti Siddhi Trinesh",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG3427",
+    "room": "507/13",
+    "name": "Manpuri Himanth Raj",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG0038",
+    "room": "507/14",
+    "name": "YATIN JAIN",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE7279",
+    "room": "507/15",
+    "name": "KAUSHAL GUPTA KORANGI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3103",
+    "room": "508/1",
+    "name": "SUSHANT TENKALE",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3811",
+    "room": "508/2",
+    "name": "GUNTI SRI HARSHITH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3001",
+    "room": "508/3",
+    "name": "Pilli Adhvith Sri Chandra",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD9780",
+    "room": "508/5",
+    "name": "ARJUN G KULKARNI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE8018",
+    "room": "508/6",
+    "name": "Sarthak Deepak Netragave",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE8366",
+    "room": "508/7",
+    "name": "VISHAL REDDY JALLAPALLY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2459",
+    "room": "508/8",
+    "name": "YUG KHODIYAR",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD5172",
+    "room": "508/9",
+    "name": "NAYAN KUMAR",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE0556",
+    "room": "508/10",
+    "name": "KARTHIK BHATI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2607",
+    "room": "508/11",
+    "name": "SIDDHAROODH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF6138",
+    "room": "508/12",
+    "name": "SAINAND S BIRADAR",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF5498",
+    "room": "509/1",
+    "name": "PRITHVI SOLANKI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF8276",
+    "room": "509/2",
+    "name": "Tanay Jain",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF4046",
+    "room": "509/3",
+    "name": "YOGIT PATEL",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE0893",
+    "room": "509/4",
+    "name": "KUNAL NITHIN PATEL",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD8385",
+    "room": "509/5",
+    "name": "T G Pranav",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AG0011",
+    "room": "509/6",
+    "name": "DARSH SANGAMESHWAR DACHAWAR",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF4253",
+    "room": "509/7",
+    "name": "ADITYA MAHARUDRA BIRNALE",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3678",
+    "room": "509/8",
+    "name": "G POORV",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE8197",
+    "room": "509/9",
+    "name": "OM LIMBANI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2312",
+    "room": "509/10",
+    "name": "DEV DUBEY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE6531",
+    "room": "509/11",
+    "name": "SIDDHANT SURYAPRAKASH BAHETI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3207",
+    "room": "509/12",
+    "name": "KRISHNA GHANSHYAM POLAR",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF4730",
+    "room": "510/1",
+    "name": "SANIEL JAIKUMAR NAIDU",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF4429",
+    "room": "510/2",
+    "name": "KRUNAL KYADA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD9575",
+    "room": "510/3",
+    "name": "ELCHAL ARAVIND REDDY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF4921",
+    "room": "510/4",
+    "name": "ishant kumar",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2644",
+    "room": "510/5",
+    "name": "BODAVALLA MANIDEEP SAI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF4772",
+    "room": "510/6",
+    "name": "GOTLAPALLY ASHWATH GOUD",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3769",
+    "room": "510/7",
+    "name": "AVANEESH SABYASACHI DAS",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD9314",
+    "room": "510/8",
+    "name": "NARAGUDEM JAYASIMHA REDDY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2916",
+    "room": "510/9",
+    "name": "SMEET VASANT POLAR",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE6080",
+    "room": "510/10",
+    "name": "RAHEEL ANAND PATEL",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF4326",
+    "room": "510/11",
+    "name": "MEER SHAILESH CHODVADIA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD8298",
+    "room": "511/1",
+    "name": "mithun reddy musuku",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF4959",
+    "room": "511/2",
+    "name": "DAKSH MAHESH YEMULA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE5891",
+    "room": "511/3",
+    "name": "T REVANTH REDDY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE2512",
+    "room": "511/4",
+    "name": "Konde Rudhraksh",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF1027",
+    "room": "511/5",
+    "name": "BADDAM JASHWANTH REDDY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2915",
+    "room": "511/6",
+    "name": "Dhairya Dipak Bhappa",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE5078",
+    "room": "511/7",
+    "name": "BHAVYA KIRTIKUMAR PATEL",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3497",
+    "room": "511/8",
+    "name": "ARYAN HITESH PATEL",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD8652",
+    "room": "511/9",
+    "name": "VISHWAJEET DHAGE",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD2298",
+    "room": "511/10",
+    "name": "AKULA DEVAK YADAV",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD7803",
+    "room": "511/11",
+    "name": "Vihaan Vishal Gujja",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD8305",
+    "room": "511/12",
+    "name": "NIPUN PATEL",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE6083",
+    "room": "512/1",
+    "name": "PINAK HITESH PATEL",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3901",
+    "room": "512/2",
+    "name": "NAITIK HITESH PATEL",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF4413",
+    "room": "512/3",
+    "name": "PALEPU NIKHIL VEDAMSH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD9538",
+    "room": "512/4",
+    "name": "SHAURYA KULKARNI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE6047",
+    "room": "512/6",
+    "name": "G AVINASH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE6274",
+    "room": "512/7",
+    "name": "SHASHANK SHIVANAND WADWAT",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2327",
+    "room": "512/8",
+    "name": "HRITHVIK BURLA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE5303",
+    "room": "512/9",
+    "name": "RATHOD NITHIN",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE5674",
+    "room": "512/10",
+    "name": "SANJAY KUMAR PATEL",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF2330",
+    "room": "512/11",
+    "name": "CHEPYALA ABIJITH REDDY",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD4730",
+    "room": "512/12",
+    "name": "DINDY ROHIL GANTA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3512",
+    "room": "513/1",
+    "name": "Daksheesh Hudge",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AC8431",
+    "room": "513/2",
+    "name": "Kethavath Rohith",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD4897",
+    "room": "513/3",
+    "name": "RUDRA PRATAP SINGH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF3840",
+    "room": "513/4",
+    "name": "MEET HITESH PATEL",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF4906",
+    "room": "513/6",
+    "name": "AARYA THAKUR",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF5496",
+    "room": "513/7",
+    "name": "RUDRA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD9865",
+    "room": "513/8",
+    "name": "DEV MEHTA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AE5451",
+    "room": "513/9",
+    "name": "BHABANI SANKAR RATH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF4986",
+    "room": "513/10",
+    "name": "ADWAITH BANDI",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD9552",
+    "room": "513/11",
+    "name": "PRAJOT VILAS CHALWA",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AD6484",
+    "room": "513/12",
+    "name": "TERALA RISHIKESH",
+    "points": 0,
+    "floor": "5",
+    "active": true
+  },
+  {
+    "id": "AF4182",
+    "room": "601/2",
+    "name": "VIHAAN REDDY KUNREDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9242",
+    "room": "601/3",
+    "name": "Poralla Naga Srinivasarao",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF2308",
+    "room": "601/4",
+    "name": "IDAMAKANTI KEDHARA NAAGA SAAI REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF4262",
+    "room": "601/5",
+    "name": "RUDRA MANOJ PATEL",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9523",
+    "room": "601/6",
+    "name": "CHEBOLU SURYA MONISH SARMA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF4635",
+    "room": "601/7",
+    "name": "PRASHANT KUMAR MAURYA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG3177",
+    "room": "601/8",
+    "name": "THIPPIREDDY SHIVA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG1191",
+    "room": "601/9",
+    "name": "KOPPINEEDI BUVAN KRISHNA DEVARAIYA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9363",
+    "room": "601/10",
+    "name": "Vutukuri sai kartheek",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF4881",
+    "room": "601/11",
+    "name": "TUNGA CHAITAN SAI",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF8581",
+    "room": "602/1",
+    "name": "KARANJI SATHVIK",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF3714",
+    "room": "602/2",
+    "name": "MADISETTI KUSHAL",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF6374",
+    "room": "602/3",
+    "name": "B KRISHNA VENKAT RAJU",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF2559",
+    "room": "602/4",
+    "name": "DHRUBHENDRA BHAKTA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF4882",
+    "room": "602/5",
+    "name": "SHRI SHRIKANT KADAM",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0592",
+    "room": "602/6",
+    "name": "REVANI VIKAS",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0732",
+    "room": "602/7",
+    "name": "Shourya maru",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AD7724",
+    "room": "602/8",
+    "name": "SEPELLI SHREYANSH",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AE6022",
+    "room": "602/9",
+    "name": "katikaneni Arush Rao",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9444",
+    "room": "602/10",
+    "name": "PAVULURI VENKATA SAI RUTVIK",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF2611",
+    "room": "602/12",
+    "name": "NEELAVENI LOKESH GOUD",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF4649",
+    "room": "602/13",
+    "name": "HARSHWARDHAN KUMAR",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF5852",
+    "room": "602/16",
+    "name": "PRANAV VARMA VATSAVAYI",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF6392",
+    "room": "602/17",
+    "name": "Shreeyash Jaideep Tompe",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF2727",
+    "room": "603/1",
+    "name": "AVIRAL MISHRA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AE9708",
+    "room": "603/2",
+    "name": "HARIT JAYKUMAR TRIVEDI",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF3328",
+    "room": "603/3",
+    "name": "JAY PATEL",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF2371",
+    "room": "603/4",
+    "name": "BANDI PARDHAV SAI",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG1698",
+    "room": "603/5",
+    "name": "VARUN BHATI",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0741",
+    "room": "603/6",
+    "name": "G Reyansh",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF4316",
+    "room": "603/7",
+    "name": "TANAY LAKHAN BANOT",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0162",
+    "room": "603/8",
+    "name": "KUMAR SUNDARAM SINGH",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF7136",
+    "room": "603/9",
+    "name": "BODA CHANDESH",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9450",
+    "room": "603/10",
+    "name": "Avula Varun Gowtham",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF4389",
+    "room": "603/11",
+    "name": "PALAMPALLI LAKSHMI SATHWIK REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF3440",
+    "room": "603/12",
+    "name": "Chitraaditya Arkat",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF8383",
+    "room": "603/13",
+    "name": "ANKUSH CHOWDHURY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9215",
+    "room": "603/14",
+    "name": "KONDADI VILOK TEJA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0039",
+    "room": "603/15",
+    "name": "BHEEMANA KAARTHIKEYA CHOWDARY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF4368",
+    "room": "604/1",
+    "name": "UNDRALLA MAYUSH REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9689",
+    "room": "604/2",
+    "name": "MALLIPEDDI AADHVIK",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF6569",
+    "room": "604/3",
+    "name": "PRATYUSH NAIDU LOLUGU",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF3506",
+    "room": "604/4",
+    "name": "Annam Haneesh reddy",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9241",
+    "room": "604/5",
+    "name": "Gurajala Yeshwin Veera Sai",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0225",
+    "room": "604/6",
+    "name": "Keshav varma gottumukkala",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0571",
+    "room": "604/7",
+    "name": "Adithya Goud Ganagani",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0258",
+    "room": "604/8",
+    "name": "BHUMIREDDY NARAPUREDDY RISHIKESH REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9246",
+    "room": "604/9",
+    "name": "Chamarthi Pradyumna Raju",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9628",
+    "room": "604/10",
+    "name": "KONDREDDY JOSHIT SAI REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9296",
+    "room": "604/11",
+    "name": "GORA RISHI GOUD",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG1460",
+    "room": "604/12",
+    "name": "CHAKALI JAYASHWAR",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9275",
+    "room": "604/13",
+    "name": "JAIVANTH MANE",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9212",
+    "room": "604/14",
+    "name": "MAMIDI PUNEETH RAJ YADAV",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF6074",
+    "room": "604/15",
+    "name": "ALLALA SAI VARSHITH REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF2509",
+    "room": "605/1",
+    "name": "TALASILA JAYA ABHINAV",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF3401",
+    "room": "605/2",
+    "name": "APPANI RITVIJ",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9686",
+    "room": "605/3",
+    "name": "VANSH CHAVAN",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF3525",
+    "room": "605/4",
+    "name": "AKULA SHASHANK",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9331",
+    "room": "605/5",
+    "name": "BAKKERA SRIKAR",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0389",
+    "room": "605/6",
+    "name": "YAMJALA AKSHITH REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9379",
+    "room": "605/7",
+    "name": "GOUNDLA ADDHVVYITH GOUD",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0391",
+    "room": "605/8",
+    "name": "NIKHILESH GURRAM",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9481",
+    "room": "605/9",
+    "name": "CHENNUPATI ROHAN",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9733",
+    "room": "605/10",
+    "name": "VEGESNA HARSHITHRAM RAJU",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9494",
+    "room": "605/11",
+    "name": "AYUSHMAAN R CHAVAN",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG1828",
+    "room": "605/12",
+    "name": "SAMAR SINGH DAHIYA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9507",
+    "room": "605/13",
+    "name": "Naitik Gangji",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9210",
+    "room": "605/14",
+    "name": "BODDU YEESHWAR",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9272",
+    "room": "605/15",
+    "name": "RIDHAAN HALDER",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9303",
+    "room": "606/1",
+    "name": "MANEPALLI HEMANTH",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9230",
+    "room": "606/2",
+    "name": "Dhawan Gehlot",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0455",
+    "room": "606/3",
+    "name": "NAGAROOR HARSHITH KRISHNA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF3675",
+    "room": "606/4",
+    "name": "MANISH REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9665",
+    "room": "606/5",
+    "name": "VELPULA SUPRITH",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0422",
+    "room": "606/6",
+    "name": "TANDRA DHEERAJ",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9667",
+    "room": "606/7",
+    "name": "S G ASHWATH",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9521",
+    "room": "606/8",
+    "name": "Chandika Gyana Deep",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9668",
+    "room": "606/9",
+    "name": "B.vedanth",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9743",
+    "room": "606/10",
+    "name": "KROVVIDI BANGAR RAJU",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9673",
+    "room": "606/11",
+    "name": "DHUMMI VISHWANATH",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG2042",
+    "room": "606/12",
+    "name": "RAJAT JATIN GOGARI",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9674",
+    "room": "606/13",
+    "name": "BOPPANI KUSHAL",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9252",
+    "room": "606/14",
+    "name": "KOTHAMASU RITHWIK",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9781",
+    "room": "606/15",
+    "name": "NAMAN PATEL",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF2635",
+    "room": "607/1",
+    "name": "EDLA RAHUL",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9776",
+    "room": "607/2",
+    "name": "SHIVARAM KARTHIK REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9211",
+    "room": "607/3",
+    "name": "SURAPANENI RAMNARAYAN",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF6829",
+    "room": "607/4",
+    "name": "MADURI SAITEJA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9900",
+    "room": "607/5",
+    "name": "GATTA AKSHAY SAI",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0583",
+    "room": "607/6",
+    "name": "Kraleti Bhaskar Agastya",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9906",
+    "room": "607/7",
+    "name": "Gaddam Srijith Reddy",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0682",
+    "room": "607/8",
+    "name": "N MEGAN BHAGAT",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9221",
+    "room": "607/9",
+    "name": "CHITKULA SAI REYANSH REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9775",
+    "room": "607/10",
+    "name": "SHIVARAM DHEERAJ REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9968",
+    "room": "607/11",
+    "name": "AKSHAJ U",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG2290",
+    "room": "607/12",
+    "name": "ALETI SUSHANTH REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0033",
+    "room": "607/13",
+    "name": "GUDIPATI MAHADEV SAI",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9278",
+    "room": "607/14",
+    "name": "Menga Vidhat",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0045",
+    "room": "607/15",
+    "name": "Gunda Vashish",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF5387",
+    "room": "608/1",
+    "name": "GOLLA HARSHITH YADAV",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0743",
+    "room": "608/2",
+    "name": "Marcus Laishram",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AD5606",
+    "room": "608/3",
+    "name": "GAURANG DEV CHHIBBER",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0859",
+    "room": "608/4",
+    "name": "PATLOLLA VISHWANATH REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0076",
+    "room": "608/5",
+    "name": "Shubham agrawal",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0872",
+    "room": "608/6",
+    "name": "EELE KARUNAKAR REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0077",
+    "room": "608/7",
+    "name": "RUDRANSH SANTHOSHRAO JADHAV",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0965",
+    "room": "608/8",
+    "name": "GADIRAJU KUSHAL VARMA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0141",
+    "room": "608/9",
+    "name": "KAVAN KESHRANI",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9843",
+    "room": "608/10",
+    "name": "SHAURYA SINGH",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0155",
+    "room": "608/11",
+    "name": "NARENDRA MAHESH TIPRESWER",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AE5437",
+    "room": "608/12",
+    "name": "Baddigam Vrishank Sri Saran Reddy",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0217",
+    "room": "608/13",
+    "name": "Paradesi Nikhil Reddy",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0857",
+    "room": "608/14",
+    "name": "Bondla Vignesh Reddy",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0227",
+    "room": "608/15",
+    "name": "GANNAVARAPU SREEKAR",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0232",
+    "room": "608/16",
+    "name": "NANDI BRUNDHAN",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AE9954",
+    "room": "609/1",
+    "name": "NARENDER MALI",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF6075",
+    "room": "609/2",
+    "name": "PINGILI VARSHHITH KUMAR REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9711",
+    "room": "609/3",
+    "name": "P ARNAV SAI",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG1109",
+    "room": "609/4",
+    "name": "A. ABHIJAY NAG",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF7245",
+    "room": "609/6",
+    "name": "GADHIYA BHAVIK HARESHBHAI",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0397",
+    "room": "609/7",
+    "name": "POSHAL NAREN",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG1374",
+    "room": "609/8",
+    "name": "DIPESH CHOUDARY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0480",
+    "room": "609/9",
+    "name": "Bandamedi Manotej",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG1253",
+    "room": "609/10",
+    "name": "ADDALA SRIKESH REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG1220",
+    "room": "609/11",
+    "name": "DHULIPUDI BHUVAN CHANDRA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG2739",
+    "room": "609/12",
+    "name": "Baluguri Rajiv Kanth",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0588",
+    "room": "609/15",
+    "name": "Konda Kruthik Sai",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9799",
+    "room": "610/1",
+    "name": "JAIVAL MEHUL JARIVALA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF7927",
+    "room": "610/2",
+    "name": "Y TRISHUL GOUD",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0617",
+    "room": "610/3",
+    "name": "Vidit Umakant Dongare",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG1811",
+    "room": "610/4",
+    "name": "NARENDRA KUMAR",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF3695",
+    "room": "610/5",
+    "name": "PRUTHVIRAJ BHAGVAT CHAME",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0644",
+    "room": "610/7",
+    "name": "KALLEM SHASHIWANTH REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG1912",
+    "room": "610/8",
+    "name": "CHAGANTI YAGNA TEJA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0392",
+    "room": "610/9",
+    "name": "PATLOLLA SHRIANK REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0738",
+    "room": "610/11",
+    "name": "Ansh Agarwal",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG1464",
+    "room": "610/14",
+    "name": "Adhyan Tulsyan",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG1340",
+    "room": "610/15",
+    "name": "LOMAS KHETANI",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG1381",
+    "room": "611/1",
+    "name": "MAGANTI SRIKAR KRISHNA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG2293",
+    "room": "611/2",
+    "name": "DISHANTH",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0564",
+    "room": "611/3",
+    "name": "ERIKK CHABUNGBAM",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG2485",
+    "room": "611/4",
+    "name": "Devulapalli Nagavardhan",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG1983",
+    "room": "611/5",
+    "name": "PASUPULA RAMAGAUTHAM REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF7141",
+    "room": "611/7",
+    "name": "BHAANVISHAK SAI SARAPU",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG2737",
+    "room": "611/8",
+    "name": "KARTAVYA JAIN",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG2038",
+    "room": "611/9",
+    "name": "DARPAL JAISURYA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0148",
+    "room": "611/10",
+    "name": "PATLORI VISHWANTH REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG2188",
+    "room": "611/11",
+    "name": "D TANISH GOUD",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG2745",
+    "room": "611/12",
+    "name": "SUMEET SANDEEP CHOPDA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG1167",
+    "room": "611/13",
+    "name": "R AKHILESWAR REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9512",
+    "room": "611/15",
+    "name": "LAXMIPURAM SAI VARSHITH REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9770",
+    "room": "612/1",
+    "name": "M DAKSHISH REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG2875",
+    "room": "612/2",
+    "name": "KRISHNA CHANDRAKANT DIGHE",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9480",
+    "room": "612/3",
+    "name": "CHUNDI RANA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG2911",
+    "room": "612/4",
+    "name": "ADARSH BIRADAR",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9479",
+    "room": "612/5",
+    "name": "BOGGALA VARUN TEJ",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF5112",
+    "room": "612/6",
+    "name": "SHRI ADVIK KUMAR CHATLAPALLI",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9626",
+    "room": "612/7",
+    "name": "KARAMANJOT SINGH",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG3867",
+    "room": "612/8",
+    "name": "SAVINDAR SINGH",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF1828",
+    "room": "612/9",
+    "name": "YATHARTH PANKAJ PARALIKAR",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0211",
+    "room": "612/10",
+    "name": "PRAYAGA VENKATA BALA TRILOCHANA SASTRY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9276",
+    "room": "612/12",
+    "name": "GOVINDHU PRANAV AKSHAY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9328",
+    "room": "612/13",
+    "name": "Pulluru Tanush Kumar",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF1206",
+    "room": "612/14",
+    "name": "B ABIRAM GOUD",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9362",
+    "room": "612/15",
+    "name": "NAIKOTI RITHIK",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF9581",
+    "room": "613/1",
+    "name": "PASUMARTI VARNIT SATYA CHOWDARY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF4942",
+    "room": "613/2",
+    "name": "SHRIDHAR SHIVLING BHURE",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0326",
+    "room": "613/4",
+    "name": "SARVESH BALBHIM BIRADAR",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0382",
+    "room": "613/5",
+    "name": "CHITTIGIDDA SAI NANDAN REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0294",
+    "room": "613/7",
+    "name": "Soma Veerabhadra sai mahadev",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0421",
+    "room": "613/8",
+    "name": "PISHATI AARUSH REDDY",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0742",
+    "room": "613/9",
+    "name": "Sorokhaibam Jerison Singh",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0216",
+    "room": "613/10",
+    "name": "ATULYA KUCHIMANCHI",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG0902",
+    "room": "613/12",
+    "name": "VELUGURI RUPESH",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF3564",
+    "room": "613/13",
+    "name": "ILURI ADITYA",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG4166",
+    "room": "613/14",
+    "name": "VISHWANATHAM SRIANSH",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AF2348",
+    "room": "613/15",
+    "name": "SANGAMESH BELURE",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  },
+  {
+    "id": "AG4505",
+    "room": "613/16",
+    "name": "Hemendra Kumar Joshi",
+    "points": 0,
+    "floor": "6",
+    "active": true
+  }
+]
