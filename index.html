@@ -62,6 +62,7 @@
                 <div class="mb-3">
                     <label for="searchQueryPoints" class="form-label">Search Student by Name, ID, Floor, or Room</label>
                     <input type="text" class="form-control" id="searchQueryPoints" placeholder="Enter name, ID, floor, or room">
+<div id="studentResults" class="mb-3"></div>
                 </div>
                 <div id="searchResultsPoints" class="mb-3"></div>
 
@@ -197,8 +198,9 @@ fetch('students.json')
   .catch(error => console.error("Failed to load student data:", error));
 
 
+
 function initializeApp() {
-  const searchInput = document.getElementById('searchInput');
+  const searchInput = document.getElementById('searchQueryPoints');
   const resultsContainer = document.getElementById('studentResults');
 
   function renderResults(results) {
@@ -209,6 +211,42 @@ function initializeApp() {
     }
 
     results.forEach(student => {
+      const div = document.createElement('div');
+      div.className = 'student-result';
+      div.textContent = `${student.name} | ID: ${student.id} | Room: ${student.room}`;
+      resultsContainer.appendChild(div);
+    });
+  }
+
+  searchInput.addEventListener('input', function () {
+    const searchValue = this.value.toLowerCase();
+    const filtered = allStudents.filter(student =>
+      student.name.toLowerCase().includes(searchValue) ||
+      student.id.toLowerCase().includes(searchValue) ||
+      student.room.toLowerCase().includes(searchValue) ||
+      (student.floor && student.floor.toString().includes(searchValue))
+    );
+    renderResults(filtered);
+  });
+
+  // Update localStorage and trigger search setup
+  localStorage.setItem('students', JSON.stringify(allStudents));
+  let students = allStudents;
+
+  if (!localStorage.getItem('responseHistory')) {
+    localStorage.setItem('responseHistory', JSON.stringify([]));
+  }
+
+  // Setup searches AFTER students is ready
+  handleSearch('searchQueryPoints', 'searchResultsPoints');
+  handleSearch('searchQueryRankings', 'searchResultsRankings');
+  document.getElementById('refreshRankings').addEventListener('click', refreshRankings);
+  document.getElementById('gradeFilter').addEventListener('change', refreshRankings);
+  document.getElementById('floorFilter').addEventListener('change', refreshRankings);
+  refreshRankings();
+  refreshResponses();
+}
+results.forEach(student => {
       const div = document.createElement('div');
       div.className = 'student-result';
       div.textContent = `${student.name} | ID: ${student.id} | Room: ${student.room}`;
