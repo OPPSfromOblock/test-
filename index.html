@@ -785,38 +785,39 @@ if (!localStorage.getItem('responseHistory')) {
 }
 let responseHistory = JSON.parse(localStorage.getItem('responseHistory')) || [];
 
-        function handleSearch(inputId, resultsId) {
-            document.getElementById(inputId).addEventListener('input', function() {
-            const query = this.value.toLowerCase().trim();
-                const results = document.getElementById(resultsId);
-                results.innerHTML = '';
-                if (query) {
-                    const filteredStudents = students.filter(student => {
-                        const floor = student.room.split('/')[0];
-                        return student.name.toLowerCase().includes(query) || 
-                           student.id.toLowerCase().includes(query) || 
-                           student.room.toLowerCase().includes(query) || 
-                           floor.toLowerCase().includes(query);
-
-                    });
-                    if (filteredStudents.length) {
-                        results.innerHTML = '<h5>Matching Students:</h5>';
-                        filteredStudents.forEach(student => {
-                            results.innerHTML += `
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="${inputId === 'searchQueryPoints' ? 'selectedStudents' : 'selectedRankings'}" value="${student.id}" id="${inputId}_${student.id}">
-                                    <label class="form-check-label" for="${inputId}_${student.id}">
-                                        ${student.name} (${student.id}, Room: ${student.room}, Points: ${student.points})
-                                    </label>
-                                </div>
-                            `;
-                        });
-                    } else {
-                        results.innerHTML = '<p>No students found.</p>';
-                    }
-                }
+       function handleSearch(inputId, resultsId) {
+    document.getElementById(inputId).addEventListener('input', function() {
+        const query = this.value.toLowerCase().trim();
+        const results = document.getElementById(resultsId);
+        results.innerHTML = '';
+        if (query) {
+            const filteredStudents = students.filter(student => {
+                const floor = student.room ? student.room.split('/')[0] : '';
+                const id = student.id || '';
+                const room = student.room || '';
+                return (student.name && student.name.toLowerCase().includes(query)) ||
+                       (id.toLowerCase().includes(query)) ||
+                       (room.toLowerCase().includes(query)) ||
+                       (floor.toLowerCase().includes(query));
             });
+            if (filteredStudents.length) {
+                results.innerHTML = '<h5>Matching Students:</h5>';
+                filteredStudents.forEach(student => {
+                    results.innerHTML += `
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="${inputId === 'searchQueryPoints' ? 'selectedStudents' : 'selectedRankings'}" value="${student.id}" id="${inputId}_${student.id}">
+                            <label class="form-check-label" for="${inputId}_${student.id}">
+                                ${student.name} (${student.id}, Room: ${student.room || 'N/A'}, Points: ${student.points})
+                            </label>
+                        </div>
+                    `;
+                });
+            } else {
+                results.innerHTML = '<p>No students found.</p>';
+            }
         }
+    });
+}
 
         document.getElementById('positiveAction').addEventListener('change', function() {
             document.getElementById('examPercentage').style.display = this.value === 'exam' ? 'block' : 'none';
