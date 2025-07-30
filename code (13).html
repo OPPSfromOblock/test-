@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Gurukul Points Management - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4a90e2; /* Softer blue */
+            --secondary-color: #334a6d; /* Darker, richer blue */
+            --success-color: #5cb85c; /* Standard green */
+            --danger-color: #d9534f; /* Standard red */
+            --warning-color: #f0ad4e; /* Standard orange */
+            --info-color: #5bc0de; /* Standard info blue */
+            --light-bg: #f0f2f5; /* Light grey background */
+            --dark-bg: #2c3e50;
+            --card-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+            --text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            --gradient-start: #e0f2f7; /* Light blue for gradient */
+            --gradient-end: #f0f8ff; /* Very light blue/white for gradient */
+        }
+
+        body {
+            background-color: var(--light-bg);
+            font-family: 'Poppins', sans-serif; /* Modern font */
+            color: #333;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            min-height: 100vh;
+            font-size: 1.05rem; /* Slightly larger base font size */
+            display: flex;
+        }
+
+        .animated-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+            background-size: 400% 400%;
+            animation: gradientAnimation 25s ease infinite; /* Slower animation */
+            z-index: -1; /* Send to back */
+            opacity: 0.6; /* More subtle transparency */
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .sidebar {
+            width: 280px; /* Increased width for better content display */
+            background-color: var(--secondary-color); /* Darker blue for sidebar */
+            color: white;
+            padding: 20px;
+            box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Push logout to bottom */
+            position: fixed; /* Fixed sidebar */
+            height: 100vh; /* Full height */
+            z-index: 1000;
+        }
+
+        .sidebar .logo {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color); /* Use primary color for logo */
+            text-shadow: var(--text-shadow);
+        }
+
+        .sidebar .user-info {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebar .user-info h5 {
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .sidebar .user-info p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        .sidebar .nav-pills .nav-link {
+            color: rgba(255, 255, 255, 0.8);
+            padding: 12px 20px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar .nav-pills .nav-link i {
+            margin-right: 12px;
+            font-size: 1.1rem;
+        }
+
+        .sidebar .nav-pills .nav-link.active,
+        .sidebar .nav-pills .nav-link:hover {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transform: translateX(5px);
+        }
+
+        .sidebar .logout-section {
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebar .logout-section .btn-logout {
+            width: 100%;
+            background-color: var(--danger-color);
+            border-color: var(--danger-color);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar .logout-section .btn-logout:hover {
+            background-color: #c9302c;
+            border-color: #c9302c;
+        }
+
+        .main-content {
+            margin-left: 280px; /* Offset for fixed sidebar */
+            flex-grow: 1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: calc(100% - 280px); /* Adjust width */
+        }
+
+        .auth-container {
+            max-width: 500px; /* Slightly wider for better form display */
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            padding: 30px;
+            animation: fadeInScale 0.8s ease-out;
+            width: 100%; /* Ensure it takes full width of its container */
+        }
+
+        @keyframes fadeInScale {
+            from { opacity: 0; transform: scale(0.98); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .form-control, .form-select {
+            border-radius: 6px;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(74, 144, 226, 0.25);
+        }
+
+        .btn {
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 10px 20px;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.2s ease-in-out;
+            z-index: -1;
+        }
+
+        .btn:hover::before {
+            left: 0;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #3a7bd5;
+            border-color: #3a7bd5;
+            transform: translateY(-1px);
+        }
+
+        .role-option {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            background-color: #f8faff;
+        }
+
+        .role-option:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .role-option.selected {
+            border-color: var(--primary-color);
+            background-color: var(--gradient-start);
+            box-shadow: 0 2px 5px rgba(74, 144, 226, 0.2);
+        }
+
+        .role-option input[type="radio"] {
+            display: none;
+        }
+
+        .role-option label {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .role-option label span.title {
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+
+        .role-option label span.description {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .role-option.disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            background-color: #f0f0f0;
+        }
+
+        .role-option.disabled:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        .alert {
+            border-radius: 8px;
+            padding: 15px;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-background"></div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div>
+            <div class="logo">
+                <i class="fas fa-star"></i> Gurukul
+            </div>
+            <div class="user-info" id="userInfo">
+                <!-- User info will be populated here by JavaScript -->
+                <h5>Welcome!</h5>
+                <p>Please log in or register.</p>
+            </div>
+            <ul class="nav nav-pills flex-column mb-auto" id="authTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="login-tab" data-bs-toggle="pill" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="register-tab" data-bs-toggle="pill" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">
+                        <i class="fas fa-user-plus"></i> Register
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="logout-section" style="display: none;" id="logoutSection">
+            <button class="btn btn-logout" id="logoutBtn">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <div class="auth-container">
+            <h1 class="text-center mb-4" style="font-size: 2rem; color: var(--primary-color); font-weight: 700;">
+                <span id="mainTitle">Login / Register</span>
+            </h1>
+
+            <div class="tab-content mt-4">
+                <!-- Login Form Tab -->
+                <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                    <form id="loginForm" class="space-y-4">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label"><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" class="form-control" id="loginEmail" required placeholder="Enter your email"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label"><i class="fas fa-lock"></i> Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required placeholder="Enter your password"/>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </button>
+                        </div>
+                        <div class="mt-3 alert alert-danger" id="loginError" style="display: none;"></div>
+
+                        <!-- Add Google Sign-In Button Here -->
+                        <div class="d-grid mt-3">
+                            <button type="button" class="btn btn-outline-danger btn-lg" id="googleSignInBtn">
+                                <i class="fab fa-google"></i> Sign in with Google
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Register Form Tab -->
+                <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                    <form id="registrationForm" class="space-y-4">
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label"><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" class="form-control" id="registerName" required placeholder="Enter your full name"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label"><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" class="form-control" id="registerEmail" required placeholder="Enter your email"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label"><i class="fas fa-lock"></i> Password</label>
+                            <input type="password" class="form-control" id="registerPassword" required placeholder="Create a password"/>
+                        </div>
+
+                        <!-- Role Selection -->
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fas fa-user-tag"></i> Your Position</label>
+                            <div id="roleSelection">
+                                <div class="role-option selected" data-role="teacher">
+                                    <label>
+                                        <input type="radio" name="role" value="teacher" checked />
+                                        <div>
+                                            <span class="d-block title">Teacher</span>
+                                            <span class="d-block description">Can manage classes and submit grades</span>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="role-option disabled" id="specialRoleContainer">
+                                    <label>
+                                        <input type="radio" name="role" value="special" disabled />
+                                        <div>
+                                            <span class="d-block title text-muted">Higher Position?</span>
+                                            <span class="d-block description text-muted">In-Charge/Admin roles require verification</span>
+                                            <button type="button" onclick="showVerificationRequest()" class="btn btn-sm btn-outline-primary mt-2">
+                                                Upgrade Account
+                                            </button>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hidden verification section -->
+                        <div id="verificationSection" class="card p-3 mt-3" style="display: none;">
+                            <h5 class="card-title"><i class="fas fa-key"></i> Enter Upgrade Code</h5>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="roleCode" placeholder="5-6 digit code"/>
+                                <small class="form-text text-muted">(Admin code: AD1234, In-Charge code: IN4567)</small>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="button" onclick="verifyRoleCode()" class="btn btn-primary">
+                                    <i class="fas fa-check-circle"></i> Verify Code
+                                </button>
+                                <button type="button" onclick="hideVerificationRequest()" class="btn btn-secondary">
+                                    <i class="fas fa-times-circle"></i> Cancel
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-user-plus"></i> Register
+                            </button>
+                        </div>
+                        <div class="mt-3 alert alert-danger" id="registerError" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Add Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script>
+        // Your Firebase configuration (replace with your actual config)
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY", // Replace with your actual API Key
+            authDomain: "YOUR_AUTH_DOMAIN", // Replace with your actual Auth Domain
+            projectId: "YOUR_PROJECT_ID", // Replace with your actual Project ID
+            storageBucket: "YOUR_STORAGE_BUCKET", // Replace with your actual Storage Bucket
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID", // Replace with your actual Messaging Sender ID
+            appId: "YOUR_APP_ID" // Replace with your actual App ID
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const googleProvider = new firebase.auth.GoogleAuthProvider();
+
+        // Pre-defined verification codes
+        const CODES = {
+            AD1234: 'admin',
+            IN4567: 'incharge'
+        };
+
+        // In-memory database for demonstration (will be replaced by Firebase users)
+        // For now, we'll keep it to simulate roles for new Google sign-ups
+        let usersDB = [
+            { name: 'Admin User', email: 'admin@gurukul.edu', password: 'hari@123', role: 'admin' },
+            { name: 'Ranveer Sir', email: 'ranveer@gurukul.edu', password: 'gurukul', role: 'incharge' },
+            { name: 'Manish Sir', email: 'manish@gurukul.edu', password: 'gurukul', role: 'incharge' },
+            { name: 'Vasanth Sir', email: 'vasanth@gurukul.edu', password: 'gurukul', role: 'incharge' },
+            { name: 'Anirudh Sir', email: 'anirudh@gurukul.edu', password: 'gurukul', role: 'incharge' },
+            { name: 'Harish Sir', email: 'harish@gurukul.edu', password: 'gurukul', role: 'incharge' },
+            { name: 'Chakradhar Sir', email: 'chakradhar@gurukul.edu', password: 'gurukul', role: 'incharge' },
+            { name: 'Aman Sir', email: 'aman@gurukul.edu', password: 'gurukul', role: 'incharge' },
+            { name: 'Rohit Sir', email: 'rohit@gurukul.edu', password: 'gurukul', role: 'incharge' },
+            { name: 'Testing Admin', email: 'test@gurukul.edu', password: 'gurukul', role: 'incharge' },
+            { name: 'Teacher User', email: 'teacher@gurukul.edu', password: 'gurukul', role: 'teacher' }
+        ];
+
+        let selectedRole = 'teacher'; // Default role for registration
+
+        function showVerificationRequest() {
+            document.getElementById('verificationSection').style.display = 'block';
+            document.getElementById('roleSelection').style.display = 'none';
+        }
+
+        function hideVerificationRequest() {
+            document.getElementById('verificationSection').style.display = 'none';
+            document.getElementById('roleSelection').style.display = 'block';
+            // Reset radio button selection if user cancels verification
+            document.querySelector('.role-option[data-role="teacher"]').classList.add('selected');
+            document.querySelector('.role-option[data-role="teacher"] input').checked = true;
+            selectedRole = 'teacher';
+        }
+
+        function verifyRoleCode() {
+            const code = document.getElementById('roleCode').value.trim();
+            const role = CODES[code];
+            const registerError = document.getElementById('registerError');
+
+            if (role) {
+                selectedRole = role;
+                hideVerificationRequest();
+                registerError.style.display = 'none';
+                alert(`Role set to ${role}. You can now complete registration.`);
+            } else {
+                registerError.textContent = 'Invalid code. Please try again or contact admin.';
+                registerError.style.display = 'block';
+            }
+        }
+
+        // Role selection click handler
+        document.querySelectorAll('.role-option').forEach(option => {
+            option.addEventListener('click', function() {
+                if (this.classList.contains('disabled')) {
+                    return; // Do nothing if disabled
+                }
+                document.querySelectorAll('.role-option').forEach(opt => opt.classList.remove('selected'));
+                this.classList.add('selected');
+                this.querySelector('input[type="radio"]').checked = true;
+                selectedRole = this.dataset.role;
+            });
+        });
+
+        // Function to update user info in sidebar
+        function updateUserInfo(user) {
+            const userInfoDiv = document.getElementById('userInfo');
+            const logoutSection = document.getElementById('logoutSection');
+            const mainTitle = document.getElementById('mainTitle');
+
+            if (user) {
+                userInfoDiv.innerHTML = `
+                    <h5>${user.displayName || user.email}</h5>
+                    <p>${user.role ? (user.role.charAt(0).toUpperCase() + user.role.slice(1)) : 'User'}</p>
+                `;
+                logoutSection.style.display = 'block';
+                mainTitle.textContent = `Welcome, ${user.displayName ? user.displayName.split(' ')[0] : user.email.split('@')[0]}!`;
+                // Hide auth forms if logged in
+                document.querySelector('.auth-container').style.display = 'none';
+            } else {
+                userInfoDiv.innerHTML = `
+                    <h5>Welcome!</h5>
+                    <p>Please log in or register.</p>
+                `;
+                logoutSection.style.display = 'none';
+                mainTitle.textContent = 'Login / Register';
+                // Show auth forms if logged out
+                document.querySelector('.auth-container').style.display = 'block';
+            }
+        }
+
+        // Login handler (Email/Password)
+        document.getElementById('loginForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('loginEmail').value.trim();
+            const password = document.getElementById('loginPassword').value.trim();
+            const loginError = document.getElementById('loginError');
+
+            auth.signInWithEmailAndPassword(email, password)
+                .then((userCredential) => {
+                    // Signed in
+                    const user = userCredential.user;
+                    // Find user in local DB to get role, or set default if not found
+                    let localUser = usersDB.find(u => u.email === user.email);
+                    if (!localUser) {
+                        localUser = { name: user.displayName || user.email, email: user.email, role: 'teacher' }; // Default role for new Firebase email users
+                        usersDB.push(localUser); // Add to local DB for role tracking
+                    }
+                    sessionStorage.setItem('currentUser', JSON.stringify({ ...user.toJSON(), role: localUser.role }));
+                    updateUserInfo({ ...user.toJSON(), role: localUser.role });
+                    loginError.style.display = 'none';
+                    alert('Login successful!');
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    loginError.textContent = `Error: ${errorMessage}`;
+                    loginError.style.display = 'block';
+                });
+        });
+
+        // Registration handler (Email/Password)
+        document.getElementById('registrationForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const registerName = document.getElementById('registerName').value.trim();
+            const registerEmail = document.getElementById('registerEmail').value.trim();
+            const registerPassword = document.getElementById('registerPassword').value.trim();
+            const registerError = document.getElementById('registerError');
+
+            auth.createUserWithEmailAndPassword(registerEmail, registerPassword)
+                .then((userCredential) => {
+                    // Signed in
+                    const user = userCredential.user;
+                    // Update user profile with display name
+                    return user.updateProfile({
+                        displayName: registerName
+                    }).then(() => {
+                        const newUser = {
+                            name: registerName,
+                            email: registerEmail,
+                            // password: registerPassword, // Storing password in local DB is not secure for real apps
+                            role: selectedRole
+                        };
+                        usersDB.push(newUser); // Add to local DB for role tracking
+                        sessionStorage.setItem('currentUser', JSON.stringify({ ...user.toJSON(), role: selectedRole }));
+                        updateUserInfo({ ...user.toJSON(), role: selectedRole });
+                        alert('Registration successful! You are now logged in.');
+                        registerError.style.display = 'none';
+                    });
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    registerError.textContent = `Error: ${errorMessage}`;
+                    registerError.style.display = 'block';
+                });
+        });
+
+        // Google Sign-In Handler
+        document.getElementById('googleSignInBtn').addEventListener('click', () => {
+            const loginError = document.getElementById('loginError');
+            auth.signInWithPopup(googleProvider)
+                .then((result) => {
+                    // This gives you a Google Access Token. You can use it to access the Google API.
+                    const credential = firebase.auth.GoogleAuthProvider.credentialFromResult(result);
+                    const token = credential.accessToken;
+                    // The signed-in user info.
+                    const user = result.user;
+
+                    // Check if user exists in your local DB or assign a default role
+                    let localUser = usersDB.find(u => u.email === user.email);
+                    if (!localUser) {
+                        // If it's a new Google user, add them to your local DB with a default role
+                        localUser = { name: user.displayName, email: user.email, role: 'teacher' };
+                        usersDB.push(localUser);
+                    }
+
+                    sessionStorage.setItem('currentUser', JSON.stringify({ ...user.toJSON(), role: localUser.role }));
+                    updateUserInfo({ ...user.toJSON(), role: localUser.role });
+                    loginError.style.display = 'none';
+                    alert('Signed in with Google successfully!');
+                })
+                .catch((error) => {
+                    // Handle Errors here.
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    // The email of the user's account used.
+                    const email = error.email;
+                    // The firebase.auth.AuthCredential type that was used.
+                    const credential = firebase.auth.GoogleAuthProvider.credentialFromError(error);
+
+                    loginError.textContent = `Google Sign-In Error: ${errorMessage}`;
+                    loginError.style.display = 'block';
+                    console.error("Google Sign-In Error:", error);
+                });
+        });
+
+
+        // Logout handler
+        document.getElementById('logoutBtn').addEventListener('click', () => {
+            auth.signOut().then(() => {
+                // Sign-out successful.
+                sessionStorage.removeItem('currentUser');
+                updateUserInfo(null); // Clear user info
+                // Activate login tab and show login form
+                const loginTabBtn = document.getElementById('login-tab');
+                const loginTab = new bootstrap.Tab(loginTabBtn);
+                loginTab.show();
+                document.getElementById('loginForm').reset(); // Clear login form
+                document.getElementById('registrationForm').reset(); // Clear registration form
+                document.getElementById('loginError').style.display = 'none';
+                document.getElementById('registerError').style.display = 'none';
+                alert('You have been logged out.');
+            }).catch((error) => {
+                // An error happened.
+                console.error("Logout Error:", error);
+                alert("Error logging out. Please try again.");
+            });
+        });
+
+        // Initial setup on DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', () => {
+            // Listen for Firebase Auth state changes
+            auth.onAuthStateChanged((user) => {
+                if (user) {
+                    // User is signed in.
+                    // Retrieve role from local DB or assign default if new Google user
+                    let localUser = usersDB.find(u => u.email === user.email);
+                    if (!localUser) {
+                        localUser = { name: user.displayName, email: user.email, role: 'teacher' };
+                        usersDB.push(localUser);
+                    }
+                    sessionStorage.setItem('currentUser', JSON.stringify({ ...user.toJSON(), role: localUser.role }));
+                    updateUserInfo({ ...user.toJSON(), role: localUser.role });
+                } else {
+                    // User is signed out.
+                    sessionStorage.removeItem('currentUser');
+                    updateUserInfo(null);
+                }
+            });
+
+            const currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
+            updateUserInfo(currentUser); // Populate user info if logged in
+
+            // Handle tab switching for main content title
+            const loginTabBtn = document.getElementById('login-tab');
+            const registerTabBtn = document.getElementById('register-tab');
+            const mainTitle = document.getElementById('mainTitle');
+
+            loginTabBtn.addEventListener('shown.bs.tab', () => {
+                mainTitle.textContent = 'Login / Register';
+            });
+
+            registerTabBtn.addEventListener('shown.bs.tab', () => {
+                mainTitle.textContent = 'Register New Account';
+            });
+
+            // If a user is logged in, hide the auth container and show a welcome message
+            if (currentUser) {
+                document.querySelector('.auth-container').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
