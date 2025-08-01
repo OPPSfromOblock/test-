@@ -1179,16 +1179,6 @@
                     </a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" data-bs-toggle="tab" href="#gatepass" id="gatepass-tab" role="tab" title="Manage student gatepass records">
-                        <i class="fas fa-door-closed"></i> Gatepass
-                    </a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" data-bs-toggle="tab" href="#visiting" id="visiting-tab" role="tab" title="Manage visitor records for students">
-                        <i class="fas fa-users"></i> Visiting
-                    </a>
-                </li>
-                <li class="nav-item" role="presentation">
                     <a class="nav-link" data-bs-toggle="tab" href="#help-desk" id="help-desk-tab" role="tab" title="Send a message to administrators for help">
                         <i class="fas fa-question-circle"></i> Help Desk
                     </a>
@@ -1373,7 +1363,7 @@
                         <div class="card-body">
                             <form id="pointsForm">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-6" id="positivePointsSectionContainer">
                                         <div class="action-section" id="positivePointsSection">
                                             <h4><i class="fas fa-thumbs-up text-success"></i> Give Positive Points</h4>
                                             <select class="form-select mb-3" id="positiveAction" name="positiveAction" title="Select an action to add points to students." aria-label="Select a positive action">
@@ -1411,7 +1401,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6" id="negativePointsSectionContainer">
                                         <div class="action-section">
                                             <h4><i class="fas fa-thumbs-down text-danger"></i> Deduct Negative Points</h4>
                                             <select class="form-select mb-3" name="negativeAction" title="Select an action to deduct points from students." aria-label="Select a negative action">
@@ -1946,215 +1936,6 @@
                     </div>
                 </div>
 
-                <!-- Gatepass Tab -->
-                <div class="tab-pane fade" id="gatepass" role="tabpanel">
-                    <h3><i class="fas fa-door-closed"></i> Gatepass Management</h3>
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <i class="fas fa-user-plus"></i> Add New Gatepass Entry
-                        </div>
-                        <div class="card-body">
-                            <form id="addGatepassForm">
-                                <div class="mb-3">
-                                    <label class="form-label" for="gatepassStudentSearch">Search Student:</label>
-                                    <input class="form-control" id="gatepassStudentSearch" placeholder="Search by Name or ID..." type="text" title="Search for a student to assign a gatepass." aria-label="Search student for gatepass"/>
-                                    <div class="mb-3 row" id="gatepassStudentSearchResults"></div>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="gatepassDepartureDate">Departure Date:</label>
-                                    <input type="date" class="form-control" id="gatepassDepartureDate" required aria-label="Gatepass departure date"/>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="gatepassDepartureTime">Departure Time:</label>
-                                    <input type="time" class="form-control" id="gatepassDepartureTime" required aria-label="Gatepass departure time"/>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="gatepassReturnDate">Expected Return Date:</label>
-                                    <input type="date" class="form-control" id="gatepassReturnDate" aria-label="Gatepass expected return date"/>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="gatepassReturnTime">Expected Return Time:</label>
-                                    <input type="time" class="form-control" id="gatepassReturnTime" aria-label="Gatepass expected return time"/>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="gatepassReason">Reason for Gatepass:</label>
-                                    <textarea class="form-control" id="gatepassReason" rows="3" placeholder="e.g., Family visit, Medical appointment" required aria-label="Reason for gatepass"></textarea>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="gatepassApprovedBy">Approved By:</label>
-                                    <input type="text" class="form-control" id="gatepassApprovedBy" placeholder="Name of approving authority" required aria-label="Gatepass approved by"/>
-                                </div>
-                                <div class="text-center mt-3">
-                                    <button type="submit" class="btn btn-primary"><i class="fas fa-plus"></i> Add Gatepass</button>
-                                </div>
-                            </form>
-                            <div class="update-message alert mt-3" id="addGatepassMessage" style="display: none;" role="alert"></div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header">
-                            <i class="fas fa-list"></i> Gatepass History
-                        </div>
-                        <div class="card-body">
-                            <div class="filter-container">
-                                <div class="row mb-3">
-                                    <div class="col-md-6">
-                                        <label for="gatepassHistoryFloorFilter" class="form-label">Filter by Floor:</label>
-                                        <select id="gatepassHistoryFloorFilter" class="form-select" title="Filter gatepass records by student's floor." aria-label="Filter gatepass history by floor">
-                                            <option value="all">All Floors</option>
-                                            <option value="1">1st Floor</option>
-                                            <option value="2">2nd Floor</option>
-                                            <option value="3">3rd Floor</option>
-                                            <option value="4">4th Floor</option>
-                                            <option value="5">5th Floor</option>
-                                            <option value="6">6th Floor</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="gatepassHistoryDateFilter" class="form-label">Filter by Date:</label>
-                                        <input type="date" class="form-control" id="gatepassHistoryDateFilter" title="Filter gatepass records by a specific date." aria-label="Filter gatepass history by date"/>
-                                    </div>
-                                </div>
-                                <button type="button" id="applyGatepassHistoryFilters" class="btn btn-primary" title="Apply the selected floor and date filters to the gatepass history.">Apply Filters</button>
-                                <button type="button" id="resetGatepassHistoryFilters" class="btn btn-secondary ms-2" title="Clear all gatepass history filters.">Reset Filters</button>
-                            </div>
-                            <div class="search-container">
-                                <input class="form-control" id="searchQueryGatepassHistory" placeholder="Search by Student Name, ID, Reason, or Approved By..." type="text" title="Search for specific gatepass records." aria-label="Search gatepass history"/>
-                                <i class="fas fa-search search-icon"></i>
-                            </div>
-                            <div class="filter-display-container" id="gatepassHistoryFilterDisplay"></div>
-                            <div class="table-responsive table-responsive-stack">
-                                <table class="table table-hover table-bordered">
-                                    <thead class="table-secondary">
-                                        <tr>
-                                            <th><i class="fas fa-calendar-alt"></i> Departure Date</th>
-                                            <th><i class="fas fa-clock"></i> Departure Time</th>
-                                            <th><i class="fas fa-id-card"></i> Student ID</th>
-                                            <th><i class="fas fa-user"></i> Student Name</th>
-                                            <th><i class="fas fa-building"></i> Floor</th>
-                                            <th><i class="fas fa-calendar-check"></i> Return Date</th>
-                                            <th><i class="fas fa-clock"></i> Return Time</th>
-                                            <th><i class="fas fa-question-circle"></i> Reason</th>
-                                            <th><i class="fas fa-user-tie"></i> Approved By</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="gatepassHistoryTable">
-                                        <!-- Gatepass records will be loaded here -->
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Visiting Tab -->
-                <div class="tab-pane fade" id="visiting" role="tabpanel">
-                    <h3><i class="fas fa-users"></i> Visitor Management</h3>
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <i class="fas fa-user-plus"></i> Add New Visitor Entry
-                        </div>
-                        <div class="card-body">
-                            <form id="addVisitorForm">
-                                <div class="mb-3">
-                                    <label class="form-label" for="visitorStudentSearch">Search Student:</label>
-                                    <input class="form-control" id="visitorStudentSearch" placeholder="Search by Name or ID..." type="text" title="Search for a student for whom a visitor is arriving." aria-label="Search student for visitor"/>
-                                    <div class="mb-3 row" id="visitorStudentSearchResults"></div>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="visitorName">Visitor Name:</label>
-                                    <input type="text" class="form-control" id="visitorName" placeholder="e.g., John Doe" required aria-label="Visitor name"/>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="visitorRelationship">Relationship to Student:</label>
-                                    <input type="text" class="form-control" id="visitorRelationship" placeholder="e.g., Father, Sister" required aria-label="Visitor relationship"/>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="visitorEntryDate">Entry Date:</label>
-                                    <input type="date" class="form-control" id="visitorEntryDate" required aria-label="Visitor entry date"/>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="visitorEntryTime">Entry Time:</label>
-                                    <input type="time" class="form-control" id="visitorEntryTime" required aria-label="Visitor entry time"/>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="visitorExitDate">Exit Date (if applicable):</label>
-                                    <input type="date" class="form-control" id="visitorExitDate" aria-label="Visitor exit date"/>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="visitorExitTime">Exit Time (if applicable):</label>
-                                    <input type="time" class="form-control" id="visitorExitTime" aria-label="Visitor exit time"/>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="visitorPurpose">Purpose of Visit:</label>
-                                    <textarea class="form-control" id="visitorPurpose" rows="3" placeholder="e.g., Family visit, Deliver items" required aria-label="Purpose of visit"></textarea>
-                                </div>
-                                <div class="text-center mt-3">
-                                    <button type="submit" class="btn btn-primary"><i class="fas fa-plus"></i> Add Visitor</button>
-                                </div>
-                            </form>
-                            <div class="update-message alert mt-3" id="addVisitorMessage" style="display: none;" role="alert"></div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header">
-                            <i class="fas fa-list"></i> Visitor History
-                        </div>
-                        <div class="card-body">
-                            <div class="filter-container">
-                                <div class="row mb-3">
-                                    <div class="col-md-6">
-                                        <label for="visitorHistoryFloorFilter" class="form-label">Filter by Floor:</label>
-                                        <select id="visitorHistoryFloorFilter" class="form-select" title="Filter visitor records by student's floor." aria-label="Filter visitor history by floor">
-                                            <option value="all">All Floors</option>
-                                            <option value="1">1st Floor</option>
-                                            <option value="2">2nd Floor</option>
-                                            <option value="3">3rd Floor</option>
-                                            <option value="4">4th Floor</option>
-                                            <option value="5">5th Floor</option>
-                                            <option value="6">6th Floor</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="visitorHistoryDateFilter" class="form-label">Filter by Date:</label>
-                                        <input type="date" class="form-control" id="visitorHistoryDateFilter" title="Filter visitor records by a specific date." aria-label="Filter visitor history by date"/>
-                                    </div>
-                                </div>
-                                <button type="button" id="applyVisitorHistoryFilters" class="btn btn-primary" title="Apply the selected floor and date filters to the visitor history.">Apply Filters</button>
-                                <button type="button" id="resetVisitorHistoryFilters" class="btn btn-secondary ms-2" title="Clear all visitor history filters.">Reset Filters</button>
-                            </div>
-                            <div class="search-container">
-                                <input class="form-control" id="searchQueryVisitorHistory" placeholder="Search by Student Name, Visitor Name, or Purpose..." type="text" title="Search for specific visitor records." aria-label="Search visitor history"/>
-                                <i class="fas fa-search search-icon"></i>
-                            </div>
-                            <div class="filter-display-container" id="visitorHistoryFilterDisplay"></div>
-                            <div class="table-responsive table-responsive-stack">
-                                <table class="table table-hover table-bordered">
-                                    <thead class="table-secondary">
-                                        <tr>
-                                            <th><i class="fas fa-calendar-alt"></i> Entry Date</th>
-                                            <th><i class="fas fa-clock"></i> Entry Time</th>
-                                            <th><i class="fas fa-id-card"></i> Student ID</th>
-                                            <th><i class="fas fa-user"></i> Student Name</th>
-                                            <th><i class="fas fa-building"></i> Floor</th>
-                                            <th><i class="fas fa-user-friends"></i> Visitor Name</th>
-                                            <th><i class="fas fa-heart"></i> Relationship</th>
-                                            <th><i class="fas fa-calendar-check"></i> Exit Date</th>
-                                            <th><i class="fas fa-clock"></i> Exit Time</th>
-                                            <th><i class="fas fa-info-circle"></i> Purpose</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="visitorHistoryTable">
-                                        <!-- Visitor records will be loaded here -->
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Help Desk Tab -->
                 <div class="tab-pane fade" id="help-desk" role="tabpanel">
                     <h3><i class="fas fa-question-circle"></i> Help Desk</h3>
@@ -2650,8 +2431,6 @@
 
         let students = [];
         let responseHistory = [];
-        let gatepassRecords = [];
-        let visitorRecords = [];
         let helpDeskRequests = []; // New array for help desk requests
         const database = firebase.database();
 
@@ -2715,64 +2494,6 @@
                 })
                 .catch(error => {
                     console.error("Error loading history:", error);
-                    hideLoading();
-                    return [];
-                });
-        }
-
-        function saveGatepassRecordsToFirebase(records) {
-            showLoading();
-            return database.ref('gatepass').set(records)
-                .then(() => {
-                    console.log("Gatepass records saved to Firebase");
-                    hideLoading();
-                })
-                .catch(error => {
-                    console.error("Error saving gatepass records:", error);
-                    hideLoading();
-                    throw error;
-                });
-        }
-
-        function loadGatepassRecordsFromFirebase() {
-            showLoading();
-            return database.ref('gatepass').once('value')
-                .then(snapshot => {
-                    const data = snapshot.val();
-                    hideLoading();
-                    return data || [];
-                })
-                .catch(error => {
-                    console.error("Error loading gatepass records:", error);
-                    hideLoading();
-                    return [];
-                });
-        }
-
-        function saveVisitorRecordsToFirebase(records) {
-            showLoading();
-            return database.ref('visitors').set(records)
-                .then(() => {
-                    console.log("Visitor records saved to Firebase");
-                    hideLoading();
-                })
-                .catch(error => {
-                    console.error("Error saving visitor records:", error);
-                    hideLoading();
-                    throw error;
-                });
-        }
-
-        function loadVisitorRecordsFromFirebase() {
-            showLoading();
-            return database.ref('visitors').once('value')
-                .then(snapshot => {
-                    const data = snapshot.val();
-                    hideLoading();
-                    return data || [];
-                })
-                .catch(error => {
-                    console.error("Error loading visitor records:", error);
                     hideLoading();
                     return [];
                 });
@@ -2851,14 +2572,10 @@
 
                 const studentsData = await loadStudentsFromFirebase();
                 const historyData = await loadHistoryFromFirebase();
-                const gatepassData = await loadGatepassRecordsFromFirebase();
-                const visitorData = await loadVisitorRecordsFromFirebase();
                 const helpDeskData = await loadHelpDeskRequestsFromFirebase(); // Load help desk requests
 
                 students = studentsData;
                 responseHistory = historyData;
-                gatepassRecords = gatepassData;
-                visitorRecords = visitorData;
                 helpDeskRequests = helpDeskData; // Assign loaded data
 
                 if (students.length === 0) {
@@ -2868,8 +2585,6 @@
                 refreshRankings();
                 refreshResponses();
                 renderStudentManagementTable();
-                renderGatepassHistoryTable();
-                renderVisitorHistoryTable();
                 document.getElementById('totalStudents').textContent = students.length;
                 document.getElementById('activeStudents').textContent = students.filter(s => s.active).length;
                 document.getElementById('dbStatus').textContent = 'Connected';
@@ -3178,8 +2893,6 @@
             document.getElementById('searchQueryHistory').addEventListener('input', filterResponses);
             document.getElementById('searchQueryStudentManagement').addEventListener('input', renderStudentManagementTable);
             handleSearch('searchQueryIndividualData', 'searchResultsIndividualData', 'selectedStudentIndividualData', true);
-            handleSearch('gatepassStudentSearch', 'gatepassStudentSearchResults', 'selectedGatepassStudent', true);
-            handleSearch('visitorStudentSearch', 'visitorStudentSearchResults', 'selectedVisitorStudent', true);
 
             document.getElementById('searchQueryBatchDiscipline').addEventListener('input', renderBatchDisciplineTable);
             document.getElementById('batchDisciplineFloorFilter').addEventListener('change', renderBatchDisciplineTable);
@@ -3248,38 +2961,6 @@
                 document.getElementById('searchQueryIndividualData').value = '';
                 document.getElementById('searchResultsIndividualData').innerHTML = '';
                 document.getElementById('individualStudentDetailsCard').style.display = 'none';
-            });
-
-            document.getElementById('addGatepassForm').addEventListener('submit', addGatepassRecord);
-            document.getElementById('gatepassHistoryFloorFilter').addEventListener('change', renderGatepassHistoryTable);
-            document.getElementById('gatepassHistoryDateFilter').addEventListener('change', renderGatepassHistoryTable);
-            document.getElementById('applyGatepassHistoryFilters').addEventListener('click', renderGatepassHistoryTable);
-            document.getElementById('resetGatepassHistoryFilters').addEventListener('click', function() {
-                document.getElementById('gatepassHistoryFloorFilter').value = 'all';
-                document.getElementById('gatepassHistoryDateFilter').value = '';
-                renderGatepassHistoryTable();
-            });
-            document.getElementById('searchQueryGatepassHistory').addEventListener('input', renderGatepassHistoryTable);
-            document.getElementById('gatepass-tab').addEventListener('shown.bs.tab', function() {
-                renderGatepassHistoryTable();
-                document.getElementById('gatepassStudentSearch').value = '';
-                document.getElementById('gatepassStudentSearchResults').innerHTML = '';
-            });
-
-            document.getElementById('addVisitorForm').addEventListener('submit', addVisitorRecord);
-            document.getElementById('visitorHistoryFloorFilter').addEventListener('change', renderVisitorHistoryTable);
-            document.getElementById('visitorHistoryDateFilter').addEventListener('change', renderVisitorHistoryTable);
-            document.getElementById('applyVisitorHistoryFilters').addEventListener('click', renderVisitorHistoryTable);
-            document.getElementById('resetVisitorHistoryFilters').addEventListener('click', function() {
-                document.getElementById('visitorHistoryFloorFilter').value = 'all';
-                document.getElementById('visitorHistoryDateFilter').value = '';
-                renderVisitorHistoryTable();
-            });
-            document.getElementById('searchQueryVisitorHistory').addEventListener('input', renderVisitorHistoryTable);
-            document.getElementById('visiting-tab').addEventListener('shown.bs.tab', function() {
-                renderVisitorHistoryTable();
-                document.getElementById('visitorStudentSearch').value = '';
-                document.getElementById('visitorStudentSearchResults').innerHTML = '';
             });
 
             document.getElementById('administration-tab').addEventListener('shown.bs.tab', function () {
@@ -3364,10 +3045,21 @@
                 });
             });
 
-            // Notification bell click handler
+            // Notification bell click handler (already present, just ensure it's correct)
             const notificationBell = document.getElementById('notificationBell');
-            if (notificationBell) { // Ensure the element exists before adding listener
+            if (notificationBell) {
                 notificationBell.addEventListener('click', displayNotificationsInModal);
+            }
+
+            // Listener for when the notification modal is fully shown
+            const notificationModal = document.getElementById('notificationModal');
+            if (notificationModal) {
+                notificationModal.addEventListener('shown.bs.modal', () => {
+                    // The displayNotificationsInModal function now handles clearing the badge
+                    // and marking as processed immediately upon modal opening.
+                    // This listener can be used for any other actions needed *after* the modal is fully visible.
+                    console.log("Notification modal is fully shown.");
+                });
             }
         }
 
@@ -4635,230 +4327,6 @@
             individualStudentDetailsCard.style.display = 'block';
         }
 
-        async function addGatepassRecord(event) {
-            event.preventDefault();
-            const addGatepassMessage = document.getElementById('addGatepassMessage');
-            const selectedStudentId = document.querySelector('input[name="selectedGatepassStudent"]:checked');
-
-            if (!selectedStudentId) {
-                displayUpdateMessage('addGatepassMessage', 'Please select a student for the gatepass.', 'danger');
-                return;
-            }
-
-            const student = students.find(s => s.id === selectedStudentId.value);
-            if (!student) {
-                displayUpdateMessage('addGatepassMessage', 'Selected student not found in records.', 'danger');
-                return;
-            }
-
-            const newGatepass = {
-                studentId: student.id,
-                studentName: student.name,
-                studentFloor: student.floor,
-                departureDate: document.getElementById('gatepassDepartureDate').value,
-                departureTime: document.getElementById('gatepassDepartureTime').value,
-                returnDate: document.getElementById('gatepassReturnDate').value,
-                returnTime: document.getElementById('gatepassReturnTime').value,
-                reason: document.getElementById('gatepassReason').value.trim(),
-                approvedBy: document.getElementById('gatepassApprovedBy').value.trim(),
-                modifiedByEmail: currentUserEmail,
-                timestamp: new Date().toISOString()
-            };
-
-            if (!newGatepass.departureDate || !newGatepass.departureTime || !newGatepass.reason || !newGatepass.approvedBy) {
-                displayUpdateMessage('addGatepassMessage', 'Please fill in all required gatepass fields.', 'danger');
-                return;
-            }
-            if (!currentUserEmail) {
-                displayUpdateMessage('addGatepassMessage', 'Your email ID is missing. Please log in again.', 'danger');
-                return;
-            }
-
-            gatepassRecords.unshift(newGatepass);
-            try {
-                await saveGatepassRecordsToFirebase(gatepassRecords);
-                displayUpdateMessage('addGatepassMessage', `Gatepass added for ${student.name}.`, 'success');
-                document.getElementById('addGatepassForm').reset();
-                const gatepassStudentSearchResults = document.getElementById('gatepassStudentSearchResults');
-                if (gatepassStudentSearchResults) gatepassStudentSearchResults.innerHTML = '';
-                document.getElementById('gatepassStudentSearch').value = '';
-                renderGatepassHistoryTable();
-            } catch (error) {
-                displayUpdateMessage('addGatepassMessage', 'Error adding gatepass record. Please try again.', 'danger');
-                console.error("Error adding gatepass record:", error);
-            }
-        }
-
-        function renderGatepassHistoryTable() {
-            const tableBody = document.getElementById('gatepassHistoryTable');
-            const floorFilter = document.getElementById('gatepassHistoryFloorFilter').value;
-            const dateFilter = document.getElementById('gatepassHistoryDateFilter').value;
-            const searchQuery = document.getElementById('searchQueryGatepassHistory').value.toLowerCase().trim();
-
-            displayActiveFilters('gatepassHistoryFilterDisplay', {
-                search: searchQuery,
-                floor: floorFilter,
-                date: dateFilter
-            });
-
-            let filteredRecords = [...gatepassRecords];
-
-            if (floorFilter !== 'all') {
-                filteredRecords = filteredRecords.filter(record => record.studentFloor === floorFilter);
-            }
-
-            if (dateFilter) {
-                filteredRecords = filteredRecords.filter(record => record.departureDate === dateFilter);
-            }
-
-            if (searchQuery) {
-                filteredRecords = filteredRecords.filter(record => {
-                    const studentName = record.studentName ? record.studentName.toLowerCase() : '';
-                    const studentId = record.studentId ? record.id.toLowerCase() : '';
-                    const reason = record.reason ? record.reason.toLowerCase() : '';
-                    const approvedBy = record.approvedBy ? record.approvedBy.toLowerCase() : '';
-                    const modifiedByEmail = record.modifiedByEmail ? record.modifiedByEmail.toLowerCase() : '';
-                    return studentName.includes(searchQuery) || studentId.includes(searchQuery) ||
-                           reason.includes(searchQuery) || approvedBy.includes(searchQuery) || modifiedByEmail.includes(searchQuery);
-                });
-            }
-
-            filteredRecords.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-
-            tableBody.innerHTML = '';
-            if (filteredRecords.length === 0) {
-                tableBody.innerHTML = '<tr><td colspan="9" class="text-center">No gatepass records found.</td></tr>';
-            } else {
-                filteredRecords.forEach(record => {
-                    const row = document.createElement('tr');
-                    row.innerHTML = `
-                        <td data-label="Departure Date">${record.departureDate}</td>
-                        <td data-label="Departure Time">${record.departureTime}</td>
-                        <td data-label="Student ID">${record.studentId}</td>
-                        <td data-label="Student Name">${record.studentName}</td>
-                        <td data-label="Floor">${record.studentFloor}</td>
-                        <td data-label="Return Date">${record.returnDate || 'N/A'}</td>
-                        <td data-label="Return Time">${record.returnTime || 'N/A'}</td>
-                        <td data-label="Reason">${record.reason}</td>
-                        <td data-label="Approved By">${record.approvedBy} (${record.modifiedByEmail || 'N/A'})</td>
-                    `;
-                    tableBody.appendChild(row);
-                });
-            }
-        }
-
-        async function addVisitorRecord(event) {
-            event.preventDefault();
-            const addVisitorMessage = document.getElementById('addVisitorMessage');
-            const selectedStudentId = document.querySelector('input[name="selectedVisitorStudent"]:checked');
-
-            if (!selectedStudentId) {
-                displayUpdateMessage('addVisitorMessage', 'Please select a student for the visitor.', 'danger');
-                return;
-            }
-
-            const student = students.find(s => s.id === selectedStudentId.value);
-            if (!student) {
-                displayUpdateMessage('addVisitorMessage', 'Selected student not found in records.', 'danger');
-                return;
-            }
-
-            const newVisitor = {
-                studentId: student.id,
-                studentName: student.name,
-                studentFloor: student.floor,
-                visitorName: document.getElementById('visitorName').value.trim(),
-                visitorRelationship: document.getElementById('visitorRelationship').value.trim(),
-                entryDate: document.getElementById('visitorEntryDate').value,
-                entryTime: document.getElementById('visitorEntryTime').value,
-                exitDate: document.getElementById('visitorExitDate').value,
-                exitTime: document.getElementById('visitorExitTime').value,
-                purpose: document.getElementById('visitorPurpose').value.trim(),
-                modifiedByEmail: currentUserEmail,
-                timestamp: new Date().toISOString()
-            };
-
-            if (!newVisitor.visitorName || !newVisitor.visitorRelationship || !newVisitor.entryDate || !newVisitor.entryTime || !newVisitor.purpose) {
-                displayUpdateMessage('addVisitorMessage', 'Please fill in all required visitor fields.', 'danger');
-                return;
-            }
-            if (!currentUserEmail) {
-                displayUpdateMessage('addVisitorMessage', 'Your email ID is missing. Please log in again.', 'danger');
-                return;
-            }
-
-            visitorRecords.unshift(newVisitor);
-            try {
-                await saveVisitorRecordsToFirebase(visitorRecords);
-                displayUpdateMessage('addVisitorMessage', `Visitor record added for ${student.name}.`, 'success');
-                document.getElementById('addVisitorForm').reset();
-                const visitorStudentSearchResults = document.getElementById('visitorStudentSearchResults');
-                if (visitorStudentSearchResults) visitorStudentSearchResults.innerHTML = '';
-                document.getElementById('visitorStudentSearch').value = '';
-                renderVisitorHistoryTable();
-            } catch (error) {
-                displayUpdateMessage('addVisitorMessage', 'Error adding visitor record. Please try again.', 'danger');
-                console.error("Error adding visitor record:", error);
-            }
-        }
-
-        function renderVisitorHistoryTable() {
-            const tableBody = document.getElementById('visitorHistoryTable');
-            const floorFilter = document.getElementById('visitorHistoryFloorFilter').value;
-            const dateFilter = document.getElementById('visitorHistoryDateFilter').value;
-            const searchQuery = document.getElementById('searchQueryVisitorHistory').value.toLowerCase().trim();
-
-            displayActiveFilters('visitorHistoryFilterDisplay', {
-                search: searchQuery,
-                floor: floorFilter,
-                date: dateFilter
-            });
-
-            let filteredRecords = [...visitorRecords];
-
-            if (floorFilter !== 'all') {
-                filteredRecords = filteredRecords.filter(record => record.studentFloor === floorFilter);
-            }
-
-            if (dateFilter) {
-                filteredRecords = filteredRecords.filter(record => record.entryDate === dateFilter);
-            }
-
-            if (searchQuery) {
-                filteredRecords = filteredRecords.filter(record => {
-                    const studentName = record.studentName ? record.studentName.toLowerCase() : '';
-                    const visitorName = record.visitorName ? record.visitorName.toLowerCase() : '';
-                    const purpose = record.purpose ? record.purpose.toLowerCase() : '';
-                    const modifiedByEmail = record.modifiedByEmail ? record.modifiedByEmail.toLowerCase() : '';
-                    return studentName.includes(searchQuery) || visitorName.includes(searchQuery) || purpose.includes(searchQuery) || modifiedByEmail.includes(searchQuery);
-                });
-            }
-
-            filteredRecords.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-
-            tableBody.innerHTML = '';
-            if (filteredRecords.length === 0) {
-                tableBody.innerHTML = '<tr><td colspan="10" class="text-center">No visitor records found.</td></tr>';
-            } else {
-                filteredRecords.forEach(record => {
-                    const row = document.createElement('tr');
-                    row.innerHTML = `
-                        <td data-label="Entry Date">${record.entryDate}</td>
-                        <td data-label="Entry Time">${record.entryTime}</td>
-                        <td data-label="Student ID">${record.studentId}</td>
-                        <td data-label="Student Name">${record.studentName}</td>
-                        <td data-label="Floor">${record.studentFloor}</td>
-                        <td data-label="Visitor Name">${record.visitorName}</td>
-                        <td data-label="Relationship">${record.visitorRelationship}</td>
-                        <td data-label="Exit Date">${record.exitDate || 'N/A'}</td>
-                        <td data-label="Exit Time">${record.exitTime || 'N/A'}</td>
-                        <td data-label="Purpose">${record.purpose} (${record.modifiedByEmail || 'N/A'})</td>
-                    `;
-                    tableBody.appendChild(row);
-                });
-            }
-        }
-
         function checkDisciplineTabAccess() {
             const today = new Date();
             const dayOfWeek = today.getDay();
@@ -4964,11 +4432,12 @@
             const tabsToControl = [
                 "rankings-tab", "responses-tab", "student-management-tab",
                 "administration-tab", "discipline-review-tab", "batch-discipline-tab",
-                "individual-data-tab", "gatepass-tab", "visiting-tab", "help-desk-tab" // Added help-desk-tab
+                "individual-data-tab", "help-desk-tab" // Removed gatepass-tab and visiting-tab
             ];
 
-            const positivePointsSection = document.getElementById('positivePointsSection');
-            const negativePointsSection = document.querySelector('#administration .action-section:last-child'); // Assuming negative points is the last action section
+            const positivePointsSectionContainer = document.getElementById('positivePointsSectionContainer');
+            const negativePointsSectionContainer = document.getElementById('negativePointsSectionContainer');
+
 
             // Hide all tabs and sections by default
             tabsToControl.forEach(tabId => {
@@ -4977,8 +4446,8 @@
                     tabElement.style.display = "none";
                 }
             });
-            if (positivePointsSection) positivePointsSection.style.display = 'none';
-            if (negativePointsSection) negativePointsSection.style.display = 'none';
+            if (positivePointsSectionContainer) positivePointsSectionContainer.style.display = 'none';
+            if (negativePointsSectionContainer) negativePointsSectionContainer.style.display = 'none';
 
 
             if (role === "admin") {
@@ -4989,23 +4458,33 @@
                         tabElement.style.display = ""; // Show all for admin
                     }
                 });
-                if (positivePointsSection) positivePointsSection.style.display = 'block';
-                if (negativePointsSection) negativePointsSection.style.display = 'block';
+                if (positivePointsSectionContainer) positivePointsSectionContainer.style.display = 'block';
+                if (negativePointsSectionContainer) negativePointsSectionContainer.style.display = 'block';
+                // Ensure both sections take half width
+                if (positivePointsSectionContainer) positivePointsSectionContainer.classList.add('col-md-6');
+                if (negativePointsSectionContainer) negativePointsSectionContainer.classList.add('col-md-6');
+                if (negativePointsSectionContainer) negativePointsSectionContainer.classList.remove('offset-md-3');
+
 
             } else if (role === "incharge") {
-                // In-charge has access to all tabs except Student Management, Rankings, Individual Data, Gatepass, and Visiting
+                // In-charge has access to all tabs except Student Management
                 const allowedTabs = [
                     "home-tab", "administration-tab", "discipline-review-tab", "batch-discipline-tab",
-                    "responses-tab", "rankings-tab", "individual-data-tab", "gatepass-tab", "visiting-tab", "help-desk-tab"
-                ]; // Re-added all tabs for incharge as per original code's intention
+                    "responses-tab", "rankings-tab", "individual-data-tab", "help-desk-tab" // Removed gatepass-tab and visiting-tab
+                ];
                 allowedTabs.forEach(tabId => {
                     const tabElement = document.getElementById(tabId);
                     if (tabElement) {
                         tabElement.style.display = "";
                     }
                 });
-                if (positivePointsSection) positivePointsSection.style.display = 'block';
-                if (negativePointsSection) negativePointsSection.style.display = 'block';
+                if (positivePointsSectionContainer) positivePointsSectionContainer.style.display = 'block';
+                if (negativePointsSectionContainer) negativePointsSectionContainer.style.display = 'block';
+                // Ensure both sections take half width
+                if (positivePointsSectionContainer) positivePointsSectionContainer.classList.add('col-md-6');
+                if (negativePointsSectionContainer) negativePointsSectionContainer.classList.add('col-md-6');
+                if (negativePointsSectionContainer) negativePointsSectionContainer.classList.remove('offset-md-3');
+
                 // Student Management is hidden for incharge
                 const studentManagementTab = document.getElementById('student-management-tab');
                 if (studentManagementTab) studentManagementTab.style.display = 'none';
@@ -5014,7 +4493,7 @@
                 // Teacher has access to specific tabs and only negative points
                 const allowedTabs = [
                     "home-tab", "administration-tab", "discipline-review-tab", "batch-discipline-tab",
-                    "responses-tab", "help-desk-tab" // Teachers can access help desk
+                    "responses-tab", "help-desk-tab"
                 ];
                 allowedTabs.forEach(tabId => {
                     const tabElement = document.getElementById(tabId);
@@ -5022,9 +4501,13 @@
                         tabElement.style.display = "";
                     }
                 });
-                // Only negative points section is visible for teachers
-                if (positivePointsSection) positivePointsSection.style.display = 'none'; // Hide positive points
-                if (negativePointsSection) negativePointsSection.style.display = 'block'; // Show negative points
+                // Only negative points section is visible for teachers and centered
+                if (positivePointsSectionContainer) positivePointsSectionContainer.style.display = 'none'; // Hide positive points
+                if (negativePointsSectionContainer) {
+                    negativePointsSectionContainer.style.display = 'block'; // Show negative points
+                    negativePointsSectionContainer.classList.remove('col-md-6'); // Remove half width
+                    negativePointsSectionContainer.classList.add('col-md-6', 'offset-md-3'); // Center it
+                }
                 // Student Management is hidden for teacher
                 const studentManagementTab = document.getElementById('student-management-tab');
                 if (studentManagementTab) studentManagementTab.style.display = 'none';
@@ -5072,21 +4555,22 @@
             }
         }
 
+        // FIX: Corrected displayNotificationsInModal function
         function displayNotificationsInModal() {
             const modalBody = document.getElementById('notificationModalBody');
             const noNotificationsMessage = document.getElementById('noNotificationsMessage');
 
-            if (!modalBody || !noNotificationsMessage) return; // Ensure elements exist
+            if (!modalBody || !noNotificationsMessage) return;
 
             modalBody.innerHTML = ''; // Clear previous notifications
-            noNotificationsMessage.style.display = 'none';
+            noNotificationsMessage.style.display = 'none'; // Hide "No notifications" message initially
 
+            // If there are no notifications, display the message and return
             if (userNotifications.length === 0) {
                 noNotificationsMessage.style.display = 'block';
                 return;
             }
 
-            // Create a temporary array to hold notifications that need to be marked as processed
             const notificationsToProcess = [];
 
             userNotifications.forEach(notification => {
@@ -5097,25 +4581,28 @@
                 let message = '';
                 if (notification.status === 'approved') {
                     message = `<i class="fas fa-check-circle"></i> Your Admin access appeal has been APPROVED! Your role has been updated.`;
-                    updateUserRoleLocally(notification.userEmail, 'admin'); // Update role immediately on display
+                    // Call updateUserRoleLocally immediately if approved
+                    updateUserRoleLocally(notification.userEmail, 'admin');
                 } else if (notification.status === 'rejected') {
                     message = `<i class="fas fa-times-circle"></i> Your Admin access appeal has been REJECTED. Reason: ${notification.reason || 'N/A'}`;
                 }
                 notificationDiv.innerHTML = message;
                 modalBody.appendChild(notificationDiv);
 
-                // Add this notification to the list to be processed (marked as read)
+                // Add this notification's key to the list to be processed (marked as read)
                 notificationsToProcess.push(notification.key);
             });
 
-            // After displaying all notifications, mark them as processed in Firebase
+            // IMPORTANT: Mark notifications as processed in Firebase *after* they are displayed.
+            // This ensures they don't reappear on subsequent loads if the user has seen them.
             notificationsToProcess.forEach(key => {
                 database.ref(`adminAppeals/${key}`).update({ status: 'processed' })
                     .then(() => console.log(`Appeal ${key} marked as processed.`))
                     .catch(error => console.error("Error marking appeal as processed:", error));
             });
 
-            // Clear local notifications and update bell after processing
+            // After displaying and marking as processed, clear the local array and update the bell.
+            // This ensures the badge disappears immediately after the modal content is shown.
             userNotifications = [];
             updateNotificationBell();
         }
