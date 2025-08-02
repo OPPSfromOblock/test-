@@ -330,7 +330,7 @@
             font-weight: 600;
             border: none;
             padding: 12px 15px; /* Reduced padding for mobile */
-            transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease;
             border-radius: 8px 8px 0 0;
             position: relative;
             overflow: hidden;
@@ -1148,11 +1148,7 @@
                         <i class="fas fa-user-edit"></i> Administration
                     </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" data-bs-toggle="tab" href="#discipline-review" id="discipline-review-tab" role="tab" title="Assign discipline ratings to individual students">
-                        <i class="fas fa-star-half-alt"></i> Discipline Review
-                    </a>
-                </li>
+                <!-- Removed Discipline Review Tab -->
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" data-bs-toggle="tab" href="#batch-discipline" id="batch-discipline-tab" role="tab" title="Assign discipline ratings to multiple students at once">
                         <i class="fas fa-clipboard-list"></i> Batch Discipline
@@ -1171,7 +1167,7 @@
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" data-bs-toggle="tab" href="#student-management" id="student-management-tab" role="tab" title="Add, edit, or delete student records">
                         <i class="fas fa-users-cog"></i> Student Management
-                    </a
+                    </a>
                 </li>
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" data-bs-toggle="tab" href="#individual-data" id="individual-data-tab" role="tab" title="View detailed information for a single student">
@@ -1179,8 +1175,8 @@
                     </a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" data-bs-toggle="tab" href="#help-desk" id="help-desk-tab" role="tab" title="Send a message to administrators for help">
-                        <i class="fas fa-question-circle"></i> Help Desk
+                    <a class="nav-link" data-bs-toggle="tab" href="#notes" id="notes-tab" role="tab" title="Manage your personal notes">
+                        <i class="fas fa-clipboard"></i> Notes
                     </a>
                 </li>
             </ul>
@@ -1335,6 +1331,31 @@
                             </div>
                         </div>
                     </div>
+                    <!-- New section for Batch Discipline Timer -->
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            <i class="fas fa-clock"></i> Batch Discipline Window
+                        </div>
+                        <div class="card-body">
+                            <p id="batchDisciplineTimerMessage" class="mb-0 text-center fs-4 fw-bold"></p>
+                        </div>
+                    </div>
+
+                    <!-- Public Announcements / Notes Section -->
+                    <div class="card mt-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <div><i class="fas fa-globe"></i> Public Announcements / Notes</div>
+                            <button class="btn btn-sm btn-success" id="addPublicNoteBtn" style="display: none;" title="Add a new public announcement or note.">
+                                <i class="fas fa-plus"></i> Add Note
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div id="publicNotesList" class="row">
+                                <!-- Public notes will be loaded here -->
+                            </div>
+                            <div class="mt-3 alert" id="publicNoteMessage" style="display: none;" role="alert"></div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Administration Tab -->
                 <div class="tab-pane fade" id="administration" role="tabpanel">
@@ -1434,14 +1455,45 @@
                                     <label class="form-label" for="adminSelector">Modified By (Incharge):</label>
                                     <select class="form-select" id="adminSelector" title="Select the incharge who is making this point change." aria-label="Select incharge">
                                         <option value="">Select Incharge</option>
-                                        <option value="Ranveer Sir">Ranveer Sir</option>
-                                        <option value="Manish Sir">Manish Sir</option>
-                                        <option value="Vasanth Sir">Vasnath Sir</option>
-                                        <option value="Anirudh Sir">Anirudh Sir</option>
-                                        <option value="Harish Sir">Harish Sir</option>
-                                        <option value="Chakradhar Sir">Chakradhar Sir</option>
-                                        <option value="Aman Sir">Aman Sir</option>
-                                        <option value="Rohit Sir">Rohit Sir</option>
+                                        <option value="BHAVESHBHAI JOLIYA">BHAVESHBHAI JOLIYA</option>
+                                        <option value="PRAVINBHAI SOLANKI">PRAVINBHAI SOLANKI</option>
+                                        <option value="THIRUPATHI VASANTH REDDY">THIRUPATHI VASANTH REDDY</option>
+                                        <option value="SUNIL VINAYAK LUTE">SUNIL VINAYAK LUTE</option>
+                                        <option value="Balaji AshokRao More">Balaji AshokRao More</option>
+                                        <option value="JOLIYA VIPUL RAMJIBHAI">JOLIYA VIPUL RAMJIBHAI</option>
+                                        <option value="LALJI TIWARI">LALJI TIWARI</option>
+                                        <option value="Ranveer Singh">Ranveer Singh</option>
+                                        <option value="BANOTH VAMSHI">BANOTH VAMSHI</option>
+                                        <option value="P Ananth Reddy">P Ananth Reddy</option>
+                                        <option value="AMAN KUMAR">AMAN KUMAR</option>
+                                        <option value="LOKESH YADAV">LOKESH YADAV</option>
+                                        <option value="SUNNY SINGH">SUNNY SINGH</option>
+                                        <option value="Anirudh Kumar">Anirudh Kumar</option>
+                                        <option value="Gauri Shankar Sah">Gauri Shankar Sah</option>
+                                        <option value="CHANDAN KUMAR THAKUR">CHANDAN KUMAR THAKUR</option>
+                                        <option value="BALRAM KUMAR">BALRAM KUMAR</option>
+                                        <option value="KOTAM HARISH KUMAR REDDY">KOTAM HARISH KUMAR REDDY</option>
+                                        <option value="M.VITTAL">M.VITTAL</option>
+                                        <option value="ROHIT KUMAR SINGH">ROHIT KUMAR SINGH</option>
+                                        <option value="PALLA SOMASANKAR">PALLA SOMASANKAR</option>
+                                        <option value="PATLOLLA VINAY REDDY">PATLOLLA VINAY REDDY</option>
+                                        <option value="DESH PANDE AKHIL">DESH PANDE AKHIL</option>
+                                        <option value="CHAKRADHAR SAHOO">CHAKRADHAR SAHOO</option>
+                                        <option value="MANISH">MANISH</option>
+                                        <option value="CH.VINOD KUMAR">CH.VINOD KUMAR</option>
+                                        <option value="G.SHANKER RAO">G.SHANKER RAO</option>
+                                        <option value="V.ADITHYA">V.ADITHYA</option>
+                                        <option value="V.DEVRAJ">V.DEVRAJ</option>
+                                        <option value="B.GIRI PRASAD">B.GIRI PRASAD</option>
+                                        <option value="VENU GOPAL KRISHNA">VENU GOPAL KRISHNA</option>
+                                        <option value="G.NAGARAJU">G.NAGARAJU</option>
+                                        <option value="ADINARAYANA RAO">ADINARAYANA RAO</option>
+                                        <option value="SATISH BHALKE">SATISH BHALKE</option>
+                                        <option value="B.ANIL">B.ANIL</option>
+                                        <option value="RAJIV">RAJIV</option>
+                                        <option value="HARI KRISHNA TIWARI">HARI KRISHNA TIWARI</option>
+                                        <option value="SHIVA KRISHNA">SHIVA KRISHNA</option>
+                                        <option value="Manoj">Manoj</option>
                                         <option value="Testing Admin">Testing admin</option>
                                     </select>
                                 </div>
@@ -1464,76 +1516,7 @@
                     </div>
                 </div>
 
-                <!-- Discipline Review Tab -->
-                <div class="tab-pane fade" id="discipline-review" role="tabpanel">
-                    <h3><i class="fas fa-star-half-alt"></i> Discipline Review</h3>
-                    <div class="card">
-                        <div class="card-header">
-                            <i class="fas fa-user-check"></i> Select Student(s) for Discipline Review
-                        </div>
-                        <div class="card-body">
-                            <div class="search-container">
-                                <input class="form-control" id="searchQueryDiscipline" placeholder="Search by Name, ID, Floor, Room, Class (e.g., X), or Section (e.g., A). You can also search by Class-Section (e.g., X-A)..." type="text" title="Enter student name, ID, floor, room, class, or section to find students for discipline review." aria-label="Search students for discipline review"/>
-                                <i class="fas fa-search search-icon"></i>
-                            </div>
-                            <div class="mb-3 row" id="searchResultsDiscipline"></div>
-                        </div>
-                    </div>
-
-                    <div class="card mt-4">
-                        <div class="card-header">
-                            <i class="fas fa-star"></i> Assign Discipline Rating
-                        </div>
-                        <div class="card-body">
-                            <form id="disciplineReviewForm">
-                                <div class="mb-3">
-                                    <label class="form-label">Select a Discipline Rating (1-10 Stars):</label>
-                                    <div class="star-rating" title="Click a star to assign a discipline rating. 1 star is lowest, 10 stars is highest." role="radiogroup" aria-label="Discipline rating">
-                                        <input type="radio" id="star10" name="rating" value="10" aria-label="10 stars"/><label for="star10" title="10 stars">&#9733;</label>
-                                        <input type="radio" id="star9" name="rating" value="9" aria-label="9 stars"/><label for="star9" title="9 stars">&#9733;</label>
-                                        <input type="radio" id="star8" name="rating" value="8" aria-label="8 stars"/><label for="star8" title="8 stars">&#9733;</label>
-                                        <input type="radio" id="star7" name="rating" value="7" aria-label="7 stars"/><label for="star7" title="7 stars">&#9733;</label>
-                                        <input type="radio" id="star6" name="rating" value="6" aria-label="6 stars"/><label for="star6" title="6 stars">&#9733;</label>
-                                        <input type="radio" id="star5" name="rating" value="5" aria-label="5 stars"/><label for="star5" title="5 stars">&#9733;</label>
-                                        <input type="radio" id="star4" name="rating" value="4" aria-label="4 stars"/><label for="star4" title="4 stars">&#9733;</label>
-                                        <input type="radio" id="star3" name="rating" value="3" aria-label="3 stars"/><label for="star3" title="3 stars">&#9733;</label>
-                                        <input type="radio" id="star2" name="rating" value="2" aria-label="2 stars"/><label for="star2" title="2 stars">&#9733;</label>
-                                        <input type="radio" id="star1" name="rating" value="1" aria-label="1 star"/><label for="star1" title="1 star">&#9733;</label>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="disciplineAdminSelector">Modified By (Incharge):</label>
-                                    <select class="form-select" id="disciplineAdminSelector" title="Select the incharge who is making this point change." aria-label="Select incharge for discipline review">
-                                        <option value="">Select Incharge</option>
-                                        <option value="Ranveer Sir">Ranveer Sir</option>
-                                        <option value="Manish Sir">Manish Sir</option>
-                                        <option value="Vasanth Sir">Vasnath Sir</option>
-                                        <option value="Anirudh Sir">Anirudh Sir</option>
-                                        <option value="Harish Sir">Harish Sir</option>
-                                        <option value="Chakradhar Sir">Chakradhar Sir</option>
-                                        <option value="Aman Sir">Aman Sir</option>
-                                        <option value="Rohit Sir">Rohit Sir</option>
-                                        <option value="Testing Admin">Testing admin</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="disciplineTeacherAdminName">Teacher's Name (if not an Incharge):</label>
-                                    <input type="text" class="form-control" id="disciplineTeacherAdminName" placeholder="Enter Teacher's Name" title="Enter the name of the teacher making this point change, if applicable." aria-label="Teacher's name for discipline review"/>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="disciplineAdminEmail">Your Email ID:</label>
-                                    <input type="email" class="form-control" id="disciplineAdminEmail" placeholder="Enter your email ID" required readonly title="Your email ID will be automatically filled from login." aria-label="Your email ID for discipline review"/>
-                                </div>
-                                <div class="text-center mt-3">
-                                    <button type="submit" class="btn btn-primary btn-lg" title="Click to submit the discipline rating for the selected students.">
-                                        <i class="fas fa-check-circle"></i> Submit Discipline Review
-                                    </button>
-                                </div>
-                            </form>
-                            <div class="update-message alert mt-3" id="disciplineUpdateMessage" role="alert"></div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Removed Discipline Review Tab Content -->
 
                 <!-- New Batch Discipline Tab -->
                 <div class="tab-pane fade" id="batch-discipline" role="tabpanel">
@@ -1607,14 +1590,45 @@
                                 <label class="form-label" for="batchDisciplineAdminSelector">Modified By (Incharge):</label>
                                 <select class="form-select" id="batchDisciplineAdminSelector" title="Select the incharge who is making this point change." aria-label="Select incharge for batch discipline">
                                     <option value="">Select Incharge</option>
-                                    <option value="Ranveer Sir">Ranveer Sir</option>
-                                    <option value="Manish Sir">Manish Sir</option>
-                                    <option value="Vasanth Sir">Vasnath Sir</option>
-                                    <option value="Anirudh Sir">Anirudh Sir</option>
-                                    <option value="Harish Sir">Harish Sir</option>
-                                    <option value="Chakradhar Sir">Chakradhar Sir</option>
-                                    <option value="Aman Sir">Aman Sir</option>
-                                    <option value="Rohit Sir">Rohit Sir</option>
+                                    <option value="BHAVESHBHAI JOLIYA">BHAVESHBHAI JOLIYA</option>
+                                    <option value="PRAVINBHAI SOLANKI">PRAVINBHAI SOLANKI</option>
+                                    <option value="THIRUPATHI VASANTH REDDY">THIRUPATHI VASANTH REDDY</option>
+                                    <option value="SUNIL VINAYAK LUTE">SUNIL VINAYAK LUTE</option>
+                                    <option value="Balaji AshokRao More">Balaji AshokRao More</option>
+                                    <option value="JOLIYA VIPUL RAMJIBHAI">JOLIYA VIPUL RAMJIBHAI</option>
+                                    <option value="LALJI TIWARI">LALJI TIWARI</option>
+                                    <option value="Ranveer Singh">Ranveer Singh</option>
+                                    <option value="BANOTH VAMSHI">BANOTH VAMSHI</option>
+                                    <option value="P Ananth Reddy">P Ananth Reddy</option>
+                                    <option value="AMAN KUMAR">AMAN KUMAR</option>
+                                    <option value="LOKESH YADAV">LOKESH YADAV</option>
+                                    <option value="SUNNY SINGH">SUNNY SINGH</option>
+                                    <option value="Anirudh Kumar">Anirudh Kumar</option>
+                                    <option value="Gauri Shankar Sah">Gauri Shankar Sah</option>
+                                    <option value="CHANDAN KUMAR THAKUR">CHANDAN KUMAR THAKUR</option>
+                                    <option value="BALRAM KUMAR">BALRAM KUMAR</option>
+                                    <option value="KOTAM HARISH KUMAR REDDY">KOTAM HARISH KUMAR REDDY</option>
+                                    <option value="M.VITTAL">M.VITTAL</option>
+                                    <option value="ROHIT KUMAR SINGH">ROHIT KUMAR SINGH</option>
+                                    <option value="PALLA SOMASANKAR">PALLA SOMASANKAR</option>
+                                    <option value="PATLOLLA VINAY REDDY">PATLOLLA VINAY REDDY</option>
+                                    <option value="DESH PANDE AKHIL">DESH PANDE AKHIL</option>
+                                    <option value="CHAKRADHAR SAHOO">CHAKRADHAR SAHOO</option>
+                                    <option value="MANISH">MANISH</option>
+                                    <option value="CH.VINOD KUMAR">CH.VINOD KUMAR</option>
+                                    <option value="G.SHANKER RAO">G.SHANKER RAO</option>
+                                    <option value="V.ADITHYA">V.ADITHYA</option>
+                                    <option value="V.DEVRAJ">V.DEVRAJ</option>
+                                    <option value="B.GIRI PRASAD">B.GIRI PRASAD</option>
+                                    <option value="VENU GOPAL KRISHNA">VENU GOPAL KRISHNA</option>
+                                    <option value="G.NAGARAJU">G.NAGARAJU</option>
+                                    <option value="ADINARAYANA RAO">ADINARAYANA RAO</option>
+                                    <option value="SATISH BHALKE">SATISH BHALKE</option>
+                                    <option value="B.ANIL">B.ANIL</option>
+                                    <option value="RAJIV">RAJIV</option>
+                                    <option value="HARI KRISHNA TIWARI">HARI KRISHNA TIWARI</option>
+                                    <option value="SHIVA KRISHNA">SHIVA KRISHNA</option>
+                                    <option value="Manoj">Manoj</option>
                                     <option value="Testing Admin">Testing admin</option>
                                 </select>
                             </div>
@@ -1761,6 +1775,10 @@
                                 </div>
                                 <button type="button" id="applyHistoryFilters" class="btn btn-primary" title="Apply the selected floor and date filters to the history.">Apply Filters</button>
                                 <button type="button" id="resetHistoryFilters" class="btn btn-secondary ms-2" title="Clear all history filters and show all records.">Reset Filters</button>
+                                <!-- NEW EXPORT BUTTON -->
+                                <button type="button" class="btn btn-success ms-2" id="exportHistory" title="Download the current history records as an Excel file.">
+                                    <i class="fas fa-file-excel"></i> Export to Excel
+                                </button>
                             </div>
                             <div class="search-container">
                                 <input class="form-control" id="searchQueryHistory" placeholder="Search history by Student Name, ID, Class (e.g., X), or Section (e.g., A). You can also search by Class-Section (e.g., X-A)..." type="text" title="Search for specific history records." aria-label="Search history"/>
@@ -1931,34 +1949,46 @@
                     </div>
                 </div>
 
-                <!-- Help Desk Tab -->
-                <div class="tab-pane fade" id="help-desk" role="tabpanel">
-                    <h3><i class="fas fa-question-circle"></i> Help Desk</h3>
+                <!-- Notes Tab -->
+                <div class="tab-pane fade" id="notes" role="tabpanel">
+                    <h3><i class="fas fa-clipboard"></i> My Notes</h3>
                     <div class="card mb-4">
                         <div class="card-header">
-                            <i class="fas fa-envelope"></i> Send a Message to Administrators
+                            <i class="fas fa-plus-circle"></i> Add New Note
                         </div>
                         <div class="card-body">
-                            <form id="helpDeskForm">
+                            <form id="addNoteForm">
                                 <div class="mb-3">
-                                    <label for="helpDeskSubject" class="form-label"><i class="fas fa-tag"></i> Subject</label>
-                                    <input type="text" class="form-control" id="helpDeskSubject" placeholder="e.g., Issue with student points, Feature request" required aria-label="Help desk subject"/>
+                                    <label for="noteTitle" class="form-label"><i class="fas fa-heading"></i> Note Title <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="noteTitle" required placeholder="Enter note title" aria-label="Note title"/>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="helpDeskMessage" class="form-label"><i class="fas fa-comment-alt"></i> Your Message</label>
-                                    <textarea class="form-control" id="helpDeskMessage" rows="5" placeholder="Describe your problem or request in detail." required aria-label="Help desk message"></textarea>
+                                    <label for="noteContent" class="form-label"><i class="fas fa-file-alt"></i> Note Content <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="noteContent" rows="5" required placeholder="Write your note here..." aria-label="Note content"></textarea>
                                 </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="helpDeskUserEmail">Your Email ID:</label>
-                                    <input type="email" class="form-control" id="helpDeskUserEmail" placeholder="Your email ID" required readonly title="Your email ID will be automatically filled from login." aria-label="Your email ID for help desk"/>
-                                </div>
-                                <div class="text-center mt-3">
-                                    <button type="submit" class="btn btn-primary btn-lg" id="sendHelpRequestBtn">
-                                        <i class="fas fa-paper-plane"></i> Send Request
-                                    </button>
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-primary" title="Add this note."><i class="fas fa-plus"></i> Add Note</button>
                                 </div>
                             </form>
-                            <div class="update-message alert mt-3" id="helpDeskMessageStatus" style="display: none;" role="alert"></div>
+                            <div class="mt-3 alert" id="addNoteMessage" style="display: none;" role="alert"></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-list"></i> Existing Notes
+                        </div>
+                        <div class="card-body">
+                            <div class="search-container mb-3">
+                                <input class="form-control" id="searchQueryNotes" placeholder="Search notes by title or content..." type="text" title="Search your notes." aria-label="Search notes"/>
+                                <i class="fas fa-search search-icon"></i>
+                            </div>
+                            <div id="notesList" class="row">
+                                <!-- Notes will be loaded here -->
+                            </div>
+                            <nav aria-label="Page navigation for notes">
+                                <ul class="pagination justify-content-center" id="notesPagination"></ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -2000,14 +2030,45 @@
                             <label class="form-label" for="rankChangeAdminSelector"><i class="fas fa-user-tie"></i> Modified By (Admin):</label>
                             <select class="form-select" id="rankChangeAdminSelector" required title="Select the admin who is performing this rank change." aria-label="Admin modifying rank">
                                 <option value="">Select Admin</option>
-                                <option value="Ranveer Sir">Ranveer Sir</option>
-                                <option value="Manish Sir">Manish Sir</option>
-                                <option value="Vasanth Sir">Vasnath Sir</option>
-                                <option value="Anirudh Sir">Anirudh Sir</option>
-                                <option value="Harish Sir">Harish Sir</option>
-                                <option value="Chakradhar Sir">Chakradhar Sir</option>
-                                <option value="Aman Sir">Aman Sir</option>
-                                <option value="Rohit Sir">Rohit Sir</option>
+                                <option value="BHAVESHBHAI JOLIYA">BHAVESHBHAI JOLIYA</option>
+                                <option value="PRAVINBHAI SOLANKI">PRAVINBHAI SOLANKI</option>
+                                <option value="THIRUPATHI VASANTH REDDY">THIRUPATHI VASANTH REDDY</option>
+                                <option value="SUNIL VINAYAK LUTE">SUNIL VINAYAK LUTE</option>
+                                <option value="Balaji AshokRao More">Balaji AshokRao More</option>
+                                <option value="JOLIYA VIPUL RAMJIBHAI">JOLIYA VIPUL RAMJIBHAI</option>
+                                <option value="LALJI TIWARI">LALJI TIWARI</option>
+                                <option value="Ranveer Singh">Ranveer Singh</option>
+                                <option value="BANOTH VAMSHI">BANOTH VAMSHI</option>
+                                <option value="P Ananth Reddy">P Ananth Reddy</option>
+                                <option value="AMAN KUMAR">AMAN KUMAR</option>
+                                <option value="LOKESH YADAV">LOKESH YADAV</option>
+                                <option value="SUNNY SINGH">SUNNY SINGH</option>
+                                <option value="Anirudh Kumar">Anirudh Kumar</option>
+                                <option value="Gauri Shankar Sah">Gauri Shankar Sah</option>
+                                <option value="CHANDAN KUMAR THAKUR">CHANDAN KUMAR THAKUR</option>
+                                <option value="BALRAM KUMAR">BALRAM KUMAR</option>
+                                <option value="KOTAM HARISH KUMAR REDDY">KOTAM HARISH KUMAR REDDY</option>
+                                <option value="M.VITTAL">M.VITTAL</option>
+                                <option value="ROHIT KUMAR SINGH">ROHIT KUMAR SINGH</option>
+                                <option value="PALLA SOMASANKAR">PALLA SOMASANKAR</option>
+                                <option value="PATLOLLA VINAY REDDY">PATLOLLA VINAY REDDY</option>
+                                <option value="DESH PANDE AKHIL">DESH PANDE AKHIL</option>
+                                <option value="CHAKRADHAR SAHOO">CHAKRADHAR SAHOO</option>
+                                <option value="MANISH">MANISH</option>
+                                <option value="CH.VINOD KUMAR">CH.VINOD KUMAR</option>
+                                <option value="G.SHANKER RAO">G.SHANKER RAO</option>
+                                <option value="V.ADITHYA">V.ADITHYA</option>
+                                <option value="V.DEVRAJ">V.DEVRAJ</option>
+                                <option value="B.GIRI PRASAD">B.GIRI PRASAD</option>
+                                <option value="VENU GOPAL KRISHNA">VENU GOPAL KRISHNA</option>
+                                <option value="G.NAGARAJU">G.NAGARAJU</option>
+                                <option value="ADINARAYANA RAO">ADINARAYANA RAO</option>
+                                <option value="SATISH BHALKE">SATISH BHALKE</option>
+                                <option value="B.ANIL">B.ANIL</option>
+                                <option value="RAJIV">RAJIV</option>
+                                <option value="HARI KRISHNA TIWARI">HARI KRISHNA TIWARI</option>
+                                <option value="SHIVA KRISHNA">SHIVA KRISHNA</option>
+                                <option value="Manoj">Manoj</option>
                                 <option value="Testing Admin">Testing admin</option>
                             </select>
                         </div>
@@ -2045,6 +2106,34 @@
                             </button>
                         </div>
                         <div class="mt-3 alert" id="upgradeMessage" style="display: none;" role="alert"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Public Note Modal (for Admin to Add/Edit) -->
+    <div class="modal fade" id="publicNoteModal" tabindex="-1" aria-labelledby="publicNoteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="publicNoteModalLabel">Add/Edit Public Note</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="publicNoteForm">
+                        <input type="hidden" id="publicNoteId">
+                        <div class="mb-3">
+                            <label for="publicNoteTitle" class="form-label"><i class="fas fa-heading"></i> Note Title <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="publicNoteTitle" required placeholder="Enter note title" aria-label="Public note title"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="publicNoteContent" class="form-label"><i class="fas fa-file-alt"></i> Note Content <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="publicNoteContent" rows="5" required placeholder="Write your note here..." aria-label="Public note content"></textarea>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary" id="savePublicNoteBtn" title="Save this public note."><i class="fas fa-save"></i> Save Note</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -2321,11 +2410,14 @@
 
         let students = [];
         let responseHistory = [];
-        let helpDeskRequests = []; // New array for help desk requests
+        let notes = []; // New array for personal notes
+        let publicNotes = []; // New array for public notes
         const database = firebase.database();
 
         const loadingOverlay = document.getElementById('loadingOverlay');
         const rankChangerModal = new bootstrap.Modal(document.getElementById('rankChangerModal'));
+        const publicNoteModal = new bootstrap.Modal(document.getElementById('publicNoteModal'));
+
 
         let currentUserEmail = '';
         let currentUserRole = null;
@@ -2386,35 +2478,68 @@
                 });
         }
 
-        // New functions for Help Desk
-        function saveHelpDeskRequestToFirebase(request) {
+        // New functions for Personal Notes
+        function saveNotesToFirebase(notesData) {
             showLoading();
-            return database.ref('helpDeskRequests').push(request)
+            // Store notes under the user's UID
+            return database.ref(`userNotes/${currentUserUid}`).set(notesData)
                 .then(() => {
-                    console.log("Help desk request saved to Firebase");
+                    console.log("Personal Notes saved to Firebase");
                     hideLoading();
                 })
                 .catch(error => {
-                    console.error("Error saving help desk request:", error);
+                    console.error("Error saving personal notes:", error);
                     hideLoading();
                     throw error;
                 });
         }
 
-        function loadHelpDeskRequestsFromFirebase() {
+        function loadNotesFromFirebase() {
             showLoading();
-            return database.ref('helpDeskRequests').once('value')
+            // Load notes from under the user's UID
+            return database.ref(`userNotes/${currentUserUid}`).once('value')
                 .then(snapshot => {
                     const data = snapshot.val();
                     hideLoading();
-                    return data ? Object.values(data) : [];
+                    return data || [];
                 })
                 .catch(error => {
-                    console.error("Error loading help desk requests:", error);
+                    console.error("Error loading personal notes:", error);
                     hideLoading();
                     return [];
                 });
         }
+
+        // New functions for Public Notes
+        function savePublicNotesToFirebase(notesData) {
+            showLoading();
+            return database.ref('publicNotes').set(notesData)
+                .then(() => {
+                    console.log("Public Notes saved to Firebase");
+                    hideLoading();
+                })
+                .catch(error => {
+                    console.error("Error saving public notes:", error);
+                    hideLoading();
+                    throw error;
+                });
+        }
+
+        function loadPublicNotesFromFirebase() {
+            showLoading();
+            return database.ref('publicNotes').once('value')
+                .then(snapshot => {
+                    const data = snapshot.val();
+                    hideLoading();
+                    return data || [];
+                })
+                .catch(error => {
+                    console.error("Error loading public notes:", error);
+                    hideLoading();
+                    return [];
+                });
+        }
+
 
         function displayUpdateMessage(elementId, message, type = 'success') {
             const messageElement = document.getElementById(elementId);
@@ -2459,11 +2584,13 @@
 
                 const studentsData = await loadStudentsFromFirebase();
                 const historyData = await loadHistoryFromFirebase();
-                const helpDeskData = await loadHelpDeskRequestsFromFirebase(); // Load help desk requests
+                publicNotes = await loadPublicNotesFromFirebase(); // Load public notes
+                if (currentUserUid) { // Only load personal notes if a user is logged in
+                    notes = await loadNotesFromFirebase();
+                }
 
                 students = studentsData;
                 responseHistory = historyData;
-                helpDeskRequests = helpDeskData; // Assign loaded data
 
                 if (students.length === 0) {
                     console.log("No data available in Firebase, please add students via Student Management tab.");
@@ -2472,14 +2599,17 @@
                 refreshRankings();
                 refreshResponses();
                 renderStudentManagementTable();
+                renderNotesTable(); // Render personal notes table
+                renderPublicNotes(); // Render public notes
                 document.getElementById('totalStudents').textContent = students.length;
                 document.getElementById('activeStudents').textContent = students.filter(s => s.active).length;
                 document.getElementById('dbStatus').textContent = 'Connected';
                 document.getElementById('dbStatus').className = 'badge bg-success';
 
                 initializeEventListeners();
-                checkDisciplineTabAccess();
+                checkDisciplineTabAccess(); // Call this to apply the new time-based logic
                 checkUserRole(currentUserRole); // Re-apply role-based access after data load
+                updateBatchDisciplineTimer(); // Start the timer for batch discipline
 
             } catch (error) {
                 console.error("Error initializing app:", error);
@@ -2673,94 +2803,6 @@
                 }
             });
 
-            document.getElementById('disciplineReviewForm').addEventListener('submit', async function(e) {
-                e.preventDefault();
-                const selectedStudentIds = Array.from(document.querySelectorAll('#searchResultsDiscipline input[name="selectedStudentsDiscipline"]:checked')).map(input => input.value);
-                const rating = document.querySelector('input[name="rating"]:checked');
-                const disciplineAdminSelector = document.getElementById('disciplineAdminSelector').value;
-                const disciplineTeacherAdminName = document.getElementById('disciplineTeacherAdminName').value.trim();
-                const disciplineAdminEmail = currentUserEmail;
-
-                if (!selectedStudentIds.length) {
-                    displayUpdateMessage('disciplineUpdateMessage', 'Please select at least one student for discipline review.', 'danger');
-                    return;
-                }
-
-                const today = new Date();
-                const dayOfWeek = today.getDay();
-                // Discipline tab access is controlled by checkDisciplineTabAccess, so this check is redundant here
-                // but keeping it for now as per instruction "dont change the lock on batch and discipline review for now"
-                if (dayOfWeek === 6 && selectedStudentIds.length > 1) {
-                    displayUpdateMessage('disciplineUpdateMessage', 'On Saturdays, you can only assign discipline ratings to one student at a time.', 'danger');
-                    return;
-                }
-
-                if (!rating) {
-                    displayUpdateMessage('disciplineUpdateMessage', 'Please select a star rating.', 'danger');
-                    return;
-                }
-
-                if (!disciplineAdminEmail) {
-                    displayUpdateMessage('disciplineUpdateMessage', 'Your email ID is missing. Please log in again.', 'danger');
-                    return;
-                }
-
-                let modifiedBy = '';
-                if (disciplineAdminSelector) {
-                    modifiedBy = disciplineAdminSelector;
-                } else if (disciplineTeacherAdminName) {
-                    modifiedBy = disciplineTeacherAdminName;
-                } else {
-                    displayUpdateMessage('disciplineUpdateMessage', 'Please select an Incharge or enter a Teacher\'s Name.', 'danger');
-                    return;
-                }
-                modifiedBy += ` (${disciplineAdminEmail})`;
-
-                const pointsAwarded = parseInt(rating.value) * 3;
-                const actionText = `Discipline Review (${rating.value} stars)`;
-
-                const now = new Date();
-                const date = now.toLocaleDateString('en-GB');
-                const time = now.toLocaleTimeString('en-GB');
-
-                try {
-                    const studentNames = [];
-                    selectedStudentIds.forEach(studentId => {
-                        const student = students.find(s => s.id === studentId);
-                        if (student) {
-                            student.points += pointsAwarded;
-                            studentNames.push(student.name);
-                            responseHistory.unshift({
-                                date,
-                                time,
-                                studentId,
-                                name: student.name,
-                                action: actionText,
-                                pointsChanged: pointsAwarded,
-                                modifiedBy: modifiedBy
-                            });
-                        }
-                    });
-
-                    await Promise.all([
-                        saveStudentsToFirebase(students),
-                        saveHistoryToFirebase(responseHistory)
-                    ]);
-
-                    const studentNamesString = studentNames.join(', ');
-                    displayUpdateMessage('disciplineUpdateMessage', `Done, added discipline points for ${studentNamesString} by ${modifiedBy}.`, 'success');
-
-                    document.getElementById('disciplineReviewForm').reset();
-                    document.getElementById('searchResultsDiscipline').innerHTML = '';
-                    document.getElementById('searchQueryDiscipline').value = '';
-                    refreshRankings();
-                    refreshResponses();
-                } catch (error) {
-                    console.error("Error updating discipline points:", error);
-                    displayUpdateMessage('disciplineUpdateMessage', 'Error updating discipline points. Please try again.', 'danger');
-                }
-            });
-
             window.updateRemark = async function(studentId, newRemark) {
                 const student = students.find(s => s.id === studentId);
                 if (student) {
@@ -2773,9 +2815,9 @@
                 }
             };
             document.getElementById('exportRankings').addEventListener('click', exportToExcel);
+            document.getElementById('exportHistory').addEventListener('click', exportHistoryToExcel); // New line for history export
 
             handleSearch('searchQueryPoints', 'searchResultsPoints', 'selectedStudents');
-            handleSearch('searchQueryDiscipline', 'searchResultsDiscipline', 'selectedStudentsDiscipline', true);
             document.getElementById('searchQueryRankings').addEventListener('input', refreshRankings);
             document.getElementById('searchQueryHistory').addEventListener('input', filterResponses);
             document.getElementById('searchQueryStudentManagement').addEventListener('input', renderStudentManagementTable);
@@ -2853,9 +2895,6 @@
             document.getElementById('administration-tab').addEventListener('shown.bs.tab', function () {
                 document.getElementById('adminEmail').value = currentUserEmail;
             });
-            document.getElementById('discipline-review-tab').addEventListener('shown.bs.tab', function () {
-                document.getElementById('disciplineAdminEmail').value = currentUserEmail;
-            });
             document.getElementById('batch-discipline-tab').addEventListener('shown.bs.tab', function () {
                 document.getElementById('batchDisciplineAdminEmail').value = currentUserEmail;
             });
@@ -2878,42 +2917,126 @@
                 filterResponses();
             });
 
-            // Help Desk tab
-            document.getElementById('help-desk-tab').addEventListener('shown.bs.tab', function () {
-                document.getElementById('helpDeskUserEmail').value = currentUserEmail;
+            // Personal Notes tab
+            document.getElementById('notes-tab').addEventListener('shown.bs.tab', function () {
+                renderNotesTable();
             });
-            document.getElementById('helpDeskForm').addEventListener('submit', async function(e) {
+            document.getElementById('addNoteForm').addEventListener('submit', addNote);
+            document.getElementById('searchQueryNotes').addEventListener('input', renderNotesTable);
+            document.getElementById('notesList').addEventListener('click', async function(event) {
+                if (event.target.classList.contains('delete-note-btn')) {
+                    const noteId = event.target.dataset.id;
+                    if (confirm('Are you sure you want to delete this note?')) {
+                        await deleteNote(noteId);
+                    }
+                } else if (event.target.classList.contains('edit-note-btn')) {
+                    const noteId = event.target.dataset.id;
+                    const noteCard = event.target.closest('.note-card');
+                    const titleElement = noteCard.querySelector('.card-title');
+                    const contentElement = noteCard.querySelector('.card-text');
+
+                    const originalTitle = titleElement.textContent;
+                    const originalContent = contentElement.textContent;
+
+                    titleElement.innerHTML = `<input type="text" class="form-control form-control-sm mb-2" value="${originalTitle}" id="editNoteTitle_${noteId}">`;
+                    contentElement.innerHTML = `<textarea class="form-control form-control-sm" rows="3" id="editNoteContent_${noteId}">${originalContent}</textarea>`;
+
+                    event.target.textContent = 'Save';
+                    event.target.classList.remove('btn-warning', 'edit-note-btn');
+                    event.target.classList.add('btn-success', 'save-note-btn');
+
+                    const saveButton = event.target;
+                    saveButton.addEventListener('click', async function handler() {
+                        const newTitle = document.getElementById(`editNoteTitle_${noteId}`).value;
+                        const newContent = document.getElementById(`editNoteContent_${noteId}`).value;
+                        await updateNote(noteId, newTitle, newContent);
+
+                        titleElement.textContent = newTitle;
+                        contentElement.textContent = newContent;
+
+                        saveButton.textContent = 'Edit';
+                        saveButton.classList.remove('btn-success', 'save-note-btn');
+                        saveButton.classList.add('btn-warning', 'edit-note-btn');
+                        saveButton.removeEventListener('click', handler); // Remove this specific listener
+                    });
+                }
+            });
+
+            // Public Notes (Home Tab)
+            document.getElementById('addPublicNoteBtn').addEventListener('click', function() {
+                document.getElementById('publicNoteId').value = ''; // Clear ID for new note
+                document.getElementById('publicNoteTitle').value = '';
+                document.getElementById('publicNoteContent').value = '';
+                document.getElementById('publicNoteModalLabel').textContent = 'Add New Public Note';
+                publicNoteModal.show();
+            });
+
+            document.getElementById('publicNoteForm').addEventListener('submit', async function(e) {
                 e.preventDefault();
-                const subject = document.getElementById('helpDeskSubject').value.trim();
-                const message = document.getElementById('helpDeskMessage').value.trim();
-                const userEmail = document.getElementById('helpDeskUserEmail').value.trim();
-                const userName = JSON.parse(sessionStorage.getItem('currentUser'))?.name || 'Unknown User';
+                const noteId = document.getElementById('publicNoteId').value;
+                const title = document.getElementById('publicNoteTitle').value.trim();
+                const content = document.getElementById('publicNoteContent').value.trim();
+                const publicNoteMessage = document.getElementById('publicNoteMessage');
 
-                if (!subject || !message) {
-                    displayUpdateMessage('helpDeskMessageStatus', 'Please fill in both subject and message fields.', 'danger');
-                    return;
-                }
-                if (!userEmail) {
-                    displayUpdateMessage('helpDeskMessageStatus', 'Your email ID is missing. Please log in again.', 'danger');
+                if (!title || !content) {
+                    displayUpdateMessage('publicNoteMessage', 'Please enter both a title and content for the public note.', 'danger');
                     return;
                 }
 
-                const helpRequest = {
-                    subject: subject,
-                    message: message,
-                    userEmail: userEmail,
-                    userName: userName,
-                    timestamp: new Date().toISOString(),
-                    status: 'pending' // Admins can change this to 'resolved' later
-                };
+                if (noteId) {
+                    // Edit existing note
+                    const noteIndex = publicNotes.findIndex(n => n.id === noteId);
+                    if (noteIndex > -1) {
+                        publicNotes[noteIndex].title = title;
+                        publicNotes[noteIndex].content = content;
+                        publicNotes[noteIndex].timestamp = new Date().toISOString();
+                    }
+                } else {
+                    // Add new note
+                    const newNote = {
+                        id: Date.now().toString(),
+                        title: title,
+                        content: content,
+                        timestamp: new Date().toISOString()
+                    };
+                    publicNotes.push(newNote);
+                }
 
                 try {
-                    await saveHelpDeskRequestToFirebase(helpRequest);
-                    displayUpdateMessage('helpDeskMessageStatus', 'Your help request has been sent to the administrators!', 'success');
-                    document.getElementById('helpDeskForm').reset();
+                    await savePublicNotesToFirebase(publicNotes);
+                    displayUpdateMessage('publicNoteMessage', `Public note ${noteId ? 'updated' : 'added'} successfully!`, 'success');
+                    publicNoteModal.hide();
+                    renderPublicNotes();
                 } catch (error) {
-                    displayUpdateMessage('helpDeskMessageStatus', 'Failed to send help request. Please try again.', 'danger');
-                    console.error("Error sending help request:", error);
+                    displayUpdateMessage('publicNoteMessage', `Error ${noteId ? 'updating' : 'adding'} public note. Please try again.`, 'danger');
+                    console.error("Error saving public note:", error);
+                }
+            });
+
+            document.getElementById('publicNotesList').addEventListener('click', async function(event) {
+                if (event.target.classList.contains('edit-public-note-btn')) {
+                    const noteId = event.target.dataset.id;
+                    const noteToEdit = publicNotes.find(n => n.id === noteId);
+                    if (noteToEdit) {
+                        document.getElementById('publicNoteId').value = noteToEdit.id;
+                        document.getElementById('publicNoteTitle').value = noteToEdit.title;
+                        document.getElementById('publicNoteContent').value = noteToEdit.content;
+                        document.getElementById('publicNoteModalLabel').textContent = 'Edit Public Note';
+                        publicNoteModal.show();
+                    }
+                } else if (event.target.classList.contains('delete-public-note-btn')) {
+                    const noteId = event.target.dataset.id;
+                    if (confirm('Are you sure you want to delete this public note?')) {
+                        publicNotes = publicNotes.filter(n => n.id !== noteId);
+                        try {
+                            await savePublicNotesToFirebase(publicNotes);
+                            displayUpdateMessage('publicNoteMessage', 'Public note deleted successfully!', 'success');
+                            renderPublicNotes();
+                        } catch (error) {
+                            displayUpdateMessage('publicNoteMessage', 'Error deleting public note. Please try again.', 'danger');
+                            console.error("Error deleting public note:", error);
+                        }
+                    }
                 }
             });
 
@@ -3019,39 +3142,39 @@
                 const dayOfWeek = today.getDay();
                 const isDisciplineTabSearch = (inputId === 'searchQueryDiscipline' || inputId === 'searchQueryBatchDiscipline');
 
-                if (query) {
-                    const { classQuery, sectionQuery } = parseClassSectionQuery(query);
+                let filteredStudents = students.filter(student => {
+    const name = student.name ? student.name.toLowerCase() : '';
+    const id = student.id ? student.id.toLowerCase() : '';
+    const room = student.room ? student.room.toLowerCase() : '';
+    const floor = student.floor ? student.floor.toString().toLowerCase() : '';
+    const studentClass = student.class ? student.class.toLowerCase() : '';
+    const section = student.section ? student.section.toLowerCase() : '';
 
-                    const filteredStudents = students.filter(student => {
-                        const name = student.name ? student.name.toLowerCase() : '';
-                        const id = student.id ? student.id.toLowerCase() : '';
-                        const room = student.room ? student.room.toLowerCase() : '';
-                        const floor = student.floor ? student.floor.toString().toLowerCase() : '';
-                        const studentClass = student.class ? student.class.toLowerCase() : '';
-                        const section = student.section ? student.section.toLowerCase() : '';
+    let matchesSearch = false;
+    if (name.includes(searchQuery) || id.includes(searchQuery) || room.includes(searchQuery) || floor.includes(searchQuery)) {
+        matchesSearch = true;
+    }
 
-                        let matches = false;
+    if (classQuery && sectionQuery) {
+        if (studentClass === classQuery && section === sectionQuery) {
+            matchesSearch = true;
+        }
+    } else if (classQuery) {
+        if (studentClass.includes(classQuery)) {
+            matchesSearch = true;
+        }
+    } else if (sectionQuery) {
+        if (section.includes(sectionQuery)) {
+            matchesSearch = true;
+        }
+    }
 
-                        if (name.includes(query) || id.includes(query) || room.includes(query) || floor.includes(query)) {
-                            matches = true;
-                        }
+    const matchesFloor = floorFilter === 'all' || floor === floorFilter;
+    const matchesClassFilter = !classFilter || studentClass.includes(classFilter);
+    const matchesSectionFilter = !sectionFilter || section.includes(sectionFilter);
 
-                        if (classQuery && sectionQuery) {
-                            if (studentClass === classQuery && section === sectionQuery) {
-                                matches = true;
-                            }
-                        } else if (classQuery) {
-                            if (studentClass.includes(classQuery)) {
-                                matches = true;
-                            }
-                        } else if (sectionQuery) {
-                             if (section.includes(sectionQuery)) {
-                                matches = true;
-                            }
-                        }
-                        return matches;
-                    });
-
+    return matchesSearch && matchesFloor && matchesClassFilter && matchesSectionFilter;
+});
                     if (filteredStudents.length) {
                         filteredStudents.forEach(student => {
                             const studentCard = document.createElement('div');
@@ -3146,35 +3269,35 @@
             let studentsToDisplayMain = allRankedStudents.filter(s => s.points >= 0);
 
             if (searchQueryRankings) {
-                studentsToDisplayMain = studentsToDisplayMain.filter(student => {
-                    const name = student.name ? student.name.toLowerCase() : '';
-                    const id = student.id ? student.id.toLowerCase() : '';
-                    const room = student.room ? student.room.toLowerCase() : '';
-                    const floor = student.floor ? student.floor.toString().toLowerCase() : '';
-                    const studentClass = student.class ? student.class.toLowerCase() : '';
-                    const section = student.section ? student.section.toLowerCase() : '';
+    studentsToDisplayMain = studentsToDisplayMain.filter(student => {
+        const name = student.name ? student.name.toLowerCase() : '';
+        const id = student.id ? student.id.toLowerCase() : '';
+        const room = student.room ? student.room.toLowerCase() : '';
+        const floor = student.floor ? student.floor.toString().toLowerCase() : '';
+        const studentClass = student.class ? student.class.toLowerCase() : '';
+        const section = student.section ? student.section.toLowerCase() : '';
 
-                    let matchesSearch = false;
-                    if (name.includes(searchQueryRankings) || id.includes(searchQueryRankings) || room.includes(searchQueryRankings) || floor.includes(searchQueryRankings)) {
-                        matchesSearch = true;
-                    }
+        let matchesSearch = false;
+        if (name.includes(searchQueryRankings) || id.includes(searchQueryRankings) || room.includes(searchQueryRankings) || floor.includes(searchQueryRankings)) {
+            matchesSearch = true;
+        }
 
-                    if (classQuery && sectionQuery) {
-                        if (studentClass === classQuery && section === sectionQuery) {
-                            matchesSearch = true;
-                        }
-                    } else if (classQuery) {
-                        if (studentClass.includes(classQuery)) {
-                            matchesSearch = true;
-                        }
-                    } else if (sectionQuery) {
-                         if (section.includes(sectionQuery)) {
-                            matchesSearch = true;
-                        }
-                    }
-                    return matchesSearch;
-                });
+        if (classQuery && sectionQuery) {
+            if (studentClass === classQuery && section === sectionQuery) {
+                matchesSearch = true;
             }
+        } else if (classQuery) {
+            if (studentClass.includes(classQuery)) {
+                matchesSearch = true;
+            }
+        } else if (sectionQuery) {
+            if (section.includes(sectionQuery)) {
+                matchesSearch = true;
+            }
+        }
+        return matchesSearch;
+    });
+}
 
             if (gradeFilter !== 'all') {
                 studentsToDisplayMain = studentsToDisplayMain.filter(s => s.assignedGrade === gradeFilter);
@@ -3250,35 +3373,35 @@
                 studentsToDisplayERank = studentsToDisplayERank.filter(s => s.floor === floorFilter);
             }
             if (searchQueryRankings) {
-                studentsToDisplayERank = studentsToDisplayERank.filter(student => {
-                    const name = student.name ? student.name.toLowerCase() : '';
-                    const id = student.id ? student.id.toLowerCase() : '';
-                    const room = student.room ? student.room.toLowerCase() : '';
-                    const floor = student.floor ? student.floor.toString().toLowerCase() : '';
-                    const studentClass = student.class ? student.class.toLowerCase() : '';
-                    const section = student ? student.section.toLowerCase() : '';
+    studentsToDisplayERank = studentsToDisplayERank.filter(student => {
+        const name = student.name ? student.name.toLowerCase() : '';
+        const id = student.id ? student.id.toLowerCase() : '';
+        const room = student.room ? student.room.toLowerCase() : '';
+        const floor = student.floor ? student.floor.toString().toLowerCase() : '';
+        const studentClass = student.class ? student.class.toLowerCase() : '';
+        const section = student.section ? student.section.toLowerCase() : '';
 
-                    let matchesSearch = false;
-                    if (name.includes(searchQueryRankings) || id.includes(searchQueryRankings) || room.includes(searchQueryRankings) || floor.includes(searchQueryRankings)) {
-                        matchesSearch = true;
-                    }
+        let matchesSearch = false;
+        if (name.includes(searchQueryRankings) || id.includes(searchQueryRankings) || room.includes(searchQueryRankings) || floor.includes(searchQueryRankings)) {
+            matchesSearch = true;
+        }
 
-                    if (classQuery && sectionQuery) {
-                        if (studentClass === classQuery && section === sectionQuery) {
-                            matchesSearch = true;
-                        }
-                    } else if (classQuery) {
-                        if (studentClass.includes(classQuery)) {
-                            matchesSearch = true;
-                        }
-                    } else if (sectionQuery) {
-                         if (section.includes(sectionQuery)) {
-                            matchesSearch = true;
-                        }
-                    }
-                    return matchesSearch;
-                });
+        if (classQuery && sectionQuery) {
+            if (studentClass === classQuery && section === sectionQuery) {
+                matchesSearch = true;
             }
+        } else if (classQuery) {
+            if (studentClass.includes(classQuery)) {
+                matchesSearch = true;
+            }
+        } else if (sectionQuery) {
+            if (section.includes(searchQueryRankings)) {
+                matchesSearch = true;
+            }
+        }
+        return matchesSearch;
+    });
+}
             studentsToDisplayERank.sort((a, b) => a.points - b.points);
 
             eRankingsTable.innerHTML = '';
@@ -3338,35 +3461,36 @@
 
             let filteredHistory = [...responseHistory];
 
-            if (searchQueryHistory) {
-                filteredHistory = filteredHistory.filter(entry => {
-                    const name = entry.name ? entry.name.toLowerCase() : '';
-                    const id = entry.studentId ? entry.studentId.toLowerCase() : '';
-                    const student = students.find(s => s.id === entry.studentId);
-                    const studentClass = student ? student.class.toLowerCase() : '';
-                    const section = student ? student.section.toLowerCase() : '';
+            f (searchQueryHistory) {
+    filteredHistory = filteredHistory.filter(entry => {
+        const name = entry.name ? entry.name.toLowerCase() : '';
+        const id = entry.studentId ? entry.studentId.toLowerCase() : '';
+        const student = students.find(s => s.id === entry.studentId);
+        const studentClass = student ? student.class.toLowerCase() : '';
+        const section = student ? student.section.toLowerCase() : '';
 
-                    let matchesSearch = false;
-                    if (name.includes(searchQueryHistory) || id.includes(searchQueryHistory)) {
-                        matchesSearch = true;
-                    }
+        let matchesSearch = false;
+        if (name.includes(searchQueryHistory) || id.includes(searchQueryHistory)) {
+            matchesSearch = true;
+        }
 
-                    if (classQuery && sectionQuery) {
-                        if (studentClass === classQuery && section === sectionQuery) {
-                            matchesSearch = true;
-                        }
-                    } else if (classQuery) {
-                        if (studentClass.includes(classQuery)) {
-                            matchesSearch = true;
-                        }
-                    } else if (sectionQuery) {
-                         if (section.includes(sectionQuery)) {
-                            matchesSearch = true;
-                        }
-                    }
-                    return matchesSearch;
-                });
+        if (classQuery && sectionQuery) {
+            if (studentClass === classQuery && section === sectionQuery) {
+                matchesSearch = true;
             }
+        } else if (classQuery) {
+            if (studentClass.includes(classQuery)) {
+                matchesSearch = true;
+            }
+        } else if (sectionQuery) {
+            if (section.includes(sectionQuery)) {
+                matchesSearch = true;
+            }
+        }
+        return matchesSearch;
+    });
+}
+
 
             if (selectedFloor !== 'all') {
                 filteredHistory = filteredHistory.filter(entry => {
@@ -3470,6 +3594,40 @@
             XLSX.writeFile(wb, 'Gurukul_Points_Rankings.xlsx');
         }
 
+        function exportHistoryToExcel() {
+            const wb = XLSX.utils.book_new();
+            const historyTable = document.getElementById('responseTable');
+            const rows = historyTable.querySelectorAll('tr');
+
+            if (rows.length === 0 || (rows.length === 1 && rows[0].querySelector('td').colSpan === 8)) {
+                alert("No history records to export.");
+                return;
+            }
+
+            const wsData = [];
+            // Add header row
+            wsData.push(['Date', 'Time', 'Student ID', 'Name', 'Action', 'Points Changed', 'Floor', 'Modified By']);
+
+            // Add data rows
+            rows.forEach(row => {
+                const rowData = [];
+                row.querySelectorAll('td').forEach(cell => {
+                    // Extract text content, removing icons and extra spaces
+                    let text = cell.textContent.trim();
+                    // Remove the icon text if present (e.g., "Date 24/07/2024" -> "24/07/2024")
+                    if (cell.querySelector('i')) {
+                        text = text.substring(text.indexOf(' ') + 1).trim();
+                    }
+                    rowData.push(text);
+                });
+                wsData.push(rowData);
+            });
+
+            const ws = XLSX.utils.aoa_to_sheet(wsData);
+            XLSX.utils.book_append_sheet(wb, ws, 'Gurukul_Points_History.xlsx');
+            XLSX.writeFile(wb, 'Gurukul_Points_History.xlsx');
+        }
+
         async function addStudent(event) {
             event.preventDefault();
             const addStudentMessage = document.getElementById('addStudentMessage');
@@ -3553,35 +3711,33 @@
 
 
             let filteredStudents = students.filter(student => {
-                const name = student.name ? student.name.toLowerCase() : '';
-                const id = student.id ? student.id.toLowerCase() : '';
-                const room = student.room ? student.room.toLowerCase() : '';
-                const floor = student.floor ? student.floor.toString().toLowerCase() : '';
-                const studentClass = student.class ? student.class.toLowerCase() : '';
-                const section = student.section ? student.section.toLowerCase() : '';
+    const name = student.name ? student.name.toLowerCase() : '';
+    const id = student.id ? student.id.toLowerCase() : '';
+    const room = student.room ? student.room.toLowerCase() : '';
+    const floor = student.floor ? student.floor.toString().toLowerCase() : '';
+    const studentClass = student.class ? student.class.toLowerCase() : '';
+    const section = student.section ? student.section.toLowerCase() : '';
 
-                let matchesSearch = false;
-                if (name.includes(searchQuery) || id.includes(searchQuery) || room.includes(searchQuery) || floor.includes(searchQuery)) {
-                    matchesSearch = true;
-                }
+    let matchesSearch = false;
+    if (name.includes(searchQuery) || id.includes(searchQuery) || room.includes(searchQuery) || floor.includes(searchQuery)) {
+        matchesSearch = true;
+    }
 
-                if (classQuery && sectionQuery) {
-                    if (studentClass === classQuery && section === sectionQuery) {
-                        matchesSearch = true;
-                    }
-                } else if (classQuery) {
-                    if (studentClass.includes(classQuery)) {
-                        matchesSearch = true;
-                    }
-                } else if (sectionQuery) {
-                     if (section.includes(sectionQuery)) {
-                        matchesSearch = true;
-                    }
-                }
-                return matchesSearch;
-            });
-
-
+    if (classQuery && sectionQuery) {
+        if (studentClass === classQuery && section === sectionQuery) {
+            matchesSearch = true;
+        }
+    } else if (classQuery) {
+        if (studentClass.includes(classQuery)) {
+            matchesSearch = true;
+        }
+    } else if (sectionQuery) {
+        if (section.includes(sectionQuery)) {
+            matchesSearch = true;
+        }
+    }
+    return matchesSearch;
+});
 
             const totalPages = Math.ceil(filteredStudents.length / rowsPerPage);
             currentPage = Math.min(currentPage, totalPages > 0 ? totalPages : 1);
@@ -3785,7 +3941,14 @@
                             <div class="star-rating" data-student-id="${student.id}" title="Click a star to assign a discipline rating for this student.">
                                 ${Array.from({ length: 10 }, (_, i) => {
                                     const starValue = 10 - i;
-                                    const isDisabled = (dayOfWeek === 6 && studentsToDisplay.length > 1 && student.id !== studentsToDisplay[0].id);
+                                    // Disable all but the first student's rating on Saturday if multiple students are displayed
+                                    // Also disable if student already has an entry for today
+                                    const existingEntryToday = responseHistory.some(entry =>
+                                        entry.studentId === student.id &&
+                                        entry.action.startsWith('Batch Discipline Review') &&
+                                        entry.date === today.toLocaleDateString('en-GB')
+                                    );
+                                    const isDisabled = (dayOfWeek === 6 && studentsToDisplay.length > 1 && student.id !== studentsToDisplay[0].id) || existingEntryToday;
                                     return `<input type="radio" id="batch-star-${student.id}-${starValue}" name="batch-rating-${student.id}" value="${starValue}" ${isDisabled ? 'disabled' : ''} />
                                             <label for="batch-star-${student.id}-${starValue}" title="${starValue} stars">&#9733;</label>`;
                                 }).join('')}
@@ -3921,23 +4084,28 @@
 
             let studentsWithRatings = 0;
 
-            tableRows.forEach(row => {
+            for (const row of tableRows) {
                 const studentId = row.dataset.id;
                 const student = students.find(s => s.id === studentId);
-                if (!student) return;
+                if (!student) continue;
 
                 const selectedRatingInput = row.querySelector(`input[name="batch-rating-${studentId}"]:checked`);
                 const newRating = selectedRatingInput ? parseInt(selectedRatingInput.value) : null;
 
                 if (newRating !== null) {
-                    studentsWithRatings++;
-                    // Discipline tab access is controlled by checkDisciplineTabAccess, so this check is redundant here
-                    // but keeping it for now as per instruction "dont change the lock on batch and discipline review for now"
-                    if (dayOfWeek === 6 && studentsWithRatings > 1) {
-                        displayUpdateMessage('batchDisciplineUpdateMessage', 'On Saturdays, you can only assign discipline ratings to one student at a time in batch mode.', 'danger');
-                        return;
+                    // Check if student already has a discipline entry for today
+                    const existingEntryToday = responseHistory.some(entry =>
+                        entry.studentId === studentId &&
+                        entry.action.startsWith('Batch Discipline Review') &&
+                        entry.date === date
+                    );
+
+                    if (dayOfWeek === 6 && existingEntryToday) {
+                        displayUpdateMessage('batchDisciplineUpdateMessage', `Student ${student.name} already has a batch discipline entry for today. Only one entry per student is allowed on Saturdays.`, 'danger');
+                        return; // Stop processing and return
                     }
 
+                    studentsWithRatings++;
                     const pointsAwarded = newRating * 3;
                     const actionText = `Batch Discipline Review (${newRating} stars)`;
 
@@ -3959,7 +4127,7 @@
                         });
                     }
                 }
-            });
+            }
 
             if (updatedStudents.length === 0) {
                 displayUpdateMessage('batchDisciplineUpdateMessage', 'No new discipline ratings selected or changed.', 'info');
@@ -4199,35 +4367,46 @@
 
         function checkDisciplineTabAccess() {
             const today = new Date();
-            const dayOfWeek = today.getDay();
+            const dayOfWeek = today.getDay(); // 0 for Sunday, 6 for Saturday
+            const currentHour = today.getHours();
 
-            const disciplineTabLink = document.getElementById('discipline-review-tab');
             const batchDisciplineTabLink = document.getElementById('batch-discipline-tab');
 
-            if (disciplineTabLink && batchDisciplineTabLink) { // Ensure elements exist
-                // Keeping the original logic for now as per instruction "dont change the lock on batch and discipline review for now"
-                if (dayOfWeek !== 6) { // Not Saturday
-                    disciplineTabLink.classList.add('disabled');
+            const startTime = 7; // 7 AM
+            const endTime = 22; // 10 PM (22:00)
+
+            if (batchDisciplineTabLink) {
+                // Remove existing event listeners to prevent multiple bindings
+                batchDisciplineTabLink.removeEventListener('click', preventBatchDisciplineClick);
+
+                // Teachers cannot access Batch Discipline at all
+                if (currentUserRole === 'teacher') {
                     batchDisciplineTabLink.classList.add('disabled');
-
-                    disciplineTabLink.removeEventListener('click', preventDefaultClick); // Remove if already added
-                    batchDisciplineTabLink.removeEventListener('click', preventDefaultClick); // Remove if already added
-
-                    disciplineTabLink.addEventListener('click', preventDefaultClick);
-                    batchDisciplineTabLink.addEventListener('click', preventDefaultClick);
-                } else { // Saturday
-                    disciplineTabLink.classList.remove('disabled');
+                    batchDisciplineTabLink.addEventListener('click', preventBatchDisciplineClick);
+                } else if (dayOfWeek === 6 && currentHour >= startTime && currentHour < endTime) { // Saturday, 7 AM to 10 PM
                     batchDisciplineTabLink.classList.remove('disabled');
-
-                    disciplineTabLink.removeEventListener('click', preventDefaultClick);
-                    batchDisciplineTabLink.removeEventListener('click', preventDefaultClick);
+                } else {
+                    batchDisciplineTabLink.classList.add('disabled');
+                    batchDisciplineTabLink.addEventListener('click', preventBatchDisciplineClick);
                 }
             }
         }
 
-        function preventDefaultClick(event) {
+        function preventBatchDisciplineClick(event) {
             event.preventDefault();
-            alert("This tab is only accessible on Saturdays.");
+            const today = new Date();
+            const dayOfWeek = today.getDay();
+            const currentHour = today.getHours();
+            const startTime = 7;
+            const endTime = 22;
+
+            if (currentUserRole === 'teacher') {
+                alert("Teachers do not have access to the 'Batch Discipline' tab.");
+            } else if (dayOfWeek !== 6) {
+                alert("The 'Batch Discipline' tab is only accessible on Saturdays.");
+            } else if (currentHour < startTime || currentHour >= endTime) {
+                alert("The 'Batch Discipline' tab is only accessible between 7 AM and 10 PM on Saturdays.");
+            }
         }
 
         // Function to update user info in sidebar and control UI visibility
@@ -4285,12 +4464,13 @@
 
             const tabsToControl = [
                 "rankings-tab", "responses-tab", "student-management-tab",
-                "administration-tab", "discipline-review-tab", "batch-discipline-tab",
-                "individual-data-tab", "help-desk-tab"
+                "administration-tab", "batch-discipline-tab",
+                "individual-data-tab", "notes-tab"
             ];
 
             const positivePointsSectionContainer = document.getElementById('positivePointsSectionContainer');
             const negativePointsSectionContainer = document.getElementById('negativePointsSectionContainer');
+            const addPublicNoteBtn = document.getElementById('addPublicNoteBtn');
 
 
             // Hide all tabs and sections by default
@@ -4302,6 +4482,7 @@
             });
             if (positivePointsSectionContainer) positivePointsSectionContainer.style.display = 'none';
             if (negativePointsSectionContainer) negativePointsSectionContainer.style.display = 'none';
+            if (addPublicNoteBtn) addPublicNoteBtn.style.display = 'none';
 
 
             if (role === "admin") {
@@ -4318,13 +4499,13 @@
                 if (positivePointsSectionContainer) positivePointsSectionContainer.classList.add('col-md-6');
                 if (negativePointsSectionContainer) negativePointsSectionContainer.classList.add('col-md-6');
                 if (negativePointsSectionContainer) negativePointsSectionContainer.classList.remove('offset-md-3');
+                if (addPublicNoteBtn) addPublicNoteBtn.style.display = 'block';
 
 
             } else if (role === "incharge") {
-                // In-charge has access to all tabs except Student Management
+                // In-charge has access to Home, Administration, Batch Discipline, and Notes
                 const allowedTabs = [
-                    "home-tab", "administration-tab", "discipline-review-tab", "batch-discipline-tab",
-                    "responses-tab", "rankings-tab", "individual-data-tab", "help-desk-tab"
+                    "home-tab", "administration-tab", "batch-discipline-tab", "notes-tab"
                 ];
                 allowedTabs.forEach(tabId => {
                     const tabElement = document.getElementById(tabId);
@@ -4339,15 +4520,20 @@
                 if (negativePointsSectionContainer) negativePointsSectionContainer.classList.add('col-md-6');
                 if (negativePointsSectionContainer) negativePointsSectionContainer.classList.remove('offset-md-3');
 
-                // Student Management is hidden for incharge
+                // Rankings, Individual Data, Student Management, and History are hidden for incharge
+                const rankingsTab = document.getElementById('rankings-tab');
+                if (rankingsTab) rankingsTab.style.display = 'none';
+                const individualDataTab = document.getElementById('individual-data-tab');
+                if (individualDataTab) individualDataTab.style.display = 'none';
                 const studentManagementTab = document.getElementById('student-management-tab');
                 if (studentManagementTab) studentManagementTab.style.display = 'none';
+                const responsesTab = document.getElementById('responses-tab');
+                if (responsesTab) responsesTab.style.display = 'none';
 
             } else if (role === "teacher") {
-                // Teacher has access to specific tabs and only negative points
+                // Teacher has access to Home, Administration (only negative points), and Notes
                 const allowedTabs = [
-                    "home-tab", "administration-tab", "discipline-review-tab", "batch-discipline-tab",
-                    "responses-tab", "help-desk-tab"
+                    "home-tab", "administration-tab", "notes-tab"
                 ];
                 allowedTabs.forEach(tabId => {
                     const tabElement = document.getElementById(tabId);
@@ -4356,19 +4542,278 @@
                     }
                 });
                 // Only negative points section is visible for teachers and centered
-                if (positivePointsSectionContainer) positivePointsSectionContainer.style.display = 'none'; // Hide positive points
+                if (positivePointsSectionContainer) positivePointsSectionContainer.style.display = 'none';
                 if (negativePointsSectionContainer) {
-                    negativePointsSectionContainer.style.display = 'block'; // Show negative points
-                    negativePointsSectionContainer.classList.remove('col-md-6'); // Remove half width
-                    negativePointsSectionContainer.classList.add('col-md-6', 'offset-md-3'); // Center it
+                    negativePointsSectionContainer.style.display = 'block';
+                    negativePointsSectionContainer.classList.remove('col-md-6');
+                    negativePointsSectionContainer.classList.add('col-md-6', 'offset-md-3');
                 }
-                // Student Management is hidden for teacher
+                // Batch Discipline, Student Management, Rankings, Individual Data, and History are hidden for teacher
+                const batchDisciplineTab = document.getElementById('batch-discipline-tab');
+                if (batchDisciplineTab) batchDisciplineTab.style.display = 'none';
                 const studentManagementTab = document.getElementById('student-management-tab');
                 if (studentManagementTab) studentManagementTab.style.display = 'none';
+                const rankingsTab = document.getElementById('rankings-tab');
+                if (rankingsTab) rankingsTab.style.display = 'none';
+                const individualDataTab = document.getElementById('individual-data-tab');
+                if (individualDataTab) individualDataTab.style.display = 'none';
+                const responsesTab = document.getElementById('responses-tab');
+                if (responsesTab) responsesTab.style.display = 'none';
             }
             // Re-check discipline tab access after role-based display is set
             checkDisciplineTabAccess();
+            renderPublicNotes(); // Re-render public notes to update button visibility
         }
+
+        // New function for Batch Discipline Timer
+        function updateBatchDisciplineTimer() {
+            const timerMessageElement = document.getElementById('batchDisciplineTimerMessage');
+            if (!timerMessageElement) return;
+
+            const now = new Date();
+            const dayOfWeek = now.getDay(); // 0 = Sunday, 6 = Saturday
+            const currentHour = now.getHours();
+            const currentMinute = now.getMinutes();
+
+            const openDay = 6; // Saturday
+            const openHour = 7; // 7 AM
+            const closeHour = 22; // 10 PM (22:00)
+
+            let message = '';
+
+            if (dayOfWeek === openDay && currentHour >= openHour && currentHour < closeHour) {
+                // It's Saturday and within the open window
+                const closeTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), closeHour, 0, 0);
+                const timeLeft = closeTime.getTime() - now.getTime();
+
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                message = `<span class="text-success">Batch Discipline is OPEN!</span> It will close in ${hours}h ${minutes}m ${seconds}s.`;
+            } else {
+                // It's not Saturday or outside the open window
+                let nextOpenTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), openHour, 0, 0);
+
+                if (dayOfWeek < openDay) {
+                    // Days until next Saturday
+                    nextOpenTime.setDate(now.getDate() + (openDay - dayOfWeek));
+                } else if (dayOfWeek > openDay) {
+                    // Days until next Saturday (wrap to next week)
+                    nextOpenTime.setDate(now.getDate() + (7 - dayOfWeek + openDay));
+                } else { // It's Saturday but outside the hours
+                    if (currentHour >= closeHour) {
+                        // Already past closing time on Saturday, so next open is next Saturday
+                        nextOpenTime.setDate(now.getDate() + 7);
+                    }
+                    // If currentHour < openHour, nextOpenTime is already set for today's Saturday 7 AM
+                }
+
+                const timeLeft = nextOpenTime.getTime() - now.getTime();
+
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                message = `<span class="text-danger">Batch Discipline is CLOSED.</span> It will open in `;
+                if (days > 0) message += `${days}d `;
+                message += `${hours}h ${minutes}m ${seconds}s.`;
+            }
+
+            timerMessageElement.innerHTML = message;
+        }
+
+        // Update the timer every second
+        setInterval(updateBatchDisciplineTimer, 1000);
+
+        // Personal Notes Management Functions
+        let notesCurrentPage = 1;
+        const notesPerPage = 5;
+
+        function renderNotesTable() {
+            const notesList = document.getElementById('notesList');
+            const notesPagination = document.getElementById('notesPagination');
+            const searchQuery = document.getElementById('searchQueryNotes').value.toLowerCase().trim();
+
+            let filteredNotes = notes.filter(note => {
+                const title = note.title ? note.title.toLowerCase() : '';
+                const content = note.content ? note.content.toLowerCase() : '';
+                return title.includes(searchQuery) || content.includes(searchQuery);
+            });
+
+            filteredNotes.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp)); // Sort by most recent
+
+            const totalPages = Math.ceil(filteredNotes.length / notesPerPage);
+            notesCurrentPage = Math.min(notesCurrentPage, totalPages > 0 ? totalPages : 1);
+
+            const startIndex = (notesCurrentPage - 1) * notesPerPage;
+            const endIndex = startIndex + notesPerPage;
+            const notesToDisplay = filteredNotes.slice(startIndex, endIndex);
+
+            notesList.innerHTML = '';
+            if (notesToDisplay.length === 0) {
+                notesList.innerHTML = '<div class="col-12"><div class="alert alert-info">No notes found.</div></div>';
+            } else {
+                notesToDisplay.forEach(note => {
+                    const noteCard = document.createElement('div');
+                    noteCard.className = 'col-md-6 mb-3';
+                    noteCard.innerHTML = `
+                        <div class="card note-card">
+                            <div class="card-body">
+                                <h5 class="card-title">${note.title}</h5>
+                                <p class="card-text">${note.content}</p>
+                                <p class="card-text"><small class="text-muted">Last updated: ${new Date(note.timestamp).toLocaleString()}</small></p>
+                                <button class="btn btn-warning btn-sm edit-note-btn" data-id="${note.id}" title="Edit this note."><i class="fas fa-edit"></i> Edit</button>
+                                <button class="btn btn-danger btn-sm delete-note-btn ms-2" data-id="${note.id}" title="Delete this note."><i class="fas fa-trash"></i> Delete</button>
+                            </div>
+                        </div>
+                    `;
+                    notesList.appendChild(noteCard);
+                });
+            }
+
+            notesPagination.innerHTML = '';
+            if (totalPages > 1) {
+                let li = document.createElement('li');
+                li.className = `page-item ${notesCurrentPage === 1 ? 'disabled' : ''}`;
+                li.innerHTML = `<a class="page-link" href="#" aria-label="Previous" title="Go to the previous page."><span aria-hidden="true">&laquo;</span></a>`;
+                li.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    if (notesCurrentPage > 1) {
+                        notesCurrentPage--;
+                        renderNotesTable();
+                    }
+                });
+                notesPagination.appendChild(li);
+
+                for (let i = 1; i <= totalPages; i++) {
+                    li = document.createElement('li');
+                    li.className = `page-item ${i === notesCurrentPage ? 'active' : ''}`;
+                    li.innerHTML = `<a class="page-link" href="#" title="Go to page ${i}.">${i}</a>`;
+                    li.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        notesCurrentPage = i;
+                        renderNotesTable();
+                    });
+                    notesPagination.appendChild(li);
+                }
+
+                li = document.createElement('li');
+                li.className = `page-item ${notesCurrentPage === totalPages ? 'disabled' : ''}`;
+                li.innerHTML = `<a class="page-link" href="#" aria-label="Next" title="Go to the next page."><span aria-hidden="true">&raquo;</span></a>`;
+                li.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    if (notesCurrentPage < totalPages) {
+                        notesCurrentPage++;
+                        renderNotesTable();
+                    }
+                });
+                notesPagination.appendChild(li);
+            }
+        }
+
+        async function addNote(event) {
+            event.preventDefault();
+            const addNoteMessage = document.getElementById('addNoteMessage');
+            const noteTitle = document.getElementById('noteTitle').value.trim();
+            const noteContent = document.getElementById('noteContent').value.trim();
+
+            if (!noteTitle || !noteContent) {
+                displayUpdateMessage('addNoteMessage', 'Please enter both a title and content for your note.', 'danger');
+                return;
+            }
+
+            const newNote = {
+                id: Date.now().toString(), // Simple unique ID
+                title: noteTitle,
+                content: noteContent,
+                timestamp: new Date().toISOString()
+            };
+
+            notes.push(newNote);
+            try {
+                await saveNotesToFirebase(notes);
+                displayUpdateMessage('addNoteMessage', 'Note added successfully!', 'success');
+                document.getElementById('addNoteForm').reset();
+                renderNotesTable();
+            } catch (error) {
+                displayUpdateMessage('addNoteMessage', 'Error adding note. Please try again.', 'danger');
+                console.error("Error adding note:", error);
+            }
+        }
+
+        async function deleteNote(noteId) {
+            const initialLength = notes.length;
+            notes = notes.filter(note => note.id !== noteId);
+            if (notes.length < initialLength) {
+                try {
+                    await saveNotesToFirebase(notes);
+                    displayUpdateMessage('addNoteMessage', 'Note deleted successfully!', 'success');
+                    renderNotesTable();
+                } catch (error) {
+                    displayUpdateMessage('addNoteMessage', 'Error deleting note. Please try again.', 'danger');
+                    console.error("Error deleting note:", error);
+                }
+            }
+        }
+
+        async function updateNote(noteId, newTitle, newContent) {
+            const noteIndex = notes.findIndex(note => note.id === noteId);
+            if (noteIndex > -1) {
+                notes[noteIndex].title = newTitle;
+                notes[noteIndex].content = newContent;
+                notes[noteIndex].timestamp = new Date().toISOString(); // Update timestamp on edit
+                try {
+                    await saveNotesToFirebase(notes);
+                    displayUpdateMessage('addNoteMessage', 'Note updated successfully!', 'success');
+                    renderNotesTable(); // Re-render to update timestamp display
+                } catch (error) {
+                    displayUpdateMessage('addNoteMessage', 'Error updating note. Please try again.', 'danger');
+                    console.error("Error updating note:", error);
+                }
+            }
+        }
+
+        // Public Notes Rendering
+        function renderPublicNotes() {
+            const publicNotesList = document.getElementById('publicNotesList');
+            const addPublicNoteBtn = document.getElementById('addPublicNoteBtn');
+
+            publicNotes.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp)); // Sort by most recent
+
+            publicNotesList.innerHTML = '';
+            if (publicNotes.length === 0) {
+                publicNotesList.innerHTML = '<div class="col-12"><div class="alert alert-info">No public announcements or notes available.</div></div>';
+            } else {
+                publicNotes.forEach(note => {
+                    const noteCard = document.createElement('div');
+                    noteCard.className = 'col-md-6 mb-3';
+                    noteCard.innerHTML = `
+                        <div class="card note-card">
+                            <div class="card-body">
+                                <h5 class="card-title">${note.title}</h5>
+                                <p class="card-text">${note.content}</p>
+                                <p class="card-text"><small class="text-muted">Last updated: ${new Date(note.timestamp).toLocaleString()}</small></p>
+                                <div class="public-note-actions" style="display: ${currentUserRole === 'admin' ? 'block' : 'none'};">
+                                    <button class="btn btn-warning btn-sm edit-public-note-btn" data-id="${note.id}" title="Edit this public note."><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="btn btn-danger btn-sm delete-public-note-btn ms-2" data-id="${note.id}" title="Delete this public note."><i class="fas fa-trash"></i> Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    publicNotesList.appendChild(noteCard);
+                });
+            }
+
+            // Control visibility of add button based on role
+            if (currentUserRole === 'admin') {
+                if (addPublicNoteBtn) addPublicNoteBtn.style.display = 'block';
+            } else {
+                if (addPublicNoteBtn) addPublicNoteBtn.style.display = 'none';
+            }
+        }
+
 
         document.addEventListener('DOMContentLoaded', async () => {
             // Firebase Auth state listener
