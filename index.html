@@ -330,7 +330,7 @@
             font-weight: 600;
             border: none;
             padding: 12px 15px; /* Reduced padding for mobile */
-            transition: all 0.3s ease;
+            transition: all 0.3s ease-in-out;
             border-radius: 8px 8px 0 0;
             position: relative;
             overflow: hidden;
@@ -2367,16 +2367,16 @@
 
         // --- DASHBOARD LOGIC (from dashboard.html) ---
         const allStudents = []; // This remains empty as per original dashboard.html
-        const firebaseConfig = {
-            apiKey: "AIzaSyAsFiadkeL-__gF_Lb5VY2iap4DlatkaX4",
-            authDomain: "senior-data-researchinnovation.firebaseapp.com", // Ensure this is present for Auth
-            databaseURL: "https://senior-data-researchinnovation-default-rtdb.firebaseio.com",
-            projectId: "senior-data-researchinnovation",
-            storageBucket: "senior-data-researchinnovation.firebaseapp.com",
-            messagingSenderId: "587116206951",
-            appId: "1:587116206951:web:ddf6db02ecd19a63cf2dc2",
-            measurementId: "G-97JXW80ZLY"
-        };
+       const firebaseConfig = {
+  apiKey: "AIzaSyAtanJUJCZmcvGf_JS0ffKc1SlhMW8aWug",
+  authDomain: "gstatus-304a8.firebaseapp.com",
+  databaseURL: "https://gstatus-304a8-default-rtdb.firebaseio.com",
+  projectId: "gstatus-304a8",
+  storageBucket: "gstatus-304a8.firebasestorage.app",
+  messagingSenderId: "382807331706",
+  appId: "1:382807331706:web:c9e2a5236753e97580bcc3",
+  measurementId: "G-97JXW80ZLY"
+};
 
         let firebaseApp;
         try {
@@ -3142,39 +3142,39 @@
                 const dayOfWeek = today.getDay();
                 const isDisciplineTabSearch = (inputId === 'searchQueryDiscipline' || inputId === 'searchQueryBatchDiscipline');
 
-                let filteredStudents = students.filter(student => {
-    const name = student.name ? student.name.toLowerCase() : '';
-    const id = student.id ? student.id.toLowerCase() : '';
-    const room = student.room ? student.room.toLowerCase() : '';
-    const floor = student.floor ? student.floor.toString().toLowerCase() : '';
-    const studentClass = student.class ? student.class.toLowerCase() : '';
-    const section = student.section ? student.section.toLowerCase() : '';
+                if (query) {
+                    const { classQuery, sectionQuery } = parseClassSectionQuery(query);
 
-    let matchesSearch = false;
-    if (name.includes(searchQuery) || id.includes(searchQuery) || room.includes(searchQuery) || floor.includes(searchQuery)) {
-        matchesSearch = true;
-    }
+                    const filteredStudents = students.filter(student => {
+                        const name = student.name ? student.name.toLowerCase() : '';
+                        const id = student.id ? student.id.toLowerCase() : '';
+                        const room = student.room ? student.room.toLowerCase() : '';
+                        const floor = student.floor ? student.floor.toString().toLowerCase() : '';
+                        const studentClass = student.class ? student.class.toLowerCase() : '';
+                        const section = student.section ? student.section.toLowerCase() : '';
 
-    if (classQuery && sectionQuery) {
-        if (studentClass === classQuery && section === sectionQuery) {
-            matchesSearch = true;
-        }
-    } else if (classQuery) {
-        if (studentClass.includes(classQuery)) {
-            matchesSearch = true;
-        }
-    } else if (sectionQuery) {
-        if (section.includes(sectionQuery)) {
-            matchesSearch = true;
-        }
-    }
+                        let matches = false;
 
-    const matchesFloor = floorFilter === 'all' || floor === floorFilter;
-    const matchesClassFilter = !classFilter || studentClass.includes(classFilter);
-    const matchesSectionFilter = !sectionFilter || section.includes(sectionFilter);
+                        if (name.includes(query) || id.includes(query) || room.includes(query) || floor.includes(query)) {
+                            matches = true;
+                        }
 
-    return matchesSearch && matchesFloor && matchesClassFilter && matchesSectionFilter;
-});
+                        if (classQuery && sectionQuery) {
+                            if (studentClass === classQuery && section === sectionQuery) {
+                                matches = true;
+                            }
+                        } else if (classQuery) {
+                            if (studentClass.includes(classQuery)) {
+                                matches = true;
+                            }
+                        } else if (sectionQuery) {
+                             if (section.includes(sectionQuery)) {
+                                matches = true;
+                            }
+                        }
+                        return matches;
+                    });
+
                     if (filteredStudents.length) {
                         filteredStudents.forEach(student => {
                             const studentCard = document.createElement('div');
@@ -3269,35 +3269,35 @@
             let studentsToDisplayMain = allRankedStudents.filter(s => s.points >= 0);
 
             if (searchQueryRankings) {
-    studentsToDisplayMain = studentsToDisplayMain.filter(student => {
-        const name = student.name ? student.name.toLowerCase() : '';
-        const id = student.id ? student.id.toLowerCase() : '';
-        const room = student.room ? student.room.toLowerCase() : '';
-        const floor = student.floor ? student.floor.toString().toLowerCase() : '';
-        const studentClass = student.class ? student.class.toLowerCase() : '';
-        const section = student.section ? student.section.toLowerCase() : '';
+                studentsToDisplayMain = studentsToDisplayMain.filter(student => {
+                    const name = student.name ? student.name.toLowerCase() : '';
+                    const id = student.id ? student.id.toLowerCase() : '';
+                    const room = student.room ? student.room.toLowerCase() : '';
+                    const floor = student.floor ? student.floor.toString().toLowerCase() : '';
+                    const studentClass = student.class ? student.class.toLowerCase() : '';
+                    const section = student.section ? student.section.toLowerCase() : '';
 
-        let matchesSearch = false;
-        if (name.includes(searchQueryRankings) || id.includes(searchQueryRankings) || room.includes(searchQueryRankings) || floor.includes(searchQueryRankings)) {
-            matchesSearch = true;
-        }
+                    let matchesSearch = false;
+                    if (name.includes(searchQueryRankings) || id.includes(searchQueryRankings) || room.includes(searchQueryRankings) || floor.includes(searchQueryRankings)) {
+                        matchesSearch = true;
+                    }
 
-        if (classQuery && sectionQuery) {
-            if (studentClass === classQuery && section === sectionQuery) {
-                matchesSearch = true;
+                    if (classQuery && sectionQuery) {
+                        if (studentClass === classQuery && section === sectionQuery) {
+                            matchesSearch = true;
+                        }
+                    } else if (classQuery) {
+                        if (studentClass.includes(classQuery)) {
+                            matchesSearch = true;
+                        }
+                    } else if (sectionQuery) {
+                         if (section.includes(sectionQuery)) {
+                            matchesSearch = true;
+                        }
+                    }
+                    return matchesSearch;
+                });
             }
-        } else if (classQuery) {
-            if (studentClass.includes(classQuery)) {
-                matchesSearch = true;
-            }
-        } else if (sectionQuery) {
-            if (section.includes(sectionQuery)) {
-                matchesSearch = true;
-            }
-        }
-        return matchesSearch;
-    });
-}
 
             if (gradeFilter !== 'all') {
                 studentsToDisplayMain = studentsToDisplayMain.filter(s => s.assignedGrade === gradeFilter);
@@ -3373,35 +3373,35 @@
                 studentsToDisplayERank = studentsToDisplayERank.filter(s => s.floor === floorFilter);
             }
             if (searchQueryRankings) {
-    studentsToDisplayERank = studentsToDisplayERank.filter(student => {
-        const name = student.name ? student.name.toLowerCase() : '';
-        const id = student.id ? student.id.toLowerCase() : '';
-        const room = student.room ? student.room.toLowerCase() : '';
-        const floor = student.floor ? student.floor.toString().toLowerCase() : '';
-        const studentClass = student.class ? student.class.toLowerCase() : '';
-        const section = student.section ? student.section.toLowerCase() : '';
+                studentsToDisplayERank = studentsToDisplayERank.filter(student => {
+                    const name = student.name ? student.name.toLowerCase() : '';
+                    const id = student.id ? student.id.toLowerCase() : '';
+                    const room = student.room ? student.room.toLowerCase() : '';
+                    const floor = student.floor ? student.floor.toString().toLowerCase() : '';
+                    const studentClass = student.class ? student.class.toLowerCase() : '';
+                    const section = student ? student.section.toLowerCase() : '';
 
-        let matchesSearch = false;
-        if (name.includes(searchQueryRankings) || id.includes(searchQueryRankings) || room.includes(searchQueryRankings) || floor.includes(searchQueryRankings)) {
-            matchesSearch = true;
-        }
+                    let matchesSearch = false;
+                    if (name.includes(searchQueryRankings) || id.includes(searchQueryRankings) || room.includes(searchQueryRankings) || floor.includes(searchQueryRankings)) {
+                        matchesSearch = true;
+                    }
 
-        if (classQuery && sectionQuery) {
-            if (studentClass === classQuery && section === sectionQuery) {
-                matchesSearch = true;
+                    if (classQuery && sectionQuery) {
+                        if (studentClass === classQuery && section === sectionQuery) {
+                            matchesSearch = true;
+                        }
+                    } else if (classQuery) {
+                        if (studentClass.includes(classQuery)) {
+                            matchesSearch = true;
+                        }
+                    } else if (sectionQuery) {
+                         if (section.includes(sectionQuery)) {
+                            matchesSearch = true;
+                        }
+                    }
+                    return matchesSearch;
+                });
             }
-        } else if (classQuery) {
-            if (studentClass.includes(classQuery)) {
-                matchesSearch = true;
-            }
-        } else if (sectionQuery) {
-            if (section.includes(searchQueryRankings)) {
-                matchesSearch = true;
-            }
-        }
-        return matchesSearch;
-    });
-}
             studentsToDisplayERank.sort((a, b) => a.points - b.points);
 
             eRankingsTable.innerHTML = '';
@@ -3461,36 +3461,35 @@
 
             let filteredHistory = [...responseHistory];
 
-            f (searchQueryHistory) {
-    filteredHistory = filteredHistory.filter(entry => {
-        const name = entry.name ? entry.name.toLowerCase() : '';
-        const id = entry.studentId ? entry.studentId.toLowerCase() : '';
-        const student = students.find(s => s.id === entry.studentId);
-        const studentClass = student ? student.class.toLowerCase() : '';
-        const section = student ? student.section.toLowerCase() : '';
+            if (searchQueryHistory) {
+                filteredHistory = filteredHistory.filter(entry => {
+                    const name = entry.name ? entry.name.toLowerCase() : '';
+                    const id = entry.studentId ? entry.studentId.toLowerCase() : '';
+                    const student = students.find(s => s.id === entry.studentId);
+                    const studentClass = student ? student.class.toLowerCase() : '';
+                    const section = student ? student.section.toLowerCase() : '';
 
-        let matchesSearch = false;
-        if (name.includes(searchQueryHistory) || id.includes(searchQueryHistory)) {
-            matchesSearch = true;
-        }
+                    let matchesSearch = false;
+                    if (name.includes(searchQueryHistory) || id.includes(searchQueryHistory)) {
+                        matchesSearch = true;
+                    }
 
-        if (classQuery && sectionQuery) {
-            if (studentClass === classQuery && section === sectionQuery) {
-                matchesSearch = true;
+                    if (classQuery && sectionQuery) {
+                        if (studentClass === classQuery && section === sectionQuery) {
+                            matchesSearch = true;
+                        }
+                    } else if (classQuery) {
+                        if (studentClass.includes(classQuery)) {
+                            matchesSearch = true;
+                        }
+                    } else if (sectionQuery) {
+                         if (section.includes(sectionQuery)) {
+                            matchesSearch = true;
+                        }
+                    }
+                    return matchesSearch;
+                });
             }
-        } else if (classQuery) {
-            if (studentClass.includes(classQuery)) {
-                matchesSearch = true;
-            }
-        } else if (sectionQuery) {
-            if (section.includes(sectionQuery)) {
-                matchesSearch = true;
-            }
-        }
-        return matchesSearch;
-    });
-}
-
 
             if (selectedFloor !== 'all') {
                 filteredHistory = filteredHistory.filter(entry => {
@@ -3711,33 +3710,35 @@
 
 
             let filteredStudents = students.filter(student => {
-    const name = student.name ? student.name.toLowerCase() : '';
-    const id = student.id ? student.id.toLowerCase() : '';
-    const room = student.room ? student.room.toLowerCase() : '';
-    const floor = student.floor ? student.floor.toString().toLowerCase() : '';
-    const studentClass = student.class ? student.class.toLowerCase() : '';
-    const section = student.section ? student.section.toLowerCase() : '';
+                const name = student.name ? student.name.toLowerCase() : '';
+                const id = student.id ? student.id.toLowerCase() : '';
+                const room = student.room ? student.room.toLowerCase() : '';
+                const floor = student.floor ? student.floor.toString().toLowerCase() : '';
+                const studentClass = student.class ? student.class.toLowerCase() : '';
+                const section = student.section ? student.section.toLowerCase() : '';
 
-    let matchesSearch = false;
-    if (name.includes(searchQuery) || id.includes(searchQuery) || room.includes(searchQuery) || floor.includes(searchQuery)) {
-        matchesSearch = true;
-    }
+                let matchesSearch = false;
+                if (name.includes(searchQuery) || id.includes(searchQuery) || room.includes(searchQuery) || floor.includes(searchQuery)) {
+                    matchesSearch = true;
+                }
 
-    if (classQuery && sectionQuery) {
-        if (studentClass === classQuery && section === sectionQuery) {
-            matchesSearch = true;
-        }
-    } else if (classQuery) {
-        if (studentClass.includes(classQuery)) {
-            matchesSearch = true;
-        }
-    } else if (sectionQuery) {
-        if (section.includes(sectionQuery)) {
-            matchesSearch = true;
-        }
-    }
-    return matchesSearch;
-});
+                if (classQuery && sectionQuery) {
+                    if (studentClass === classQuery && section === sectionQuery) {
+                        matchesSearch = true;
+                    }
+                } else if (classQuery) {
+                    if (studentClass.includes(classQuery)) {
+                        matchesSearch = true;
+                    }
+                } else if (sectionQuery) {
+                    if (section.includes(sectionQuery)) {
+                        matchesSearch = true;
+                    }
+                }
+                return matchesSearch;
+            });
+
+
 
             const totalPages = Math.ceil(filteredStudents.length / rowsPerPage);
             currentPage = Math.min(currentPage, totalPages > 0 ? totalPages : 1);
@@ -3885,7 +3886,7 @@
                 const section = student.section ? student.section.toLowerCase() : '';
 
                 let matchesSearch = false;
-                if (name.includes(searchQuery) || id.includes(searchQuery) || room.includes(query) || floor.includes(query)) {
+                if (name.includes(searchQuery) || id.includes(searchQuery) || room.includes(searchQuery) || floor.includes(searchQuery)) {
                     matchesSearch = true;
                 }
 
@@ -4379,11 +4380,7 @@
                 // Remove existing event listeners to prevent multiple bindings
                 batchDisciplineTabLink.removeEventListener('click', preventBatchDisciplineClick);
 
-                // Teachers cannot access Batch Discipline at all
-                if (currentUserRole === 'teacher') {
-                    batchDisciplineTabLink.classList.add('disabled');
-                    batchDisciplineTabLink.addEventListener('click', preventBatchDisciplineClick);
-                } else if (dayOfWeek === 6 && currentHour >= startTime && currentHour < endTime) { // Saturday, 7 AM to 10 PM
+                if (dayOfWeek === 6 && currentHour >= startTime && currentHour < endTime) { // Saturday, 7 AM to 10 PM
                     batchDisciplineTabLink.classList.remove('disabled');
                 } else {
                     batchDisciplineTabLink.classList.add('disabled');
@@ -4400,9 +4397,7 @@
             const startTime = 7;
             const endTime = 22;
 
-            if (currentUserRole === 'teacher') {
-                alert("Teachers do not have access to the 'Batch Discipline' tab.");
-            } else if (dayOfWeek !== 6) {
+            if (dayOfWeek !== 6) {
                 alert("The 'Batch Discipline' tab is only accessible on Saturdays.");
             } else if (currentHour < startTime || currentHour >= endTime) {
                 alert("The 'Batch Discipline' tab is only accessible between 7 AM and 10 PM on Saturdays.");
@@ -4465,7 +4460,7 @@
             const tabsToControl = [
                 "rankings-tab", "responses-tab", "student-management-tab",
                 "administration-tab", "batch-discipline-tab",
-                "individual-data-tab", "notes-tab"
+                "individual-data-tab", "notes-tab" // Added notes-tab
             ];
 
             const positivePointsSectionContainer = document.getElementById('positivePointsSectionContainer');
@@ -4482,7 +4477,7 @@
             });
             if (positivePointsSectionContainer) positivePointsSectionContainer.style.display = 'none';
             if (negativePointsSectionContainer) negativePointsSectionContainer.style.display = 'none';
-            if (addPublicNoteBtn) addPublicNoteBtn.style.display = 'none';
+            if (addPublicNoteBtn) addPublicNoteBtn.style.display = 'none'; // Hide public note add button by default
 
 
             if (role === "admin") {
@@ -4499,13 +4494,14 @@
                 if (positivePointsSectionContainer) positivePointsSectionContainer.classList.add('col-md-6');
                 if (negativePointsSectionContainer) negativePointsSectionContainer.classList.add('col-md-6');
                 if (negativePointsSectionContainer) negativePointsSectionContainer.classList.remove('offset-md-3');
-                if (addPublicNoteBtn) addPublicNoteBtn.style.display = 'block';
+                if (addPublicNoteBtn) addPublicNoteBtn.style.display = 'block'; // Show public note add button for admin
 
 
             } else if (role === "incharge") {
-                // In-charge has access to Home, Administration, Batch Discipline, and Notes
+                // In-charge has access to all tabs except Student Management, History, Rankings, and Individual Data
                 const allowedTabs = [
-                    "home-tab", "administration-tab", "batch-discipline-tab", "notes-tab"
+                    "home-tab", "administration-tab", "batch-discipline-tab",
+                    "notes-tab" // Added notes-tab
                 ];
                 allowedTabs.forEach(tabId => {
                     const tabElement = document.getElementById(tabId);
@@ -4520,20 +4516,22 @@
                 if (negativePointsSectionContainer) negativePointsSectionContainer.classList.add('col-md-6');
                 if (negativePointsSectionContainer) negativePointsSectionContainer.classList.remove('offset-md-3');
 
-                // Rankings, Individual Data, Student Management, and History are hidden for incharge
-                const rankingsTab = document.getElementById('rankings-tab');
-                if (rankingsTab) rankingsTab.style.display = 'none';
-                const individualDataTab = document.getElementById('individual-data-tab');
-                if (individualDataTab) individualDataTab.style.display = 'none';
+                // Student Management, History, Rankings, and Individual Data are hidden for incharge
                 const studentManagementTab = document.getElementById('student-management-tab');
                 if (studentManagementTab) studentManagementTab.style.display = 'none';
                 const responsesTab = document.getElementById('responses-tab');
                 if (responsesTab) responsesTab.style.display = 'none';
+                const rankingsTab = document.getElementById('rankings-tab');
+                if (rankingsTab) rankingsTab.style.display = 'none';
+                const individualDataTab = document.getElementById('individual-data-tab');
+                if (individualDataTab) individualDataTab.style.display = 'none';
+
 
             } else if (role === "teacher") {
-                // Teacher has access to Home, Administration (only negative points), and Notes
+                // Teacher has access to specific tabs and only negative points
                 const allowedTabs = [
-                    "home-tab", "administration-tab", "notes-tab"
+                    "home-tab", "administration-tab", "batch-discipline-tab",
+                    "notes-tab" // Added notes-tab
                 ];
                 allowedTabs.forEach(tabId => {
                     const tabElement = document.getElementById(tabId);
@@ -4542,15 +4540,13 @@
                     }
                 });
                 // Only negative points section is visible for teachers and centered
-                if (positivePointsSectionContainer) positivePointsSectionContainer.style.display = 'none';
+                if (positivePointsSectionContainer) positivePointsSectionContainer.style.display = 'none'; // Hide positive points
                 if (negativePointsSectionContainer) {
-                    negativePointsSectionContainer.style.display = 'block';
-                    negativePointsSectionContainer.classList.remove('col-md-6');
-                    negativePointsSectionContainer.classList.add('col-md-6', 'offset-md-3');
+                    negativePointsSectionContainer.style.display = 'block'; // Show negative points
+                    negativePointsSectionContainer.classList.remove('col-md-6'); // Remove half width
+                    negativePointsSectionContainer.classList.add('col-md-6', 'offset-md-3'); // Center it
                 }
-                // Batch Discipline, Student Management, Rankings, Individual Data, and History are hidden for teacher
-                const batchDisciplineTab = document.getElementById('batch-discipline-tab');
-                if (batchDisciplineTab) batchDisciplineTab.style.display = 'none';
+                // Student Management, Rankings, Individual Data, and History are hidden for teacher
                 const studentManagementTab = document.getElementById('student-management-tab');
                 if (studentManagementTab) studentManagementTab.style.display = 'none';
                 const rankingsTab = document.getElementById('rankings-tab');
@@ -4873,3 +4869,4 @@
     </script>
 </body>
 </html>
+
